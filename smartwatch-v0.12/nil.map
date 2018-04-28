@@ -1,0 +1,2852 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+                              (vfprintf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+                              (vfscanf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                              vector.o (__subsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o) (__addsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                              LSM303.o (atan2)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o) (atan)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                              MAX30105.o (__nesf2)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                              time.o (__divsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o) (__divsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                              MPL3115A2.o (__fixunssfsi)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                              time.o (__floatunsisf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+                              main.o (fmax)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+                              main.o (fmin)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o) (__fp_cmp)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_inf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_nan)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o) (__fp_powser)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscA)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscB)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o) (__fp_round)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_split3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_zero)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o) (inverse)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                              MPL3115A2.o (__mulsf3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o) (__mulsf3x)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+                              vector.o (sqrt)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o) (square)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o) (__fp_mpack)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o) (__fp_norm2)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                              time.o (__mulsi3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                              DS3231.o (__udivmodqi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                              main.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                              MAX30105.o (__divmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                              test/lib/ch_test.o (__udivmodsi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                              main.o (__divmodsi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                              os/nil/src/nil.o (__do_clear_bss)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                              main.o (__brkval)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o) (__ftoa_engine)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o) (isspace)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o) (tolower)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o) (strchr_P)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o) (strnlen_P)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o) (strnlen)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o) (fgetc)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+                              main.o (fprintf_P)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o) (fputc)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o) (ungetc)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o) (__ultoa_invert)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o) (__ctype_isfalse)
+
+Allocating common symbols
+Common symbol       size              file
+
+waThread2           0x134             main.o
+Fatfs               0x22e             main.o
+minute_counter      0x4               main.o
+temp_second_counter
+                    0x4               time.o
+waThread7           0x134             main.o
+j                   0x1               main.o
+IR_HR_state         0x18f             main.o
+waThread3           0x334             main.o
+lcdUSE              0x1               main.o
+AAA                 0x2               main.o
+i2cUSE              0x1               main.o
+MAX30105_activeLEDs
+                    0x1               heartRate.o
+menuactn            0x62              main.o
+Finfo               0x16              main.o
+spiUSE              0x1               main.o
+waThread14          0x134             main.o
+cursor_y            0x2               st7735_font.o
+waThread9           0x134             main.o
+menulink            0x62              main.o
+g                   0xc               L3GD20.o
+waThread11          0x134             main.o
+acc_dirs            0x2               main.o
+xfunc_out           0x2               xprintf.o
+XXX                 0x2               main.o
+System_delta        0x4               time.o
+acc_files           0x2               main.o
+sense               0xa               MAX30105.o
+waThread8           0xb4              main.o
+waThread5           0x334             main.o
+ZZZ                 0x2               main.o
+__brkval            0x2               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+_ctrl_reg1          0x1               MPL3115A2.o
+Timer               0x2               main.o
+nil                 0xb2              os/nil/src/nil.o
+menutitle           0x8c              main.o
+wa_test_support     0xb4              test/nil/test_root.o
+YYY                 0x2               main.o
+mode                0x1               MPL3115A2.o
+System_time         0x4               time.o
+Buff                0x400             main.o
+WIDTH               0x2               st7735_font.o
+menuitem            0x3d4             main.o
+waThread4           0x134             main.o
+sdUSE               0x1               main.o
+gsem1               0x1               test/nil/test_root.o
+ButtonPressed       0x1               main.o
+m_min               0xc               LSM303.o
+rotation            0x1               st7735_font.o
+acc_size            0x4               main.o
+waThread10          0x134             main.o
+MAX30105_i2caddr    0x1               heartRate.o
+HEIGHT              0x2               st7735_font.o
+waThread12          0x6c8             main.o
+Line                0x80              main.o
+WWW                 0x2               main.o
+waTimer             0xb4              time.o
+waThread1           0xb4              main.o
+test_step           0x2               test/lib/ch_test.o
+Red_HR_state        0x18f             main.o
+MAX30105_revisionID
+                    0x1               heartRate.o
+cursor_x            0x2               st7735_font.o
+wrap                0x1               st7735_font.o
+textsize            0x1               st7735_font.o
+usartUSE            0x1               main.o
+a                   0xc               LSM303.o
+waThread6           0xb4              main.o
+__flp               0x2               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+m_max               0xc               LSM303.o
+SD1                 0x49              os/hal/ports/AVR/serial_lld.o
+m                   0xc               LSM303.o
+gtr1                0x2               test/nil/test_root.o
+gsem2               0x1               test/nil/test_root.o
+testTHREAD          0x1               main.o
+textbgcolor         0x2               st7735_font.o
+textcolor           0x2               st7735_font.o
+waThread13          0x134             main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+LOAD os/nil/ports/AVR/nilcore.o
+LOAD os/nil/src/nil.o
+LOAD test/lib/ch_test.o
+LOAD test/nil/test_root.o
+LOAD test/nil/test_sequence_001.o
+LOAD test/nil/test_sequence_002.o
+LOAD os/hal/src/hal.o
+LOAD os/hal/src/hal_queues.o
+LOAD os/hal/src/hal_mmcsd.o
+LOAD os/hal/src/adc.o
+LOAD os/hal/src/can.o
+LOAD os/hal/src/dac.o
+LOAD os/hal/src/ext.o
+LOAD os/hal/src/gpt.o
+LOAD os/hal/src/i2c.o
+LOAD os/hal/src/i2s.o
+LOAD os/hal/src/icu.o
+LOAD os/hal/src/mac.o
+LOAD os/hal/src/mmc_spi.o
+LOAD os/hal/src/pal.o
+LOAD os/hal/src/pwm.o
+LOAD os/hal/src/rtc.o
+LOAD os/hal/src/sdc.o
+LOAD os/hal/src/serial.o
+LOAD os/hal/src/serial_usb.o
+LOAD os/hal/src/spi.o
+LOAD os/hal/src/st.o
+LOAD os/hal/src/uart.o
+LOAD os/hal/src/usb.o
+LOAD os/hal/src/nand.o
+LOAD os/hal/osal/nil/osal.o
+LOAD os/hal/ports/AVR/hal_lld.o
+LOAD os/hal/ports/AVR/pal_lld.o
+LOAD os/hal/ports/AVR/serial_lld.o
+LOAD os/hal/ports/AVR/adc_lld.o
+LOAD os/hal/ports/AVR/i2c_lld.o
+LOAD os/hal/ports/AVR/spi_lld.o
+LOAD os/hal/ports/AVR/gpt_lld.o
+LOAD os/hal/ports/AVR/pwm_lld.o
+LOAD os/hal/ports/AVR/icu_lld.o
+LOAD os/hal/ports/AVR/st_lld.o
+LOAD os/hal/boards/STK500/board.o
+LOAD spi.o
+LOAD twimaster.o
+LOAD st7735.o
+LOAD st7735_gfx.o
+LOAD st7735_font.o
+LOAD xprintf.o
+LOAD usart.o
+LOAD time.o
+LOAD mmcbb.o
+LOAD ff.o
+LOAD MPL3115A2.o
+LOAD L3GD20.o
+LOAD vector.o
+LOAD DS3231.o
+LOAD LSM303.o
+LOAD heartRate.o
+LOAD MAX30105.o
+LOAD main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000    0x106c2
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_fplib
+                0x0000008c       0x2d c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+ *(.progmem*)
+ .progmem.data  0x000000b9       0x73 st7735.o
+ .progmem.data  0x0000012c      0x4fb st7735_font.o
+ .progmem.data  0x00000627      0x672 main.o
+ .progmem.data  0x00000c99        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+ .progmem.data  0x00000ca1       0x4d c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+ .progmem.data  0x00000cee       0xfa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                0x00000de8                . = ALIGN (0x2)
+                0x00000de8                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000de8        0x0 linker stubs
+ *(.trampolines*)
+                0x00000de8                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000de8                __ctors_start = .
+ *(.ctors)
+                0x00000de8                __ctors_end = .
+                0x00000de8                __dtors_start = .
+ *(.dtors)
+                0x00000de8                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000de8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                0x00000de8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000de8        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000df4       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                0x00000df4                __do_copy_data
+ .init4         0x00000e0e       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x00000e0e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000e1e        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000e26        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                0x00000e26                __vector_22
+                0x00000e26                __vector_28
+                0x00000e26                __vector_1
+                0x00000e26                __vector_32
+                0x00000e26                __vector_34
+                0x00000e26                __vector_24
+                0x00000e26                __vector_12
+                0x00000e26                __bad_interrupt
+                0x00000e26                __vector_6
+                0x00000e26                __vector_31
+                0x00000e26                __vector_3
+                0x00000e26                __vector_23
+                0x00000e26                __vector_30
+                0x00000e26                __vector_25
+                0x00000e26                __vector_13
+                0x00000e26                __vector_17
+                0x00000e26                __vector_19
+                0x00000e26                __vector_7
+                0x00000e26                __vector_27
+                0x00000e26                __vector_5
+                0x00000e26                __vector_33
+                0x00000e26                __vector_2
+                0x00000e26                __vector_15
+                0x00000e26                __vector_29
+                0x00000e26                __vector_8
+                0x00000e26                __vector_26
+                0x00000e26                __vector_14
+                0x00000e26                __vector_10
+                0x00000e26                __vector_18
+ .text          0x00000e2a       0x70 os/nil/ports/AVR/nilcore.o
+                0x00000e2a                _port_switch
+                0x00000e88                _port_thread_start
+ .text          0x00000e9a      0x466 os/nil/src/nil.o
+                0x00000e9e                chSysTimerHandlerI
+                0x000010b0                chSchGoSleepTimeoutS
+                0x00000f5c                chSysConditionalLock
+                0x0000121c                chSchRescheduleS
+                0x00000f68                chSchReadyI
+                0x00001022                chSemResetI
+                0x00001240                chEvtSignal
+                0x00000f66                chSysRestoreStatusX
+                0x0000110a                chEvtWaitAnyTimeoutS
+                0x00000e9a                chSysHalt
+                0x000011f8                chThdSuspendTimeoutS
+                0x0000126a                chSysInit
+                0x000011e8                chThdSleep
+                0x000011c0                chThdSleepUntil
+                0x0000125c                chSemSignal
+                0x00001074                chEvtSignalI
+                0x00000f5e                chSysConditionalUnlock
+                0x00000f92                chThdResumeI
+                0x00001168                chEvtWaitAnyTimeout
+                0x00000f62                chSysGetStatusAndLockX
+                0x000011b6                chSemWaitTimeout
+                0x0000124e                chSemReset
+                0x00000fc8                chSemSignalI
+                0x00001172                chSemWaitTimeoutS
+ .text          0x00001300      0x516 test/lib/ch_test.o
+                0x00001366                _test_assert
+                0x00001382                _test_assert_sequence
+                0x0000150c                test_print
+                0x00001428                test_printn
+                0x000013cc                _test_assert_time_window
+                0x000015a0                test_execute
+                0x00001584                test_emit_token_i
+                0x00001564                test_emit_token
+                0x00001540                test_println
+                0x00001350                _test_fail
+ .text          0x00001816       0x50 test/nil/test_root.o
+                0x00001816                test_support
+ .text          0x00001866      0x224 test/nil/test_sequence_001.o
+ .text          0x00001a8a      0x55e test/nil/test_sequence_002.o
+ .text          0x00001fe8       0x12 os/hal/src/hal.o
+                0x00001fe8                halInit
+ .text          0x00001ffa      0x422 os/hal/src/hal_queues.o
+                0x00002028                oqObjectInit
+                0x000021a0                iqReadTimeout
+                0x0000235a                iqPutI
+                0x000023d8                oqResetI
+                0x000023fe                iqResetI
+                0x000022d8                oqGetI
+                0x00002056                oqWriteTimeout
+                0x0000225e                iqGetTimeout
+                0x00001ffa                iqObjectInit
+                0x0000211c                oqPutTimeout
+ .text          0x0000241c        0x0 os/hal/src/hal_mmcsd.o
+ .text          0x0000241c        0x0 os/hal/src/adc.o
+ .text          0x0000241c        0x0 os/hal/src/can.o
+ .text          0x0000241c        0x0 os/hal/src/dac.o
+ .text          0x0000241c        0x0 os/hal/src/ext.o
+ .text          0x0000241c        0x0 os/hal/src/gpt.o
+ .text          0x0000241c        0x0 os/hal/src/i2c.o
+ .text          0x0000241c        0x0 os/hal/src/i2s.o
+ .text          0x0000241c        0x0 os/hal/src/icu.o
+ .text          0x0000241c        0x0 os/hal/src/mac.o
+ .text          0x0000241c        0x0 os/hal/src/mmc_spi.o
+ .text          0x0000241c        0x0 os/hal/src/pal.o
+ .text          0x0000241c        0x0 os/hal/src/pwm.o
+ .text          0x0000241c        0x0 os/hal/src/rtc.o
+ .text          0x0000241c        0x0 os/hal/src/sdc.o
+ .text          0x0000241c      0x1f6 os/hal/src/serial.o
+                0x0000246e                sdIncomingDataI
+                0x0000241c                sdRequestDataI
+                0x0000260c                sdInit
+                0x0000250c                sdStart
+                0x000024de                sdStop
+                0x00002526                sdObjectInit
+ .text          0x00002612        0x0 os/hal/src/serial_usb.o
+ .text          0x00002612        0x0 os/hal/src/spi.o
+ .text          0x00002612       0x38 os/hal/src/st.o
+                0x00002612                stStartAlarm
+                0x00002634                stGetAlarm
+                0x00002624                stStopAlarm
+                0x00002644                stInit
+                0x0000262a                stSetAlarm
+ .text          0x0000264a        0x0 os/hal/src/uart.o
+ .text          0x0000264a        0x0 os/hal/src/usb.o
+ .text          0x0000264a        0x0 os/hal/src/nand.o
+ .text          0x0000264a       0x88 os/hal/osal/nil/osal.o
+                0x0000264a                osalThreadDequeueAllI
+                0x00002698                osalThreadDequeueNextI
+ .text          0x000026d2        0x2 os/hal/ports/AVR/hal_lld.o
+                0x000026d2                hal_lld_init
+ .text          0x000026d4        0x0 os/hal/ports/AVR/pal_lld.o
+ .text          0x000026d4      0x1cc os/hal/ports/AVR/serial_lld.o
+                0x00002764                sd_lld_init
+                0x00002776                __vector_21
+                0x0000274e                sd_lld_stop
+                0x000026e0                sd_lld_start
+                0x000027e2                __vector_20
+ .text          0x000028a0        0x0 os/hal/ports/AVR/adc_lld.o
+ .text          0x000028a0        0x0 os/hal/ports/AVR/i2c_lld.o
+ .text          0x000028a0        0x0 os/hal/ports/AVR/spi_lld.o
+ .text          0x000028a0        0x0 os/hal/ports/AVR/gpt_lld.o
+ .text          0x000028a0        0x0 os/hal/ports/AVR/pwm_lld.o
+ .text          0x000028a0        0x0 os/hal/ports/AVR/icu_lld.o
+ .text          0x000028a0       0x68 os/hal/ports/AVR/st_lld.o
+                0x000028a0                st_lld_init
+                0x000028b4                __vector_16
+ .text          0x00002908        0x8 os/hal/boards/STK500/board.o
+                0x00002908                boardInit
+ .text          0x00002910        0xe spi.o
+                0x00002910                spi_init
+ .text          0x0000291e      0x10a twimaster.o
+                0x000029dc                i2c_write
+                0x00002a14                i2c_readNak
+                0x00002a00                i2c_readAck
+                0x000029c6                i2c_rep_start
+                0x0000292a                i2c_start
+                0x000029cc                i2c_stop
+                0x00002976                i2c_start_wait
+                0x0000291e                i2c_init
+ .text          0x00002a28      0x59c st7735.o
+                0x00002d46                st7735_draw_bitmap
+                0x00002ba6                st7735_set_addr_win
+                0x00002c5a                st7735_draw_pixel
+                0x00002a28                st7735_write_self_color
+                0x00002e10                st7735_draw_mono_bitmap
+                0x00002a40                st7735_run_command_list
+                0x00002f2a                st7735_set_orientation
+                0x00002b2e                st7735_init
+                0x00002cb2                st7735_fill_rect
+ .text          0x00002fc4      0x3c0 st7735_gfx.o
+                0x00003206                st7735_draw_line
+                0x000031a0                st7735_draw_rect
+                0x00002fc4                st7735_draw_circle
+ .text          0x00003384      0x34a st7735_font.o
+                0x000033ba                st7735_drawChar
+                0x000036a4                st7735_printf
+                0x00003384                st7735_setCursor
+                0x000033a2                st7735_setTextColor
+                0x00003396                st7735_setTextSize
+                0x000036ae                st7735_print
+                0x000033b4                st7735_setTextWrap
+                0x000035c0                st7735_write
+ .text          0x000036ce      0xaf4 xprintf.o
+                0x00003714                xfputs
+                0x00003fa2                xprintf_P
+                0x00004058                put_dump
+                0x0000403c                xprintf
+                0x00003f24                xfprintf_P
+                0x000036f6                xputs
+                0x000036ce                xputc
+                0x00004000                xsprintf
+                0x00003fbe                xfprintf
+                0x00003f66                xsprintf_P
+ .text          0x000041c2       0x72 usart.o
+                0x000041e8                usart_getchar
+                0x000041f6                usart_pstr
+                0x000041c2                usart_init
+                0x00004220                usart_putchar_printf
+                0x00004214                usart_kbhit
+                0x000041d8                usart_putchar
+ .text          0x00004234      0x254 time.o
+                0x00004362                timer
+                0x00004282                Get_elapsed_ms
+                0x00004256                GetTime
+                0x00004332                getSeconds
+                0x000042fe                Get_elapsed_s
+                0x00004234                TimeInit
+                0x0000434c                Reset_timer
+ .text          0x00004488      0x7be mmcbb.o
+                0x00004728                disk_initialize
+                0x0000470e                disk_status
+                0x00004ada                disk_ioctl
+                0x000049ea                disk_write
+                0x00004912                disk_read
+ .text          0x00004c46     0x3258 ff.o
+                0x0000503a                get_fat
+                0x00007e86                f_close
+                0x00006b56                f_read
+                0x00005aaa                f_forward
+                0x0000604a                f_readdir
+                0x00007c9a                f_sync
+                0x00004cc0                f_mount
+                0x00007744                f_opendir
+                0x00004e0e                put_fat
+                0x0000563a                f_lseek
+                0x00004c46                clust2sect
+                0x0000656e                f_write
+                0x00007818                f_open
+ .text          0x00007e9e      0x2e6 MPL3115A2.o
+                0x00007ec2                MPL3115A2_setSeaPressure
+                0x00007f92                MPL3115A2_getAltitude
+                0x00008066                MPL3115A2_getPressure
+                0x00007f2a                MPL3115A2_getTemperature
+                0x00008130                MPL3115A2_init
+                0x00007f04                MPL3115A2_read8
+                0x00007e9e                MPL3115A2_write8
+ .text          0x00008184      0x124 L3GD20.o
+                0x00008296                L3GD20_enableDefault
+                0x00008184                L3GD20_read8
+                0x000081aa                L3GD20_read
+                0x00008272                L3GD20_write8
+ .text          0x000082a8      0x288 vector.o
+                0x000082a8                vector_cross
+                0x000083b6                vector_dot
+                0x00008444                vector_normalize
+ .text          0x00008530      0x38a DS3231.o
+                0x00008706                DS3231_getDate
+                0x0000868a                DS3231_getTemp
+                0x000088a0                DS3231_init
+                0x000086fe                DS3231_getStatus
+                0x000087c4                DS3231_getTime
+                0x00008554                decimal_to_bcd
+                0x0000857a                DS3231_write8
+                0x00008664                DS3231_read8
+                0x0000859e                DS3231_setDate
+                0x00008530                bcd_to_decimal
+                0x000085e8                DS3231_setTime
+ .text          0x000088ba      0x524 LSM303.o
+                0x000088ba                LSM303_heading_calc
+                0x00008d16                LSM303_read
+                0x00008d20                LSM303_write8
+                0x00008d44                LSM303_enableDefault
+                0x00008ab4                LSM303_heading
+                0x00008b18                LSM303_read8
+                0x00008b3e                LSM303_readMag
+                0x00008c2a                LSM303_readAcc
+ .text          0x00008dde      0x582 heartRate.o
+                0x00008dde                checkForBeat
+ .text          0x00009360      0x908 MAX30105.o
+                0x00009366                MAX30105_available
+                0x00009a6c                MAX30105_setup
+                0x0000999c                MAX30105_readTemperature
+                0x000095a8                MAX30105_disableAFULL
+                0x0000992c                MAX30105_getIR
+                0x00009420                MAX30105_setPulseAmplitudeProximity
+                0x0000953c                MAX30105_shutDown
+                0x000093ea                MAX30105_clearFIFO
+                0x00009360                MAX30105_getRevisionID
+                0x000093aa                MAX30105_nextSample
+                0x00009500                MAX30105_setPulseWidth
+                0x0000943e                MAX30105_read8
+                0x00009434                MAX30105_setPulseAmplitudeRed
+                0x0000950c                MAX30105_setSampleRate
+                0x0000938e                MAX30105_getFIFOIR
+                0x00009560                MAX30105_disablePROXINT
+                0x00009494                MAX30105_disableFIFORollover
+                0x00009a60                MAX30105_softReset
+                0x000095e0                MAX30105_getReadPointer
+                0x0000959c                MAX30105_enableDATARDY
+                0x00009524                MAX30105_setLEDMode
+                0x00009584                MAX30105_enableALCOVF
+                0x000093bc                MAX30105_write8
+                0x00009600                MAX30105_check
+                0x00009578                MAX30105_disableALCOVF
+                0x000093e0                MAX30105_setPROXINTTHRESH
+                0x000095c0                MAX30105_readRevisionID
+                0x00009488                MAX30105_setFIFOAlmostFull
+                0x00009964                MAX30105_getRed
+                0x0000956c                MAX30105_enablePROXINT
+                0x00009590                MAX30105_disableDATARDY
+                0x0000942a                MAX30105_setPulseAmplitudeIR
+                0x000095f8                MAX30105_getINT1
+                0x000094b8                MAX30105_enableSlot
+                0x00009372                MAX30105_getFIFORed
+                0x000095cc                MAX30105_readPartID
+                0x000094a0                MAX30105_enableFIFORollover
+                0x00009530                MAX30105_wakeUp
+                0x000098a4                MAX30105_safeCheck
+                0x000095b4                MAX30105_enableAFULL
+                0x00009416                MAX30105_setProximityThreshold
+                0x000094ac                MAX30105_setFIFOAverage
+                0x00009548                MAX30105_disableDIETEMPRDY
+                0x00009404                MAX30105_disableSlots
+                0x000095e8                MAX30105_getWritePointer
+                0x00009464                MAX30105_bitMask
+                0x00009a12                MAX30105_readTemperatureF
+                0x000095d4                MAX30105_init
+                0x000095f0                MAX30105_getINT2
+                0x00009554                MAX30105_enableDIETEMPRDY
+                0x00009518                MAX30105_setADCRange
+                0x000098b4                MAX30105_getRedIR
+ .text          0x00009c68     0x4cb2 main.o
+                0x0000b264                Thread5
+                0x0000ab06                Thread4
+                0x00009e76                Thread8
+                0x00009dd2                nilThdDelayUntil
+                0x0000d594                Thread12
+                0x0000bf22                Thread10
+                0x0000cdf0                read16
+                0x0000b172                Thread7
+                0x0000c3f6                __vector_11
+                0x0000a3c2                chPrintUnusedStack
+                0x0000c8c6                Thread2
+                0x0000a0e0                showMenu
+                0x0000c49a                initMenu
+                0x0000bda8                DS3231_showParameters
+                0x0000e74e                Thread3
+                0x0000cd3e                read32
+                0x00009dc4                nilThdDelay
+                0x0000a96c                Thread9
+                0x00009c98                get_fattime
+                0x0000ac5e                Thread11
+                0x00009df0                main
+                0x0000a4c0                chPrintStackSizes
+                0x0000c378                __vector_4
+                0x0000ce5a                bmpDraw
+                0x0000c448                __vector_9
+                0x00009d82                nilUnusedStack
+                0x0000b1ce                Thread6
+                0x00009d9c                nilUnusedHeapIdle
+                0x0000a5b0                Thread14
+                0x0000a8be                Thread13
+                0x0000c08a                Thread1
+                0x00009ca2                parse_time
+                0x00009d78                nilSemGetCounter
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+ .text          0x0000e91a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+                0x0000e91a                . = ALIGN (0x2)
+ *(.text.*)
+ .text.avr-libc
+                0x0000e91a      0x760 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+                0x0000e91a                vfprintf
+ .text.avr-libc
+                0x0000f07a      0x88c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+                0x0000f688                vfscanf
+ .text.avr-libc.fplib
+                0x0000f906        0xa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                0x0000f906                __subsf3
+                0x0000f908                __addsf3
+ .text.avr-libc.fplib
+                0x0000f910       0xc0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                0x0000f92a                __addsf3x
+ .text.avr-libc.fplib
+                0x0000f9d0       0x74 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                0x0000f9ee                atan2
+ .text.avr-libc.fplib
+                0x0000fa44       0x50 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+                0x0000fa44                atan
+ .text.avr-libc.fplib
+                0x0000fa94        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                0x0000fa94                __lesf2
+                0x0000fa94                __nesf2
+                0x0000fa94                __eqsf2
+                0x0000fa94                __cmpsf2
+                0x0000fa94                __ltsf2
+ .text.avr-libc.fplib
+                0x0000fa9c        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                0x0000fa9c                __divsf3
+ .text.avr-libc.fplib
+                0x0000faa0       0xcc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                0x0000fab6                __divsf3x
+                0x0000faba                __divsf3_pse
+ .text.avr-libc.fplib
+                0x0000fb6c       0x58 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                0x0000fb6c                __fixunssfsi
+ .text.avr-libc.fplib
+                0x0000fbc4       0x7a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                0x0000fbc8                __floatsisf
+                0x0000fbc4                __floatunsisf
+ .text.avr-libc.fplib
+                0x0000fc3e       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+                0x0000fc3e                fmax
+ .text.avr-libc.fplib
+                0x0000fc7c       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+                0x0000fc7c                fmin
+ .text.avr-libc.fplib
+                0x0000fcba       0x48 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                0x0000fcba                __fp_cmp
+ .text.avr-libc.fplib
+                0x0000fd02        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                0x0000fd02                __fp_inf
+ .text.avr-libc.fplib
+                0x0000fd0e        0x6 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                0x0000fd0e                __fp_nan
+ .text.avr-libc.fplib
+                0x0000fd14       0x4a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+                0x0000fd14                __fp_powser
+ .text.avr-libc.fplib
+                0x0000fd5e        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                0x0000fd5e                __fp_pscA
+ .text.avr-libc.fplib
+                0x0000fd6c        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                0x0000fd6c                __fp_pscB
+ .text.avr-libc.fplib
+                0x0000fd7a       0x22 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                0x0000fd7a                __fp_round
+ .text.avr-libc.fplib
+                0x0000fd9c       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                0x0000fd9c                __fp_split3
+                0x0000fdac                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000fde0        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                0x0000fde0                __fp_zero
+                0x0000fde2                __fp_szero
+ .text.avr-libc.fplib
+                0x0000fdee        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+                0x0000fdee                inverse
+ .text.avr-libc.fplib
+                0x0000fdfc        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                0x0000fdfc                __mulsf3
+ .text.avr-libc.fplib
+                0x0000fe00       0xc2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                0x0000fe18                __mulsf3_pse
+                0x0000fe14                __mulsf3x
+ .text.avr-libc.fplib
+                0x0000fec2       0x84 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+                0x0000feca                sqrt
+ .text.avr-libc.fplib
+                0x0000ff46        0x6 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+                0x0000ff46                square
+ .text.avr-libc.fplib
+                0x0000ff4c       0x1c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+                0x0000ff50                __fp_mpack_finite
+                0x0000ff4c                __fp_mpack
+ .text.avr-libc.fplib
+                0x0000ff68        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+                0x0000ff68                __fp_norm2
+ .text.libgcc   0x0000ff76       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                0x0000ff76                __mulsi3
+ .text.libgcc   0x0000ffb4       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                0x0000ffb4                __udivmodqi4
+ .text.libgcc   0x0000ffcc       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                0x0000ffcc                __udivmodhi4
+ .text.libgcc   0x0000fff4       0x26 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                0x0000fff4                __divmodhi4
+                0x0000fff4                _div
+ .text.libgcc   0x0001001a       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                0x0001001a                __udivmodsi4
+ .text.libgcc   0x0001005e       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                0x0001005e                __divmodsi4
+ .text.libgcc   0x00010094        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00010094        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00010094      0x20a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x00010094                malloc
+                0x000101ee                free
+ .text.avr-libc
+                0x0001029e      0x1b0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                0x0001029e                __ftoa_engine
+ .text.avr-libc
+                0x0001044e       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+                0x0001044e                isspace
+ .text.avr-libc
+                0x0001045e       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+                0x0001045e                tolower
+ .text.avr-libc
+                0x0001046e       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+                0x0001046e                strchr_P
+ .text.avr-libc
+                0x00010484       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                0x00010484                strnlen_P
+ .text.avr-libc
+                0x0001049a       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                0x0001049a                strnlen
+ .text.avr-libc
+                0x000104b0       0x84 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+                0x000104b0                fgetc
+ .text.avr-libc
+                0x00010534       0x3c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+                0x00010534                fprintf_P
+ .text.avr-libc
+                0x00010570       0x58 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+                0x00010570                fputc
+ .text.avr-libc
+                0x000105c8       0x34 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+                0x000105c8                ungetc
+ .text.avr-libc
+                0x000105fc       0xbc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                0x000105fc                __ultoa_invert
+ .text.avr-libc
+                0x000106b8        0x6 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+                0x000106bc                __ctype_istrue
+                0x000106b8                __ctype_isfalse
+                0x000106be                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000106be        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x000106be                exit
+                0x000106be                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000106be        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000106c2                _etext = .
+
+.data           0x00800100      0x5fa load address 0x000106c2
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+ .data          0x00800100        0x0 os/nil/ports/AVR/nilcore.o
+ .data          0x00800100        0x0 os/nil/src/nil.o
+ .data          0x00800100       0xe8 test/lib/ch_test.o
+ .data          0x008001e8        0x6 test/nil/test_root.o
+                0x008001e8                test_suite
+ .data          0x008001ee       0x66 test/nil/test_sequence_001.o
+                0x00800201                test_sequence_001
+ .data          0x00800254      0x144 test/nil/test_sequence_002.o
+                0x008002cd                test_sequence_002
+ .data          0x00800398        0x0 os/hal/src/hal.o
+ .data          0x00800398        0x0 os/hal/src/hal_queues.o
+ .data          0x00800398        0x0 os/hal/src/hal_mmcsd.o
+ .data          0x00800398        0x0 os/hal/src/adc.o
+ .data          0x00800398        0x0 os/hal/src/can.o
+ .data          0x00800398        0x0 os/hal/src/dac.o
+ .data          0x00800398        0x0 os/hal/src/ext.o
+ .data          0x00800398        0x0 os/hal/src/gpt.o
+ .data          0x00800398        0x0 os/hal/src/i2c.o
+ .data          0x00800398        0x0 os/hal/src/i2s.o
+ .data          0x00800398        0x0 os/hal/src/icu.o
+ .data          0x00800398        0x0 os/hal/src/mac.o
+ .data          0x00800398        0x0 os/hal/src/mmc_spi.o
+ .data          0x00800398        0x0 os/hal/src/pal.o
+ .data          0x00800398        0x0 os/hal/src/pwm.o
+ .data          0x00800398        0x0 os/hal/src/rtc.o
+ .data          0x00800398        0x0 os/hal/src/sdc.o
+ .data          0x00800398       0x10 os/hal/src/serial.o
+ .data          0x008003a8        0x0 os/hal/src/serial_usb.o
+ .data          0x008003a8        0x0 os/hal/src/spi.o
+ .data          0x008003a8        0x0 os/hal/src/st.o
+ .data          0x008003a8        0x0 os/hal/src/uart.o
+ .data          0x008003a8        0x0 os/hal/src/usb.o
+ .data          0x008003a8        0x0 os/hal/src/nand.o
+ .data          0x008003a8        0x0 os/hal/osal/nil/osal.o
+ .data          0x008003a8        0x0 os/hal/ports/AVR/hal_lld.o
+ .data          0x008003a8        0x0 os/hal/ports/AVR/pal_lld.o
+ .data          0x008003a8        0x3 os/hal/ports/AVR/serial_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/adc_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/i2c_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/spi_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/gpt_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/pwm_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/icu_lld.o
+ .data          0x008003ab        0x0 os/hal/ports/AVR/st_lld.o
+ .data          0x008003ab        0x0 os/hal/boards/STK500/board.o
+ .data          0x008003ab        0x0 spi.o
+ .data          0x008003ab        0x0 twimaster.o
+ .data          0x008003ab        0x1 st7735.o
+                0x008003ab                st7735_orientation
+ .data          0x008003ac        0x0 st7735_gfx.o
+ .data          0x008003ac        0x0 st7735_font.o
+ .data          0x008003ac       0x1a xprintf.o
+ .data          0x008003c6        0x0 usart.o
+ .data          0x008003c6        0x0 time.o
+ .data          0x008003c6        0x1 mmcbb.o
+ .data          0x008003c7        0xf ff.o
+ .data          0x008003d6        0x0 MPL3115A2.o
+ .data          0x008003d6        0x0 L3GD20.o
+ .data          0x008003d6        0x0 vector.o
+ .data          0x008003d6        0x0 DS3231.o
+ .data          0x008003d6        0xc LSM303.o
+ .data          0x008003e2       0x30 heartRate.o
+ .data          0x00800412        0x0 MAX30105.o
+ .data          0x00800412      0x2e2 main.o
+                0x00800532                lcd_context
+                0x00800556                hr_format
+                0x00800554                mt
+                0x0080054f                USART_HB_LOGGING_ON
+                0x00800533                lcd_context_count
+                0x00800555                yr
+                0x00800552                dy
+                0x00800574                DAY_NAME
+                0x00800550                min
+                0x00800612                nil_thd_configs
+                0x00800551                hr
+                0x00800553                dt
+                0x00800541                lcd_context_count_MAX
+                0x00800531                LCD_PWM_SET
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .data          0x008006f4        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .data          0x008006f4        0x6 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x008006f6                __malloc_heap_start
+                0x008006f8                __malloc_heap_end
+                0x008006f4                __malloc_margin
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+ .data          0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008006fa                . = ALIGN (0x2)
+                0x008006fa                _edata = .
+                0x008006fa                PROVIDE (__data_end, .)
+
+.bss            0x008006fa     0x2bbb
+                0x008006fa                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008006fa        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+ .bss           0x008006fa        0x0 os/nil/ports/AVR/nilcore.o
+ .bss           0x008006fa        0x0 os/nil/src/nil.o
+ .bss           0x008006fa       0x18 test/lib/ch_test.o
+ .bss           0x00800712        0x0 test/nil/test_root.o
+ .bss           0x00800712        0x0 test/nil/test_sequence_001.o
+ .bss           0x00800712        0x3 test/nil/test_sequence_002.o
+ .bss           0x00800715        0x0 os/hal/src/hal.o
+ .bss           0x00800715        0x0 os/hal/src/hal_queues.o
+ .bss           0x00800715        0x0 os/hal/src/hal_mmcsd.o
+ .bss           0x00800715        0x0 os/hal/src/adc.o
+ .bss           0x00800715        0x0 os/hal/src/can.o
+ .bss           0x00800715        0x0 os/hal/src/dac.o
+ .bss           0x00800715        0x0 os/hal/src/ext.o
+ .bss           0x00800715        0x0 os/hal/src/gpt.o
+ .bss           0x00800715        0x0 os/hal/src/i2c.o
+ .bss           0x00800715        0x0 os/hal/src/i2s.o
+ .bss           0x00800715        0x0 os/hal/src/icu.o
+ .bss           0x00800715        0x0 os/hal/src/mac.o
+ .bss           0x00800715        0x0 os/hal/src/mmc_spi.o
+ .bss           0x00800715        0x0 os/hal/src/pal.o
+ .bss           0x00800715        0x0 os/hal/src/pwm.o
+ .bss           0x00800715        0x0 os/hal/src/rtc.o
+ .bss           0x00800715        0x0 os/hal/src/sdc.o
+ .bss           0x00800715        0x0 os/hal/src/serial.o
+ .bss           0x00800715        0x0 os/hal/src/serial_usb.o
+ .bss           0x00800715        0x0 os/hal/src/spi.o
+ .bss           0x00800715        0x0 os/hal/src/st.o
+ .bss           0x00800715        0x0 os/hal/src/uart.o
+ .bss           0x00800715        0x0 os/hal/src/usb.o
+ .bss           0x00800715        0x0 os/hal/src/nand.o
+ .bss           0x00800715        0x0 os/hal/osal/nil/osal.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/hal_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/pal_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/serial_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/adc_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/i2c_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/spi_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/gpt_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/pwm_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/icu_lld.o
+ .bss           0x00800715        0x0 os/hal/ports/AVR/st_lld.o
+ .bss           0x00800715        0x0 os/hal/boards/STK500/board.o
+ .bss           0x00800715        0x0 spi.o
+ .bss           0x00800715        0x0 twimaster.o
+ .bss           0x00800715        0x4 st7735.o
+                0x00800717                st7735_width
+                0x00800716                st7735_column_start
+                0x00800718                st7735_height
+                0x00800715                st7735_row_start
+ .bss           0x00800719        0x0 st7735_gfx.o
+ .bss           0x00800719        0x0 st7735_font.o
+ .bss           0x00800719        0x2 xprintf.o
+ .bss           0x0080071b        0x0 usart.o
+ .bss           0x0080071b        0x6 time.o
+                0x0080071f                MilliSeconds
+                0x0080071b                Seconds
+ .bss           0x00800721        0x1 mmcbb.o
+ .bss           0x00800722        0x4 ff.o
+ .bss           0x00800726        0x0 MPL3115A2.o
+ .bss           0x00800726        0x0 L3GD20.o
+ .bss           0x00800726        0x0 vector.o
+ .bss           0x00800726        0x0 DS3231.o
+ .bss           0x00800726        0x0 LSM303.o
+ .bss           0x00800726        0x0 heartRate.o
+ .bss           0x00800726        0x0 MAX30105.o
+ .bss           0x00800726       0xa8 main.o
+                0x00800780                HB_ON
+                0x00800782                ms_current_beat
+                0x0080073f                switchtype
+                0x00800772                Red_result
+                0x00800742                elapsed_secs
+                0x0080074a                Red_LED_output
+                0x0080073b                pageScroll
+                0x00800786                ms_old_beat
+                0x00800740                elapsed_hours
+                0x00800792                blanking_time
+                0x00800743                battery_average
+                0x0080077c                p1
+                0x00800739                menuCount
+                0x0080076e                IR_dc_avg
+                0x0080076a                Red_dc_avg
+                0x00800781                HB_locked
+                0x00800733                curItem
+                0x0080073d                menuprintloop
+                0x00800774                LED_data_vector
+                0x0080078e                ms_elapsed_since_last_right_now
+                0x0080078a                ms_elapsed_since_last
+                0x00800748                am_pm
+                0x00800727                thread_internal_started
+                0x00800726                triggered
+                0x0080075a                IR_LED_output
+                0x00800747                s
+                0x00800735                updateFlag
+                0x00800741                elapsed_mins
+                0x00800730                SD_HB_LOGGING_ON
+                0x00800773                IR_result
+                0x00800731                curMenu
+                0x00800737                cursorCount
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+ .bss           0x008007ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008007ce       0xb2 os/nil/src/nil.o
+                0x008007ce                nil
+ COMMON         0x00800880        0x2 test/lib/ch_test.o
+                0x00800880                test_step
+ COMMON         0x00800882       0xb8 test/nil/test_root.o
+                0x00800882                wa_test_support
+                0x00800936                gsem1
+                0x00800937                gtr1
+                0x00800939                gsem2
+ COMMON         0x0080093a       0x49 os/hal/ports/AVR/serial_lld.o
+                0x0080093a                SD1
+ COMMON         0x00800983        0xf st7735_font.o
+                0x00800983                cursor_y
+                0x00800985                WIDTH
+                0x00800987                rotation
+                0x00800988                HEIGHT
+                0x0080098a                cursor_x
+                0x0080098c                wrap
+                0x0080098d                textsize
+                0x0080098e                textbgcolor
+                0x00800990                textcolor
+ COMMON         0x00800992        0x2 xprintf.o
+                0x00800992                xfunc_out
+ COMMON         0x00800994       0xc0 time.o
+                0x00800994                temp_second_counter
+                0x00800998                System_delta
+                0x0080099c                System_time
+                0x008009a0                waTimer
+ COMMON         0x00800a54        0x2 MPL3115A2.o
+                0x00800a54                _ctrl_reg1
+                0x00800a55                mode
+ COMMON         0x00800a56        0xc L3GD20.o
+                0x00800a56                g
+ COMMON         0x00800a62       0x30 LSM303.o
+                0x00800a62                m_min
+                0x00800a6e                a
+                0x00800a7a                m_max
+                0x00800a86                m
+ COMMON         0x00800a92        0x3 heartRate.o
+                0x00800a92                MAX30105_activeLEDs
+                0x00800a93                MAX30105_i2caddr
+                0x00800a94                MAX30105_revisionID
+ COMMON         0x00800a95        0xa MAX30105.o
+                0x00800a95                sense
+ COMMON         0x00800a9f     0x2812 main.o
+                0x00800a9f                waThread2
+                0x00800bd3                Fatfs
+                0x00800e01                minute_counter
+                0x00800e05                waThread7
+                0x00800f39                j
+                0x00800f3a                IR_HR_state
+                0x008010c9                waThread3
+                0x008013fd                lcdUSE
+                0x008013fe                AAA
+                0x00801400                i2cUSE
+                0x00801401                menuactn
+                0x00801463                Finfo
+                0x00801479                spiUSE
+                0x0080147a                waThread14
+                0x008015ae                waThread9
+                0x008016e2                menulink
+                0x00801744                waThread11
+                0x00801878                acc_dirs
+                0x0080187a                XXX
+                0x0080187c                acc_files
+                0x0080187e                waThread8
+                0x00801932                waThread5
+                0x00801c66                ZZZ
+                0x00801c68                Timer
+                0x00801c6a                menutitle
+                0x00801cf6                YYY
+                0x00801cf8                Buff
+                0x008020f8                menuitem
+                0x008024cc                waThread4
+                0x00802600                sdUSE
+                0x00802601                ButtonPressed
+                0x00802602                acc_size
+                0x00802606                waThread10
+                0x0080273a                waThread12
+                0x00802e02                Line
+                0x00802e82                WWW
+                0x00802e84                waThread1
+                0x00802f38                Red_HR_state
+                0x008030c7                usartUSE
+                0x008030c8                waThread6
+                0x0080317c                testTHREAD
+                0x0080317d                waThread13
+ COMMON         0x008032b1        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x008032b1                __brkval
+                0x008032b3                __flp
+                0x008032b5                PROVIDE (__bss_end, .)
+                0x000106c2                __data_load_start = LOADADDR (.data)
+                0x00010cbc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008032b5        0x0
+                0x008032b5                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008032b5                PROVIDE (__noinit_end, .)
+                0x008032b5                _end = .
+                0x008032b5                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x420
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 os/nil/ports/AVR/nilcore.o
+ .debug_aranges
+                0x00000020       0x20 os/nil/src/nil.o
+ .debug_aranges
+                0x00000040       0x20 test/lib/ch_test.o
+ .debug_aranges
+                0x00000060       0x20 test/nil/test_root.o
+ .debug_aranges
+                0x00000080       0x20 test/nil/test_sequence_001.o
+ .debug_aranges
+                0x000000a0       0x20 test/nil/test_sequence_002.o
+ .debug_aranges
+                0x000000c0       0x20 os/hal/src/hal.o
+ .debug_aranges
+                0x000000e0       0x20 os/hal/src/hal_queues.o
+ .debug_aranges
+                0x00000100       0x20 os/hal/src/serial.o
+ .debug_aranges
+                0x00000120       0x20 os/hal/src/st.o
+ .debug_aranges
+                0x00000140       0x20 os/hal/osal/nil/osal.o
+ .debug_aranges
+                0x00000160       0x20 os/hal/ports/AVR/hal_lld.o
+ .debug_aranges
+                0x00000180       0x20 os/hal/ports/AVR/serial_lld.o
+ .debug_aranges
+                0x000001a0       0x20 os/hal/ports/AVR/st_lld.o
+ .debug_aranges
+                0x000001c0       0x20 os/hal/boards/STK500/board.o
+ .debug_aranges
+                0x000001e0       0x20 spi.o
+ .debug_aranges
+                0x00000200       0x20 twimaster.o
+ .debug_aranges
+                0x00000220       0x20 st7735.o
+ .debug_aranges
+                0x00000240       0x20 st7735_gfx.o
+ .debug_aranges
+                0x00000260       0x20 st7735_font.o
+ .debug_aranges
+                0x00000280       0x20 xprintf.o
+ .debug_aranges
+                0x000002a0       0x20 usart.o
+ .debug_aranges
+                0x000002c0       0x20 time.o
+ .debug_aranges
+                0x000002e0       0x20 mmcbb.o
+ .debug_aranges
+                0x00000300       0x20 ff.o
+ .debug_aranges
+                0x00000320       0x20 MPL3115A2.o
+ .debug_aranges
+                0x00000340       0x20 L3GD20.o
+ .debug_aranges
+                0x00000360       0x20 vector.o
+ .debug_aranges
+                0x00000380       0x20 DS3231.o
+ .debug_aranges
+                0x000003a0       0x20 LSM303.o
+ .debug_aranges
+                0x000003c0       0x20 heartRate.o
+ .debug_aranges
+                0x000003e0       0x20 MAX30105.o
+ .debug_aranges
+                0x00000400       0x20 main.o
+
+.debug_pubnames
+                0x00000000     0x1e76
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x3a os/nil/ports/AVR/nilcore.o
+ .debug_pubnames
+                0x0000003a      0x1fc os/nil/src/nil.o
+ .debug_pubnames
+                0x00000236       0xe2 test/lib/ch_test.o
+ .debug_pubnames
+                0x00000318       0x63 test/nil/test_root.o
+ .debug_pubnames
+                0x0000037b       0x28 test/nil/test_sequence_001.o
+ .debug_pubnames
+                0x000003a3       0x28 test/nil/test_sequence_002.o
+ .debug_pubnames
+                0x000003cb       0x1e os/hal/src/hal.o
+ .debug_pubnames
+                0x000003e9       0xab os/hal/src/hal_queues.o
+ .debug_pubnames
+                0x00000494       0x6c os/hal/src/serial.o
+ .debug_pubnames
+                0x00000500       0x5c os/hal/src/st.o
+ .debug_pubnames
+                0x0000055c       0x47 os/hal/osal/nil/osal.o
+ .debug_pubnames
+                0x000005a3       0x23 os/hal/ports/AVR/hal_lld.o
+ .debug_pubnames
+                0x000005c6       0x6b os/hal/ports/AVR/serial_lld.o
+ .debug_pubnames
+                0x00000631       0x32 os/hal/ports/AVR/st_lld.o
+ .debug_pubnames
+                0x00000663       0x20 os/hal/boards/STK500/board.o
+ .debug_pubnames
+                0x00000683       0x1f spi.o
+ .debug_pubnames
+                0x000006a2       0x8d twimaster.o
+ .debug_pubnames
+                0x0000072f      0x152 st7735.o
+ .debug_pubnames
+                0x00000881       0x76 st7735_gfx.o
+ .debug_pubnames
+                0x000008f7      0x148 st7735_font.o
+ .debug_pubnames
+                0x00000a3f       0x9e xprintf.o
+ .debug_pubnames
+                0x00000add       0x7d usart.o
+ .debug_pubnames
+                0x00000b5a       0xdb time.o
+ .debug_pubnames
+                0x00000c35       0x62 mmcbb.o
+ .debug_pubnames
+                0x00000c97       0xb4 ff.o
+ .debug_pubnames
+                0x00000d4b       0xd4 MPL3115A2.o
+ .debug_pubnames
+                0x00000e1f       0x64 L3GD20.o
+ .debug_pubnames
+                0x00000e83       0x47 vector.o
+ .debug_pubnames
+                0x00000eca       0xdf DS3231.o
+ .debug_pubnames
+                0x00000fa9       0xcf LSM303.o
+ .debug_pubnames
+                0x00001078       0x68 heartRate.o
+ .debug_pubnames
+                0x000010e0      0x5a0 MAX30105.o
+ .debug_pubnames
+                0x00001680      0x7f6 main.o
+
+.debug_info     0x00000000    0x16538
+ *(.debug_info)
+ .debug_info    0x00000000      0x368 os/nil/ports/AVR/nilcore.o
+ .debug_info    0x00000368      0xbe5 os/nil/src/nil.o
+ .debug_info    0x00000f4d      0x9d7 test/lib/ch_test.o
+ .debug_info    0x00001924      0x501 test/nil/test_root.o
+ .debug_info    0x00001e25      0x482 test/nil/test_sequence_001.o
+ .debug_info    0x000022a7      0x8ec test/nil/test_sequence_002.o
+ .debug_info    0x00002b93      0x392 os/hal/src/hal.o
+ .debug_info    0x00002f25      0xad1 os/hal/src/hal_queues.o
+ .debug_info    0x000039f6      0x374 os/hal/src/hal_mmcsd.o
+ .debug_info    0x00003d6a      0x374 os/hal/src/adc.o
+ .debug_info    0x000040de      0x374 os/hal/src/can.o
+ .debug_info    0x00004452      0x374 os/hal/src/dac.o
+ .debug_info    0x000047c6      0x374 os/hal/src/ext.o
+ .debug_info    0x00004b3a      0x374 os/hal/src/gpt.o
+ .debug_info    0x00004eae      0x374 os/hal/src/i2c.o
+ .debug_info    0x00005222      0x374 os/hal/src/i2s.o
+ .debug_info    0x00005596      0x374 os/hal/src/icu.o
+ .debug_info    0x0000590a      0x374 os/hal/src/mac.o
+ .debug_info    0x00005c7e      0x374 os/hal/src/mmc_spi.o
+ .debug_info    0x00005ff2      0x374 os/hal/src/pal.o
+ .debug_info    0x00006366      0x374 os/hal/src/pwm.o
+ .debug_info    0x000066da      0x374 os/hal/src/rtc.o
+ .debug_info    0x00006a4e      0x374 os/hal/src/sdc.o
+ .debug_info    0x00006dc2      0xc2b os/hal/src/serial.o
+ .debug_info    0x000079ed      0x374 os/hal/src/serial_usb.o
+ .debug_info    0x00007d61      0x374 os/hal/src/spi.o
+ .debug_info    0x000080d5      0x4b0 os/hal/src/st.o
+ .debug_info    0x00008585      0x374 os/hal/src/uart.o
+ .debug_info    0x000088f9      0x374 os/hal/src/usb.o
+ .debug_info    0x00008c6d      0x374 os/hal/src/nand.o
+ .debug_info    0x00008fe1      0x44c os/hal/osal/nil/osal.o
+ .debug_info    0x0000942d      0x388 os/hal/ports/AVR/hal_lld.o
+ .debug_info    0x000097b5      0x374 os/hal/ports/AVR/pal_lld.o
+ .debug_info    0x00009b29      0x9b2 os/hal/ports/AVR/serial_lld.o
+ .debug_info    0x0000a4db      0x374 os/hal/ports/AVR/adc_lld.o
+ .debug_info    0x0000a84f      0x374 os/hal/ports/AVR/i2c_lld.o
+ .debug_info    0x0000abc3      0x374 os/hal/ports/AVR/spi_lld.o
+ .debug_info    0x0000af37      0x374 os/hal/ports/AVR/gpt_lld.o
+ .debug_info    0x0000b2ab      0x374 os/hal/ports/AVR/pwm_lld.o
+ .debug_info    0x0000b61f      0x374 os/hal/ports/AVR/icu_lld.o
+ .debug_info    0x0000b993      0x3e2 os/hal/ports/AVR/st_lld.o
+ .debug_info    0x0000bd75      0x388 os/hal/boards/STK500/board.o
+ .debug_info    0x0000c0fd       0x72 spi.o
+ .debug_info    0x0000c16f      0x196 twimaster.o
+ .debug_info    0x0000c305     0x13d5 st7735.o
+ .debug_info    0x0000d6da      0x465 st7735_gfx.o
+ .debug_info    0x0000db3f      0x4e9 st7735_font.o
+ .debug_info    0x0000e028      0x64d xprintf.o
+ .debug_info    0x0000e675      0x264 usart.o
+ .debug_info    0x0000e8d9      0x68e time.o
+ .debug_info    0x0000ef67      0x9d2 mmcbb.o
+ .debug_info    0x0000f939     0x176a ff.o
+ .debug_info    0x000110a3      0x429 MPL3115A2.o
+ .debug_info    0x000114cc      0x39c L3GD20.o
+ .debug_info    0x00011868      0x192 vector.o
+ .debug_info    0x000119fa      0x33a DS3231.o
+ .debug_info    0x00011d34      0x51e LSM303.o
+ .debug_info    0x00012252      0x23c heartRate.o
+ .debug_info    0x0001248e      0xfea MAX30105.o
+ .debug_info    0x00013478     0x30c0 main.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x5961
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x13c os/nil/ports/AVR/nilcore.o
+ .debug_abbrev  0x0000013c      0x2de os/nil/src/nil.o
+ .debug_abbrev  0x0000041a      0x391 test/lib/ch_test.o
+ .debug_abbrev  0x000007ab      0x199 test/nil/test_root.o
+ .debug_abbrev  0x00000944      0x176 test/nil/test_sequence_001.o
+ .debug_abbrev  0x00000aba      0x260 test/nil/test_sequence_002.o
+ .debug_abbrev  0x00000d1a      0x12a os/hal/src/hal.o
+ .debug_abbrev  0x00000e44      0x2d1 os/hal/src/hal_queues.o
+ .debug_abbrev  0x00001115      0x106 os/hal/src/hal_mmcsd.o
+ .debug_abbrev  0x0000121b      0x106 os/hal/src/adc.o
+ .debug_abbrev  0x00001321      0x106 os/hal/src/can.o
+ .debug_abbrev  0x00001427      0x106 os/hal/src/dac.o
+ .debug_abbrev  0x0000152d      0x106 os/hal/src/ext.o
+ .debug_abbrev  0x00001633      0x106 os/hal/src/gpt.o
+ .debug_abbrev  0x00001739      0x106 os/hal/src/i2c.o
+ .debug_abbrev  0x0000183f      0x106 os/hal/src/i2s.o
+ .debug_abbrev  0x00001945      0x106 os/hal/src/icu.o
+ .debug_abbrev  0x00001a4b      0x106 os/hal/src/mac.o
+ .debug_abbrev  0x00001b51      0x106 os/hal/src/mmc_spi.o
+ .debug_abbrev  0x00001c57      0x106 os/hal/src/pal.o
+ .debug_abbrev  0x00001d5d      0x106 os/hal/src/pwm.o
+ .debug_abbrev  0x00001e63      0x106 os/hal/src/rtc.o
+ .debug_abbrev  0x00001f69      0x106 os/hal/src/sdc.o
+ .debug_abbrev  0x0000206f      0x287 os/hal/src/serial.o
+ .debug_abbrev  0x000022f6      0x106 os/hal/src/serial_usb.o
+ .debug_abbrev  0x000023fc      0x106 os/hal/src/spi.o
+ .debug_abbrev  0x00002502      0x1bd os/hal/src/st.o
+ .debug_abbrev  0x000026bf      0x106 os/hal/src/uart.o
+ .debug_abbrev  0x000027c5      0x106 os/hal/src/usb.o
+ .debug_abbrev  0x000028cb      0x106 os/hal/src/nand.o
+ .debug_abbrev  0x000029d1      0x15e os/hal/osal/nil/osal.o
+ .debug_abbrev  0x00002b2f      0x11b os/hal/ports/AVR/hal_lld.o
+ .debug_abbrev  0x00002c4a      0x106 os/hal/ports/AVR/pal_lld.o
+ .debug_abbrev  0x00002d50      0x2f3 os/hal/ports/AVR/serial_lld.o
+ .debug_abbrev  0x00003043      0x106 os/hal/ports/AVR/adc_lld.o
+ .debug_abbrev  0x00003149      0x106 os/hal/ports/AVR/i2c_lld.o
+ .debug_abbrev  0x0000324f      0x106 os/hal/ports/AVR/spi_lld.o
+ .debug_abbrev  0x00003355      0x106 os/hal/ports/AVR/gpt_lld.o
+ .debug_abbrev  0x0000345b      0x106 os/hal/ports/AVR/pwm_lld.o
+ .debug_abbrev  0x00003561      0x106 os/hal/ports/AVR/icu_lld.o
+ .debug_abbrev  0x00003667      0x150 os/hal/ports/AVR/st_lld.o
+ .debug_abbrev  0x000037b7      0x11b os/hal/boards/STK500/board.o
+ .debug_abbrev  0x000038d2       0x3f spi.o
+ .debug_abbrev  0x00003911       0xbe twimaster.o
+ .debug_abbrev  0x000039cf      0x2d4 st7735.o
+ .debug_abbrev  0x00003ca3      0x167 st7735_gfx.o
+ .debug_abbrev  0x00003e0a      0x1bd st7735_font.o
+ .debug_abbrev  0x00003fc7      0x1f5 xprintf.o
+ .debug_abbrev  0x000041bc      0x18a usart.o
+ .debug_abbrev  0x00004346      0x234 time.o
+ .debug_abbrev  0x0000457a      0x2ad mmcbb.o
+ .debug_abbrev  0x00004827      0x294 ff.o
+ .debug_abbrev  0x00004abb      0x12f MPL3115A2.o
+ .debug_abbrev  0x00004bea      0x153 L3GD20.o
+ .debug_abbrev  0x00004d3d       0xff vector.o
+ .debug_abbrev  0x00004e3c      0x110 DS3231.o
+ .debug_abbrev  0x00004f4c      0x1df LSM303.o
+ .debug_abbrev  0x0000512b       0xfc heartRate.o
+ .debug_abbrev  0x00005227      0x272 MAX30105.o
+ .debug_abbrev  0x00005499      0x4c8 main.o
+
+.debug_line     0x00000000     0xc700
+ *(.debug_line)
+ .debug_line    0x00000000      0x2d0 os/nil/ports/AVR/nilcore.o
+ .debug_line    0x000002d0      0x719 os/nil/src/nil.o
+ .debug_line    0x000009e9      0x590 test/lib/ch_test.o
+ .debug_line    0x00000f79      0x1c6 test/nil/test_root.o
+ .debug_line    0x0000113f      0x204 test/nil/test_sequence_001.o
+ .debug_line    0x00001343      0x566 test/nil/test_sequence_002.o
+ .debug_line    0x000018a9      0x14a os/hal/src/hal.o
+ .debug_line    0x000019f3      0x5fd os/hal/src/hal_queues.o
+ .debug_line    0x00001ff0       0xeb os/hal/src/hal_mmcsd.o
+ .debug_line    0x000020db       0xeb os/hal/src/adc.o
+ .debug_line    0x000021c6       0xeb os/hal/src/can.o
+ .debug_line    0x000022b1       0xeb os/hal/src/dac.o
+ .debug_line    0x0000239c       0xeb os/hal/src/ext.o
+ .debug_line    0x00002487       0xeb os/hal/src/gpt.o
+ .debug_line    0x00002572       0xeb os/hal/src/i2c.o
+ .debug_line    0x0000265d       0xeb os/hal/src/i2s.o
+ .debug_line    0x00002748       0xeb os/hal/src/icu.o
+ .debug_line    0x00002833       0xeb os/hal/src/mac.o
+ .debug_line    0x0000291e       0xeb os/hal/src/mmc_spi.o
+ .debug_line    0x00002a09       0xeb os/hal/src/pal.o
+ .debug_line    0x00002af4       0xeb os/hal/src/pwm.o
+ .debug_line    0x00002bdf       0xeb os/hal/src/rtc.o
+ .debug_line    0x00002cca       0xeb os/hal/src/sdc.o
+ .debug_line    0x00002db5      0x439 os/hal/src/serial.o
+ .debug_line    0x000031ee       0xeb os/hal/src/serial_usb.o
+ .debug_line    0x000032d9       0xeb os/hal/src/spi.o
+ .debug_line    0x000033c4      0x1bd os/hal/src/st.o
+ .debug_line    0x00003581       0xeb os/hal/src/uart.o
+ .debug_line    0x0000366c       0xeb os/hal/src/usb.o
+ .debug_line    0x00003757       0xeb os/hal/src/nand.o
+ .debug_line    0x00003842      0x1a9 os/hal/osal/nil/osal.o
+ .debug_line    0x000039eb      0x119 os/hal/ports/AVR/hal_lld.o
+ .debug_line    0x00003b04       0xeb os/hal/ports/AVR/pal_lld.o
+ .debug_line    0x00003bef      0x36b os/hal/ports/AVR/serial_lld.o
+ .debug_line    0x00003f5a       0xeb os/hal/ports/AVR/adc_lld.o
+ .debug_line    0x00004045       0xeb os/hal/ports/AVR/i2c_lld.o
+ .debug_line    0x00004130       0xeb os/hal/ports/AVR/spi_lld.o
+ .debug_line    0x0000421b       0xeb os/hal/ports/AVR/gpt_lld.o
+ .debug_line    0x00004306       0xeb os/hal/ports/AVR/pwm_lld.o
+ .debug_line    0x000043f1       0xeb os/hal/ports/AVR/icu_lld.o
+ .debug_line    0x000044dc      0x198 os/hal/ports/AVR/st_lld.o
+ .debug_line    0x00004674      0x12b os/hal/boards/STK500/board.o
+ .debug_line    0x0000479f       0x6f spi.o
+ .debug_line    0x0000480e      0x238 twimaster.o
+ .debug_line    0x00004a46      0x9e8 st7735.o
+ .debug_line    0x0000542e      0x2b2 st7735_gfx.o
+ .debug_line    0x000056e0      0x2a6 st7735_font.o
+ .debug_line    0x00005986      0x6b5 xprintf.o
+ .debug_line    0x0000603b      0x169 usart.o
+ .debug_line    0x000061a4      0x2ce time.o
+ .debug_line    0x00006472      0x97e mmcbb.o
+ .debug_line    0x00006df0     0x187b ff.o
+ .debug_line    0x0000866b      0x314 MPL3115A2.o
+ .debug_line    0x0000897f      0x1a8 L3GD20.o
+ .debug_line    0x00008b27       0xd6 vector.o
+ .debug_line    0x00008bfd      0x28d DS3231.o
+ .debug_line    0x00008e8a      0x2c9 LSM303.o
+ .debug_line    0x00009153      0x2bd heartRate.o
+ .debug_line    0x00009410      0xabc MAX30105.o
+ .debug_line    0x00009ecc     0x2834 main.o
+
+.debug_frame    0x00000000     0x14e0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 os/nil/ports/AVR/nilcore.o
+ .debug_frame   0x00000030      0x190 os/nil/src/nil.o
+ .debug_frame   0x000001c0       0xc0 test/lib/ch_test.o
+ .debug_frame   0x00000280       0x20 test/nil/test_root.o
+ .debug_frame   0x000002a0       0x30 test/nil/test_sequence_001.o
+ .debug_frame   0x000002d0       0xe0 test/nil/test_sequence_002.o
+ .debug_frame   0x000003b0       0x20 os/hal/src/hal.o
+ .debug_frame   0x000003d0       0xb0 os/hal/src/hal_queues.o
+ .debug_frame   0x00000480       0xf0 os/hal/src/serial.o
+ .debug_frame   0x00000570       0x60 os/hal/src/st.o
+ .debug_frame   0x000005d0       0x30 os/hal/osal/nil/osal.o
+ .debug_frame   0x00000600       0x20 os/hal/ports/AVR/hal_lld.o
+ .debug_frame   0x00000620       0x70 os/hal/ports/AVR/serial_lld.o
+ .debug_frame   0x00000690       0x30 os/hal/ports/AVR/st_lld.o
+ .debug_frame   0x000006c0       0x20 os/hal/boards/STK500/board.o
+ .debug_frame   0x000006e0       0x20 spi.o
+ .debug_frame   0x00000700       0x90 twimaster.o
+ .debug_frame   0x00000790       0xa0 st7735.o
+ .debug_frame   0x00000830       0x40 st7735_gfx.o
+ .debug_frame   0x00000870       0x90 st7735_font.o
+ .debug_frame   0x00000900       0xd0 xprintf.o
+ .debug_frame   0x000009d0       0x70 usart.o
+ .debug_frame   0x00000a40       0x80 time.o
+ .debug_frame   0x00000ac0       0xb0 mmcbb.o
+ .debug_frame   0x00000b70      0x160 ff.o
+ .debug_frame   0x00000cd0       0x80 MPL3115A2.o
+ .debug_frame   0x00000d50       0x50 L3GD20.o
+ .debug_frame   0x00000da0       0x40 vector.o
+ .debug_frame   0x00000de0       0xc0 DS3231.o
+ .debug_frame   0x00000ea0       0x90 LSM303.o
+ .debug_frame   0x00000f30       0x20 heartRate.o
+ .debug_frame   0x00000f50      0x350 MAX30105.o
+ .debug_frame   0x000012a0      0x240 main.o
+
+.debug_str      0x00000000     0x3e6c
+ *(.debug_str)
+ .debug_str     0x00000000      0x181 os/nil/ports/AVR/nilcore.o
+                                0x1d5 (size before relaxing)
+ .debug_str     0x00000181      0x2be os/nil/src/nil.o
+                                0x467 (size before relaxing)
+ .debug_str     0x0000043f      0x201 test/lib/ch_test.o
+                                0x40d (size before relaxing)
+ .debug_str     0x00000640       0x5a test/nil/test_root.o
+                                0x278 (size before relaxing)
+ .debug_str     0x0000069a       0x61 test/nil/test_sequence_001.o
+                                0x267 (size before relaxing)
+ .debug_str     0x000006fb      0x16f test/nil/test_sequence_002.o
+                                0x3bb (size before relaxing)
+ .debug_str     0x0000086a       0x22 os/hal/src/hal.o
+                                0x1e0 (size before relaxing)
+ .debug_str     0x0000088c      0x155 os/hal/src/hal_queues.o
+                                0x359 (size before relaxing)
+ .debug_str     0x000009e1       0x17 os/hal/src/hal_mmcsd.o
+                                0x1d5 (size before relaxing)
+ .debug_str     0x000009f8       0x11 os/hal/src/adc.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a09       0x11 os/hal/src/can.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a1a       0x11 os/hal/src/dac.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a2b       0x11 os/hal/src/ext.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a3c       0x11 os/hal/src/gpt.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a4d       0x11 os/hal/src/i2c.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a5e       0x11 os/hal/src/i2s.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a6f       0x11 os/hal/src/icu.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a80       0x11 os/hal/src/mac.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000a91       0x15 os/hal/src/mmc_spi.o
+                                0x1d3 (size before relaxing)
+ .debug_str     0x00000aa6       0x11 os/hal/src/pal.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000ab7       0x11 os/hal/src/pwm.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000ac8       0x11 os/hal/src/rtc.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000ad9       0x11 os/hal/src/sdc.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000aea      0x185 os/hal/src/serial.o
+                                0x41f (size before relaxing)
+ .debug_str     0x00000c6f       0x18 os/hal/src/serial_usb.o
+                                0x1d6 (size before relaxing)
+ .debug_str     0x00000c87       0x11 os/hal/src/spi.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000c98       0x8d os/hal/src/st.o
+                                0x250 (size before relaxing)
+ .debug_str     0x00000d25       0x12 os/hal/src/uart.o
+                                0x1d0 (size before relaxing)
+ .debug_str     0x00000d37       0x11 os/hal/src/usb.o
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000d48       0x12 os/hal/src/nand.o
+                                0x1d0 (size before relaxing)
+ .debug_str     0x00000d5a       0x44 os/hal/osal/nil/osal.o
+                                0x20c (size before relaxing)
+ .debug_str     0x00000d9e       0x28 os/hal/ports/AVR/hal_lld.o
+                                0x1e6 (size before relaxing)
+ .debug_str     0x00000dc6       0x1b os/hal/ports/AVR/pal_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000de1       0xbe os/hal/ports/AVR/serial_lld.o
+                                0x444 (size before relaxing)
+ .debug_str     0x00000e9f       0x1b os/hal/ports/AVR/adc_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000eba       0x1b os/hal/ports/AVR/i2c_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000ed5       0x1b os/hal/ports/AVR/spi_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000ef0       0x1b os/hal/ports/AVR/gpt_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000f0b       0x1b os/hal/ports/AVR/pwm_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000f26       0x1b os/hal/ports/AVR/icu_lld.o
+                                0x1d9 (size before relaxing)
+ .debug_str     0x00000f41       0x46 os/hal/ports/AVR/st_lld.o
+                                0x254 (size before relaxing)
+ .debug_str     0x00000f87       0x27 os/hal/boards/STK500/board.o
+                                0x1e5 (size before relaxing)
+ .debug_str     0x00000fae        0x9 spi.o
+                                 0xd9 (size before relaxing)
+ .debug_str     0x00000fb7       0x74 twimaster.o
+                                0x14b (size before relaxing)
+ .debug_str     0x0000102b      0x62c st7735.o
+                                0x737 (size before relaxing)
+ .debug_str     0x00001657       0x93 st7735_gfx.o
+                                0x265 (size before relaxing)
+ .debug_str     0x000016ea       0xf5 st7735_font.o
+                                0x2fc (size before relaxing)
+ .debug_str     0x000017df       0xbe xprintf.o
+                                0x1c8 (size before relaxing)
+ .debug_str     0x0000189d       0x60 usart.o
+                                0x16a (size before relaxing)
+ .debug_str     0x000018fd       0xc7 time.o
+                                0x2c4 (size before relaxing)
+ .debug_str     0x000019c4      0x130 mmcbb.o
+                                0x236 (size before relaxing)
+ .debug_str     0x00001af4      0x3a0 ff.o
+                                0x4ea (size before relaxing)
+ .debug_str     0x00001e94      0x4e0 MPL3115A2.o
+                                0x5fa (size before relaxing)
+ .debug_str     0x00002374      0x1c1 L3GD20.o
+                                0x302 (size before relaxing)
+ .debug_str     0x00002535       0x32 vector.o
+                                0x117 (size before relaxing)
+ .debug_str     0x00002567      0x103 DS3231.o
+                                0x1ea (size before relaxing)
+ .debug_str     0x0000266a      0x281 LSM303.o
+                                0x3de (size before relaxing)
+ .debug_str     0x000028eb      0x10f heartRate.o
+                                0x1f2 (size before relaxing)
+ .debug_str     0x000029fa      0xd3a MAX30105.o
+                                0xf5c (size before relaxing)
+ .debug_str     0x00003734      0x738 main.o
+                                0xfd3 (size before relaxing)
+
+.debug_loc      0x00000000     0x91d7
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x4cc os/nil/src/nil.o
+ .debug_loc     0x000004cc      0x1ec test/lib/ch_test.o
+ .debug_loc     0x000006b8       0x18 test/nil/test_root.o
+ .debug_loc     0x000006d0       0x68 test/nil/test_sequence_001.o
+ .debug_loc     0x00000738      0x24f test/nil/test_sequence_002.o
+ .debug_loc     0x00000987      0x632 os/hal/src/hal_queues.o
+ .debug_loc     0x00000fb9      0x3cf os/hal/src/serial.o
+ .debug_loc     0x00001388      0x15e os/hal/osal/nil/osal.o
+ .debug_loc     0x000014e6      0x123 os/hal/ports/AVR/serial_lld.o
+ .debug_loc     0x00001609       0xbf twimaster.o
+ .debug_loc     0x000016c8      0x809 st7735.o
+ .debug_loc     0x00001ed1      0x483 st7735_gfx.o
+ .debug_loc     0x00002354      0x250 st7735_font.o
+ .debug_loc     0x000025a4     0x1066 xprintf.o
+ .debug_loc     0x0000360a       0x7c usart.o
+ .debug_loc     0x00003686       0xae time.o
+ .debug_loc     0x00003734      0x98f mmcbb.o
+ .debug_loc     0x000040c3     0x3428 ff.o
+ .debug_loc     0x000074eb      0x140 MPL3115A2.o
+ .debug_loc     0x0000762b      0x190 L3GD20.o
+ .debug_loc     0x000077bb      0x10e vector.o
+ .debug_loc     0x000078c9      0x3e1 DS3231.o
+ .debug_loc     0x00007caa      0x2d1 LSM303.o
+ .debug_loc     0x00007f7b      0x120 heartRate.o
+ .debug_loc     0x0000809b      0x671 MAX30105.o
+ .debug_loc     0x0000870c      0xacb main.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(nil.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x7e8
+ .debug_ranges  0x00000000       0x48 os/nil/src/nil.o
+ .debug_ranges  0x00000048       0x48 test/lib/ch_test.o
+ .debug_ranges  0x00000090       0x60 test/nil/test_sequence_002.o
+ .debug_ranges  0x000000f0       0x90 os/hal/src/hal_queues.o
+ .debug_ranges  0x00000180       0x48 os/hal/ports/AVR/serial_lld.o
+ .debug_ranges  0x000001c8      0x120 st7735.o
+ .debug_ranges  0x000002e8       0x50 st7735_font.o
+ .debug_ranges  0x00000338       0x20 xprintf.o
+ .debug_ranges  0x00000358      0x118 mmcbb.o
+ .debug_ranges  0x00000470      0x2c8 ff.o
+ .debug_ranges  0x00000738       0x38 MAX30105.o
+ .debug_ranges  0x00000770       0x78 main.o
+
+Cross Reference Table
+
+Symbol                                            File
+AAA                                               main.o
+Buff                                              main.o
+ButtonPressed                                     main.o
+DAY_NAME                                          main.o
+DS3231_getDate                                    DS3231.o
+                                                  main.o
+DS3231_getStatus                                  DS3231.o
+                                                  main.o
+DS3231_getTemp                                    DS3231.o
+                                                  main.o
+DS3231_getTime                                    DS3231.o
+                                                  main.o
+DS3231_init                                       DS3231.o
+                                                  main.o
+DS3231_read8                                      DS3231.o
+DS3231_setDate                                    DS3231.o
+DS3231_setTime                                    DS3231.o
+                                                  main.o
+DS3231_showParameters                             main.o
+DS3231_write8                                     DS3231.o
+Fatfs                                             main.o
+Finfo                                             main.o
+GetTime                                           time.o
+Get_elapsed_ms                                    time.o
+Get_elapsed_s                                     time.o
+HB_ON                                             main.o
+HB_locked                                         main.o
+HEIGHT                                            main.o
+                                                  st7735_font.o
+IR_HR_state                                       main.o
+IR_LED_output                                     main.o
+IR_dc_avg                                         main.o
+IR_result                                         main.o
+L3GD20_enableDefault                              L3GD20.o
+                                                  main.o
+L3GD20_read                                       L3GD20.o
+                                                  main.o
+L3GD20_read8                                      L3GD20.o
+L3GD20_write8                                     L3GD20.o
+LCD_PWM_SET                                       main.o
+LED_data_vector                                   main.o
+LSM303_enableDefault                              LSM303.o
+                                                  main.o
+LSM303_heading                                    LSM303.o
+                                                  main.o
+LSM303_heading_calc                               LSM303.o
+LSM303_read                                       LSM303.o
+                                                  main.o
+LSM303_read8                                      LSM303.o
+LSM303_readAcc                                    LSM303.o
+LSM303_readMag                                    LSM303.o
+LSM303_write8                                     LSM303.o
+Line                                              main.o
+MAX30105_activeLEDs                               main.o
+                                                  MAX30105.o
+                                                  heartRate.o
+MAX30105_available                                MAX30105.o
+MAX30105_bitMask                                  MAX30105.o
+MAX30105_check                                    MAX30105.o
+MAX30105_clearFIFO                                MAX30105.o
+MAX30105_disableAFULL                             MAX30105.o
+MAX30105_disableALCOVF                            MAX30105.o
+MAX30105_disableDATARDY                           MAX30105.o
+MAX30105_disableDIETEMPRDY                        MAX30105.o
+MAX30105_disableFIFORollover                      MAX30105.o
+MAX30105_disablePROXINT                           MAX30105.o
+MAX30105_disableSlots                             MAX30105.o
+MAX30105_enableAFULL                              MAX30105.o
+MAX30105_enableALCOVF                             MAX30105.o
+MAX30105_enableDATARDY                            MAX30105.o
+MAX30105_enableDIETEMPRDY                         MAX30105.o
+MAX30105_enableFIFORollover                       MAX30105.o
+MAX30105_enablePROXINT                            MAX30105.o
+MAX30105_enableSlot                               MAX30105.o
+MAX30105_getFIFOIR                                MAX30105.o
+MAX30105_getFIFORed                               MAX30105.o
+MAX30105_getINT1                                  MAX30105.o
+MAX30105_getINT2                                  MAX30105.o
+MAX30105_getIR                                    MAX30105.o
+MAX30105_getReadPointer                           MAX30105.o
+MAX30105_getRed                                   MAX30105.o
+MAX30105_getRedIR                                 MAX30105.o
+                                                  main.o
+MAX30105_getRevisionID                            MAX30105.o
+MAX30105_getWritePointer                          MAX30105.o
+MAX30105_i2caddr                                  main.o
+                                                  MAX30105.o
+                                                  heartRate.o
+MAX30105_init                                     MAX30105.o
+                                                  main.o
+MAX30105_nextSample                               MAX30105.o
+MAX30105_read8                                    MAX30105.o
+MAX30105_readPartID                               MAX30105.o
+MAX30105_readRevisionID                           MAX30105.o
+MAX30105_readTemperature                          MAX30105.o
+MAX30105_readTemperatureF                         MAX30105.o
+MAX30105_revisionID                               main.o
+                                                  MAX30105.o
+                                                  heartRate.o
+MAX30105_safeCheck                                MAX30105.o
+MAX30105_setADCRange                              MAX30105.o
+MAX30105_setFIFOAlmostFull                        MAX30105.o
+MAX30105_setFIFOAverage                           MAX30105.o
+MAX30105_setLEDMode                               MAX30105.o
+MAX30105_setPROXINTTHRESH                         MAX30105.o
+MAX30105_setProximityThreshold                    MAX30105.o
+MAX30105_setPulseAmplitudeIR                      MAX30105.o
+MAX30105_setPulseAmplitudeProximity               MAX30105.o
+MAX30105_setPulseAmplitudeRed                     MAX30105.o
+MAX30105_setPulseWidth                            MAX30105.o
+MAX30105_setSampleRate                            MAX30105.o
+MAX30105_setup                                    MAX30105.o
+                                                  main.o
+MAX30105_shutDown                                 MAX30105.o
+MAX30105_softReset                                MAX30105.o
+MAX30105_wakeUp                                   MAX30105.o
+MAX30105_write8                                   MAX30105.o
+MPL3115A2_getAltitude                             MPL3115A2.o
+                                                  main.o
+MPL3115A2_getPressure                             MPL3115A2.o
+                                                  main.o
+MPL3115A2_getTemperature                          MPL3115A2.o
+                                                  main.o
+MPL3115A2_init                                    MPL3115A2.o
+                                                  main.o
+MPL3115A2_read8                                   MPL3115A2.o
+MPL3115A2_setSeaPressure                          MPL3115A2.o
+MPL3115A2_write8                                  MPL3115A2.o
+MilliSeconds                                      time.o
+Red_HR_state                                      main.o
+Red_LED_output                                    main.o
+Red_dc_avg                                        main.o
+Red_result                                        main.o
+Reset_timer                                       time.o
+SD1                                               main.o
+                                                  os/hal/ports/AVR/serial_lld.o
+SD_HB_LOGGING_ON                                  main.o
+Seconds                                           time.o
+System_delta                                      time.o
+System_time                                       time.o
+Thread1                                           main.o
+Thread10                                          main.o
+Thread11                                          main.o
+Thread12                                          main.o
+Thread13                                          main.o
+Thread14                                          main.o
+Thread2                                           main.o
+Thread3                                           main.o
+Thread4                                           main.o
+Thread5                                           main.o
+Thread6                                           main.o
+Thread7                                           main.o
+Thread8                                           main.o
+Thread9                                           main.o
+TimeInit                                          time.o
+Timer                                             main.o
+USART_HB_LOGGING_ON                               main.o
+WIDTH                                             main.o
+                                                  st7735_font.o
+WWW                                               main.o
+XXX                                               main.o
+YYY                                               main.o
+ZZZ                                               main.o
+__addsf3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  main.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  vector.o
+__addsf3x                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__brkval                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                                                  main.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+__cmpsf2                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__ctype_isfalse                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+__ctype_istrue                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(cty_isfalse.o)
+__data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__divmodhi4                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                                                  MAX30105.o
+__divmodsi4                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                                                  main.o
+__divsf3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+                                                  main.o
+                                                  LSM303.o
+                                                  vector.o
+                                                  time.o
+__divsf3_pse                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+__divsf3x                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                                                  main.o
+                                                  MAX30105.o
+                                                  heartRate.o
+                                                  LSM303.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+                                                  ff.o
+                                                  mmcbb.o
+                                                  time.o
+                                                  xprintf.o
+                                                  st7735_font.o
+                                                  st7735_gfx.o
+                                                  st7735.o
+                                                  os/hal/ports/AVR/serial_lld.o
+                                                  test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+                                                  test/lib/ch_test.o
+                                                  os/nil/src/nil.o
+__do_copy_data                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                                                  main.o
+                                                  heartRate.o
+                                                  LSM303.o
+                                                  ff.o
+                                                  mmcbb.o
+                                                  xprintf.o
+                                                  st7735.o
+                                                  os/hal/ports/AVR/serial_lld.o
+                                                  os/hal/src/serial.o
+                                                  test/nil/test_sequence_002.o
+                                                  test/nil/test_sequence_001.o
+                                                  test/nil/test_root.o
+                                                  test/lib/ch_test.o
+__eqsf2                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__fixunssfsi                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                                                  main.o
+                                                  MPL3115A2.o
+__floatsisf                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                                                  main.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+__floatunsisf                                     c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+                                                  main.o
+                                                  MAX30105.o
+                                                  DS3231.o
+                                                  MPL3115A2.o
+                                                  time.o
+__flp                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+__fp_cmp                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_cmp.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__fp_inf                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_mpack                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+__fp_mpack_finite                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_mpack.o)
+__fp_nan                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_norm2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_norm2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+__fp_powser                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+__fp_pscA                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_pscB                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_round                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+__fp_split3                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__fp_splitA                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+__fp_szero                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(divsf3x.o)
+__fp_zero                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+__ftoa_engine                                     c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ftoa_engine.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+__heap_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__lesf2                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+__ltsf2                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  main.o
+                                                  LSM303.o
+__malloc_heap_end                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+__malloc_heap_start                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+                                                  main.o
+__malloc_margin                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+__mulsf3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+                                                  main.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  vector.o
+                                                  MPL3115A2.o
+__mulsf3_pse                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+__mulsf3x                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fp_powser.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+__mulsi3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                                                  main.o
+                                                  heartRate.o
+                                                  ff.o
+                                                  time.o
+__nesf2                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(cmpsf2.o)
+                                                  MAX30105.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__subsf3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                                                  main.o
+                                                  vector.o
+__udivmodhi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                                                  main.o
+__udivmodqi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                                                  main.o
+                                                  DS3231.o
+__udivmodsi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodsi4.o)
+                                                  main.o
+                                                  ff.o
+                                                  time.o
+                                                  xprintf.o
+                                                  test/lib/ch_test.o
+__ultoa_invert                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_10                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_11                                       main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_12                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_16                                       os/hal/ports/AVR/st_lld.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_19                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_20                                       os/hal/ports/AVR/serial_lld.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_21                                       os/hal/ports/AVR/serial_lld.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_22                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_23                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_24                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_25                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_26                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_27                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_28                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_29                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_3                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_30                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_31                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_32                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_33                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_34                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_4                                        main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_6                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_8                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_9                                        main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+_ctrl_reg1                                        main.o
+                                                  MPL3115A2.o
+_div                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+_port_switch                                      os/nil/ports/AVR/nilcore.o
+                                                  os/nil/src/nil.o
+_port_thread_start                                os/nil/ports/AVR/nilcore.o
+                                                  os/nil/src/nil.o
+_test_assert                                      test/lib/ch_test.o
+                                                  test/nil/test_sequence_002.o
+_test_assert_sequence                             test/lib/ch_test.o
+_test_assert_time_window                          test/lib/ch_test.o
+                                                  test/nil/test_sequence_002.o
+                                                  test/nil/test_sequence_001.o
+_test_fail                                        test/lib/ch_test.o
+a                                                 main.o
+                                                  LSM303.o
+acc_dirs                                          main.o
+acc_files                                         main.o
+acc_size                                          main.o
+am_pm                                             main.o
+atan                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+atan2                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan2.o)
+                                                  LSM303.o
+battery_average                                   main.o
+bcd_to_decimal                                    DS3231.o
+blanking_time                                     main.o
+bmpDraw                                           main.o
+boardInit                                         os/hal/boards/STK500/board.o
+                                                  os/hal/src/hal.o
+chEvtSignal                                       os/nil/src/nil.o
+chEvtSignalI                                      os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+chEvtWaitAnyTimeout                               os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_sequence_002.o
+chEvtWaitAnyTimeoutS                              os/nil/src/nil.o
+                                                  test/nil/test_sequence_002.o
+chPrintStackSizes                                 main.o
+chPrintUnusedStack                                main.o
+chSchGoSleepTimeoutS                              os/nil/src/nil.o
+chSchReadyI                                       os/nil/src/nil.o
+                                                  os/hal/osal/nil/osal.o
+chSchRescheduleS                                  os/nil/src/nil.o
+                                                  main.o
+                                                  os/hal/ports/AVR/st_lld.o
+                                                  os/hal/ports/AVR/serial_lld.o
+                                                  os/hal/src/serial.o
+                                                  test/nil/test_root.o
+chSemReset                                        os/nil/src/nil.o
+                                                  test/nil/test_sequence_002.o
+chSemResetI                                       os/nil/src/nil.o
+                                                  test/nil/test_root.o
+chSemSignal                                       os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_sequence_002.o
+chSemSignalI                                      os/nil/src/nil.o
+                                                  test/nil/test_root.o
+chSemWaitTimeout                                  os/nil/src/nil.o
+                                                  main.o
+                                                  os/hal/src/hal_queues.o
+                                                  test/nil/test_sequence_002.o
+chSemWaitTimeoutS                                 os/nil/src/nil.o
+chSysConditionalLock                              os/nil/src/nil.o
+chSysConditionalUnlock                            os/nil/src/nil.o
+chSysGetStatusAndLockX                            os/nil/src/nil.o
+chSysHalt                                         os/nil/src/nil.o
+                                                  os/nil/ports/AVR/nilcore.o
+chSysInit                                         os/nil/src/nil.o
+                                                  main.o
+chSysRestoreStatusX                               os/nil/src/nil.o
+chSysTimerHandlerI                                os/nil/src/nil.o
+                                                  os/hal/ports/AVR/st_lld.o
+chThdResumeI                                      os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_root.o
+chThdSleep                                        os/nil/src/nil.o
+                                                  main.o
+                                                  MPL3115A2.o
+                                                  time.o
+                                                  st7735.o
+                                                  test/nil/test_sequence_001.o
+                                                  test/nil/test_root.o
+                                                  test/lib/ch_test.o
+chThdSleepUntil                                   os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_sequence_001.o
+chThdSuspendTimeoutS                              os/nil/src/nil.o
+                                                  main.o
+                                                  test/nil/test_sequence_002.o
+checkForBeat                                      heartRate.o
+                                                  main.o
+clust2sect                                        ff.o
+curItem                                           main.o
+curMenu                                           main.o
+cursorCount                                       main.o
+cursor_x                                          main.o
+                                                  st7735_font.o
+cursor_y                                          main.o
+                                                  st7735_font.o
+decimal_to_bcd                                    DS3231.o
+disk_initialize                                   mmcbb.o
+                                                  main.o
+                                                  ff.o
+disk_ioctl                                        mmcbb.o
+                                                  ff.o
+disk_read                                         mmcbb.o
+                                                  ff.o
+disk_status                                       mmcbb.o
+                                                  ff.o
+disk_write                                        mmcbb.o
+                                                  ff.o
+dt                                                main.o
+dy                                                main.o
+elapsed_hours                                     main.o
+elapsed_mins                                      main.o
+elapsed_secs                                      main.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+f_close                                           ff.o
+                                                  main.o
+f_forward                                         ff.o
+f_lseek                                           ff.o
+                                                  main.o
+f_mount                                           ff.o
+                                                  main.o
+f_open                                            ff.o
+                                                  main.o
+f_opendir                                         ff.o
+f_read                                            ff.o
+                                                  main.o
+f_readdir                                         ff.o
+f_sync                                            ff.o
+                                                  main.o
+f_write                                           ff.o
+                                                  main.o
+fgetc                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fgetc.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+fmax                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmax.o)
+                                                  main.o
+fmin                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(fmin.o)
+                                                  main.o
+fprintf_P                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+                                                  main.o
+fputc                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fputc.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+free                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+g                                                 main.o
+                                                  L3GD20.o
+getSeconds                                        time.o
+get_fat                                           ff.o
+get_fattime                                       main.o
+                                                  ff.o
+gsem1                                             test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+gsem2                                             test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+gtr1                                              test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+halInit                                           os/hal/src/hal.o
+                                                  main.o
+hal_lld_init                                      os/hal/ports/AVR/hal_lld.o
+                                                  os/hal/src/hal.o
+hr                                                main.o
+hr_format                                         main.o
+i2cUSE                                            main.o
+i2c_init                                          twimaster.o
+                                                  main.o
+i2c_readAck                                       twimaster.o
+                                                  MAX30105.o
+i2c_readNak                                       twimaster.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+i2c_rep_start                                     twimaster.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+i2c_start                                         twimaster.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+i2c_start_wait                                    twimaster.o
+i2c_stop                                          twimaster.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+i2c_write                                         twimaster.o
+                                                  MAX30105.o
+                                                  LSM303.o
+                                                  DS3231.o
+                                                  L3GD20.o
+                                                  MPL3115A2.o
+initMenu                                          main.o
+inverse                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(inverse.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+iqGetTimeout                                      os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+iqObjectInit                                      os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+iqPutI                                            os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+iqReadTimeout                                     os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+iqResetI                                          os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+isspace                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(isspace.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+j                                                 main.o
+lcdUSE                                            main.o
+lcd_context                                       main.o
+lcd_context_count                                 main.o
+lcd_context_count_MAX                             main.o
+m                                                 main.o
+                                                  LSM303.o
+m_max                                             main.o
+                                                  LSM303.o
+m_min                                             main.o
+                                                  LSM303.o
+main                                              main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm1284p.o
+malloc                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(malloc.o)
+menuCount                                         main.o
+menuactn                                          main.o
+menuitem                                          main.o
+menulink                                          main.o
+menuprintloop                                     main.o
+menutitle                                         main.o
+min                                               main.o
+minute_counter                                    main.o
+                                                  time.o
+mode                                              main.o
+                                                  MPL3115A2.o
+ms_current_beat                                   main.o
+ms_elapsed_since_last                             main.o
+ms_elapsed_since_last_right_now                   main.o
+ms_old_beat                                       main.o
+mt                                                main.o
+nil                                               main.o
+                                                  time.o
+                                                  os/hal/osal/nil/osal.o
+                                                  test/nil/test_sequence_002.o
+                                                  test/nil/test_sequence_001.o
+                                                  test/lib/ch_test.o
+                                                  os/nil/src/nil.o
+nilSemGetCounter                                  main.o
+nilThdDelay                                       main.o
+nilThdDelayUntil                                  main.o
+nilUnusedHeapIdle                                 main.o
+nilUnusedStack                                    main.o
+nil_thd_configs                                   main.o
+                                                  os/nil/src/nil.o
+oqGetI                                            os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+oqObjectInit                                      os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+oqPutTimeout                                      os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+oqResetI                                          os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+oqWriteTimeout                                    os/hal/src/hal_queues.o
+                                                  os/hal/src/serial.o
+osalThreadDequeueAllI                             os/hal/osal/nil/osal.o
+                                                  os/hal/src/hal_queues.o
+osalThreadDequeueNextI                            os/hal/osal/nil/osal.o
+                                                  os/hal/src/hal_queues.o
+p1                                                main.o
+pageScroll                                        main.o
+parse_time                                        main.o
+put_dump                                          xprintf.o
+put_fat                                           ff.o
+read16                                            main.o
+read32                                            main.o
+rotation                                          main.o
+                                                  st7735_font.o
+s                                                 main.o
+sdIncomingDataI                                   os/hal/src/serial.o
+                                                  os/hal/ports/AVR/serial_lld.o
+sdInit                                            os/hal/src/serial.o
+                                                  os/hal/src/hal.o
+sdObjectInit                                      os/hal/src/serial.o
+                                                  os/hal/ports/AVR/serial_lld.o
+sdRequestDataI                                    os/hal/src/serial.o
+                                                  os/hal/ports/AVR/serial_lld.o
+sdStart                                           os/hal/src/serial.o
+                                                  main.o
+sdStop                                            os/hal/src/serial.o
+sdUSE                                             main.o
+sd_lld_init                                       os/hal/ports/AVR/serial_lld.o
+                                                  os/hal/src/serial.o
+sd_lld_start                                      os/hal/ports/AVR/serial_lld.o
+                                                  os/hal/src/serial.o
+sd_lld_stop                                       os/hal/ports/AVR/serial_lld.o
+                                                  os/hal/src/serial.o
+sense                                             MAX30105.o
+showMenu                                          main.o
+spiUSE                                            main.o
+spi_init                                          spi.o
+                                                  main.o
+sqrt                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(sqrt.o)
+                                                  vector.o
+square                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(square.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libm.a(atan.o)
+st7735_column_start                               st7735.o
+st7735_drawChar                                   st7735_font.o
+st7735_draw_bitmap                                st7735.o
+st7735_draw_circle                                st7735_gfx.o
+st7735_draw_line                                  st7735_gfx.o
+st7735_draw_mono_bitmap                           st7735.o
+st7735_draw_pixel                                 st7735.o
+                                                  st7735_font.o
+                                                  st7735_gfx.o
+st7735_draw_rect                                  st7735_gfx.o
+st7735_fill_rect                                  st7735.o
+                                                  main.o
+                                                  st7735_font.o
+                                                  st7735_gfx.o
+st7735_height                                     st7735.o
+                                                  main.o
+                                                  st7735_font.o
+                                                  st7735_gfx.o
+st7735_init                                       st7735.o
+                                                  main.o
+st7735_orientation                                st7735.o
+st7735_print                                      st7735_font.o
+st7735_printf                                     st7735_font.o
+                                                  main.o
+st7735_row_start                                  st7735.o
+st7735_run_command_list                           st7735.o
+st7735_setCursor                                  st7735_font.o
+                                                  main.o
+st7735_setTextColor                               st7735_font.o
+                                                  main.o
+st7735_setTextSize                                st7735_font.o
+                                                  main.o
+st7735_setTextWrap                                st7735_font.o
+                                                  main.o
+st7735_set_addr_win                               st7735.o
+                                                  main.o
+st7735_set_orientation                            st7735.o
+                                                  main.o
+st7735_width                                      st7735.o
+                                                  main.o
+                                                  st7735_font.o
+                                                  st7735_gfx.o
+st7735_write                                      st7735_font.o
+st7735_write_self_color                           st7735.o
+                                                  main.o
+stGetAlarm                                        os/hal/src/st.o
+stInit                                            os/hal/src/st.o
+                                                  os/hal/src/hal.o
+stSetAlarm                                        os/hal/src/st.o
+stStartAlarm                                      os/hal/src/st.o
+stStopAlarm                                       os/hal/src/st.o
+st_lld_init                                       os/hal/ports/AVR/st_lld.o
+                                                  os/hal/src/st.o
+strchr_P                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strchr_P.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+strnlen                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+strnlen_P                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+switchtype                                        main.o
+temp_second_counter                               time.o
+testTHREAD                                        main.o
+test_emit_token                                   test/lib/ch_test.o
+test_emit_token_i                                 test/lib/ch_test.o
+test_execute                                      test/lib/ch_test.o
+                                                  main.o
+test_print                                        test/lib/ch_test.o
+test_println                                      test/lib/ch_test.o
+test_printn                                       test/lib/ch_test.o
+test_sequence_001                                 test/nil/test_sequence_001.o
+                                                  test/nil/test_root.o
+test_sequence_002                                 test/nil/test_sequence_002.o
+                                                  test/nil/test_root.o
+test_step                                         test/nil/test_sequence_002.o
+                                                  test/nil/test_sequence_001.o
+                                                  test/lib/ch_test.o
+test_suite                                        test/nil/test_root.o
+                                                  test/lib/ch_test.o
+test_support                                      test/nil/test_root.o
+                                                  main.o
+textbgcolor                                       main.o
+                                                  st7735_font.o
+textcolor                                         main.o
+                                                  st7735_font.o
+textsize                                          main.o
+                                                  st7735_font.o
+thread_internal_started                           main.o
+timer                                             time.o
+                                                  main.o
+tolower                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(tolower.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+triggered                                         main.o
+ungetc                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(ungetc.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+updateFlag                                        main.o
+usartUSE                                          main.o
+usart_getchar                                     usart.o
+usart_init                                        usart.o
+                                                  main.o
+usart_kbhit                                       usart.o
+usart_pstr                                        usart.o
+usart_putchar                                     usart.o
+usart_putchar_printf                              usart.o
+                                                  main.o
+vector_cross                                      vector.o
+                                                  LSM303.o
+vector_dot                                        vector.o
+                                                  LSM303.o
+vector_normalize                                  vector.o
+                                                  LSM303.o
+vfprintf                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libprintf_flt.a(vfprintf_flt.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a(fprintf_p.o)
+vfscanf                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libscanf_flt.a(vfscanf_flt.o)
+waThread1                                         main.o
+waThread10                                        main.o
+waThread11                                        main.o
+waThread12                                        main.o
+waThread13                                        main.o
+waThread14                                        main.o
+waThread2                                         main.o
+waThread3                                         main.o
+waThread4                                         main.o
+waThread5                                         main.o
+waThread6                                         main.o
+waThread7                                         main.o
+waThread8                                         main.o
+waThread9                                         main.o
+waTimer                                           main.o
+                                                  time.o
+wa_test_support                                   main.o
+                                                  test/nil/test_root.o
+wrap                                              main.o
+                                                  st7735_font.o
+xfprintf                                          xprintf.o
+xfprintf_P                                        xprintf.o
+                                                  main.o
+xfputs                                            xprintf.o
+xfunc_out                                         main.o
+                                                  xprintf.o
+xprintf                                           xprintf.o
+                                                  main.o
+xprintf_P                                         xprintf.o
+xputc                                             xprintf.o
+xputs                                             xprintf.o
+                                                  main.o
+xsprintf                                          xprintf.o
+xsprintf_P                                        xprintf.o
+                                                  main.o
+yr                                                main.o

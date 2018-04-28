@@ -1,0 +1,42 @@
+   1               		.file	"hal.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	halInit
+  18               	halInit:
+  19               	.LFB48:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 0E94 0000 		call hal_lld_init
+  25               	.LM3:
+  26 0004 0E94 0000 		call sdInit
+  27               	.LM4:
+  28 0008 0E94 0000 		call boardInit
+  29               	.LM5:
+  30 000c 0E94 0000 		call stInit
+  31               	/* epilogue start */
+  32               	.LM6:
+  33 0010 0895      		ret
+  34               	.LFE48:
+  60               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 hal.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc65RsVR.s:18     .text:00000000 halInit
+
+UNDEFINED SYMBOLS
+hal_lld_init
+sdInit
+boardInit
+stInit

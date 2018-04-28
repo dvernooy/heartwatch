@@ -1,0 +1,160 @@
+   1               		.file	"usart.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	usart_init
+  18               	usart_init:
+  19               	.LFB3:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 9093 C500 		sts 197,r25
+  26               	.LVL1:
+  27               	.LM3:
+  28 0004 8093 C400 		sts 196,r24
+  29               	.LM4:
+  30 0008 88E1      		ldi r24,lo8(24)
+  31               	.LVL2:
+  32 000a 8093 C100 		sts 193,r24
+  33               	.LM5:
+  34 000e 86E0      		ldi r24,lo8(6)
+  35 0010 8093 C200 		sts 194,r24
+  36               	/* epilogue start */
+  37               	.LM6:
+  38 0014 0895      		ret
+  39               	.LFE3:
+  41               	.global	usart_putchar
+  43               	usart_putchar:
+  44               	.LFB4:
+  45               	.LM7:
+  46               	.LVL3:
+  47               	/* prologue: function */
+  48               	/* frame size = 0 */
+  49 0016 982F      		mov r25,r24
+  50               	.LVL4:
+  51               	.L4:
+  52               	.LM8:
+  53 0018 8091 C000 		lds r24,192
+  54 001c 85FF      		sbrs r24,5
+  55 001e 00C0      		rjmp .L4
+  56               	.LM9:
+  57 0020 9093 C600 		sts 198,r25
+  58               	/* epilogue start */
+  59               	.LM10:
+  60 0024 0895      		ret
+  61               	.LFE4:
+  63               	.global	usart_getchar
+  65               	usart_getchar:
+  66               	.LFB5:
+  67               	.LM11:
+  68               	/* prologue: function */
+  69               	/* frame size = 0 */
+  70               	.L9:
+  71               	.LM12:
+  72 0026 8091 C000 		lds r24,192
+  73 002a 87FF      		sbrs r24,7
+  74 002c 00C0      		rjmp .L9
+  75               	.LM13:
+  76 002e 8091 C600 		lds r24,198
+  77               	/* epilogue start */
+  78               	.LM14:
+  79 0032 0895      		ret
+  80               	.LFE5:
+  82               	.global	usart_pstr
+  84               	usart_pstr:
+  85               	.LFB6:
+  86               	.LM15:
+  87               	.LVL5:
+  88               	/* prologue: function */
+  89               	/* frame size = 0 */
+  90 0034 FC01      		movw r30,r24
+  91               	.LM16:
+  92 0036 9081      		ld r25,Z
+  93 0038 9923      		tst r25
+  94 003a 01F0      		breq .L15
+  95               	.LVL6:
+  96               	.L18:
+  97               	.LBB6:
+  98               	.LBB7:
+  99               	.LM17:
+ 100 003c 8091 C000 		lds r24,192
+ 101 0040 85FF      		sbrs r24,5
+ 102 0042 00C0      		rjmp .L18
+ 103               	.LM18:
+ 104 0044 9093 C600 		sts 198,r25
+ 105               	.LBE7:
+ 106               	.LBE6:
+ 107               	.LM19:
+ 108 0048 3196      		adiw r30,1
+ 109               	.LM20:
+ 110 004a 9081      		ld r25,Z
+ 111 004c 9923      		tst r25
+ 112 004e 01F4      		brne .L18
+ 113               	.LVL7:
+ 114               	.L15:
+ 115 0050 0895      		ret
+ 116               	.LFE6:
+ 118               	.global	usart_kbhit
+ 120               	usart_kbhit:
+ 121               	.LFB7:
+ 122               	.LM21:
+ 123               	/* prologue: function */
+ 124               	/* frame size = 0 */
+ 125               	.LM22:
+ 126 0052 8091 C000 		lds r24,192
+ 127               	.LM23:
+ 128 0056 881F      		rol r24
+ 129 0058 8827      		clr r24
+ 130 005a 881F      		rol r24
+ 131               	/* epilogue start */
+ 132 005c 0895      		ret
+ 133               	.LFE7:
+ 135               	.global	usart_putchar_printf
+ 137               	usart_putchar_printf:
+ 138               	.LFB8:
+ 139               	.LM24:
+ 140               	.LVL8:
+ 141               	/* prologue: function */
+ 142               	/* frame size = 0 */
+ 143 005e 982F      		mov r25,r24
+ 144               	.LVL9:
+ 145               	.L23:
+ 146               	.LBB8:
+ 147               	.LBB9:
+ 148               	.LM25:
+ 149 0060 8091 C000 		lds r24,192
+ 150 0064 85FF      		sbrs r24,5
+ 151 0066 00C0      		rjmp .L23
+ 152               	.LM26:
+ 153 0068 9093 C600 		sts 198,r25
+ 154               	.LBE9:
+ 155               	.LBE8:
+ 156               	.LM27:
+ 157 006c 80E0      		ldi r24,lo8(0)
+ 158 006e 90E0      		ldi r25,hi8(0)
+ 159               	/* epilogue start */
+ 160 0070 0895      		ret
+ 161               	.LFE8:
+ 227               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 usart.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:18     .text:00000000 usart_init
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:43     .text:00000016 usart_putchar
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:65     .text:00000026 usart_getchar
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:84     .text:00000034 usart_pstr
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:120    .text:00000052 usart_kbhit
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc0KSFAL.s:137    .text:0000005e usart_putchar_printf
+
+NO UNDEFINED SYMBOLS

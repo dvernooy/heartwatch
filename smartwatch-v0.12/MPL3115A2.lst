@@ -1,0 +1,518 @@
+   1               		.file	"MPL3115A2.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	MPL3115A2_write8
+  18               	MPL3115A2_write8:
+  19               	.LFB21:
+  20               	.LM1:
+  21               	.LVL0:
+  22 0000 0F93      		push r16
+  23 0002 1F93      		push r17
+  24               	/* prologue: function */
+  25               	/* frame size = 0 */
+  26 0004 182F      		mov r17,r24
+  27 0006 062F      		mov r16,r22
+  28               	.LM2:
+  29 0008 80EC      		ldi r24,lo8(-64)
+  30               	.LVL1:
+  31 000a 0E94 0000 		call i2c_start
+  32               	.LVL2:
+  33               	.LM3:
+  34 000e 812F      		mov r24,r17
+  35 0010 0E94 0000 		call i2c_write
+  36               	.LM4:
+  37 0014 802F      		mov r24,r16
+  38 0016 0E94 0000 		call i2c_write
+  39               	.LM5:
+  40 001a 0E94 0000 		call i2c_stop
+  41               	/* epilogue start */
+  42               	.LM6:
+  43 001e 1F91      		pop r17
+  44               	.LVL3:
+  45 0020 0F91      		pop r16
+  46               	.LVL4:
+  47 0022 0895      		ret
+  48               	.LFE21:
+  50               	.global	MPL3115A2_setSeaPressure
+  52               	MPL3115A2_setSeaPressure:
+  53               	.LFB18:
+  54               	.LM7:
+  55               	.LVL5:
+  56 0024 EF92      		push r14
+  57 0026 FF92      		push r15
+  58 0028 0F93      		push r16
+  59 002a 1F93      		push r17
+  60               	/* prologue: function */
+  61               	/* frame size = 0 */
+  62               	.LM8:
+  63 002c 20E0      		ldi r18,lo8(0x3f000000)
+  64 002e 30E0      		ldi r19,hi8(0x3f000000)
+  65 0030 40E0      		ldi r20,hlo8(0x3f000000)
+  66 0032 5FE3      		ldi r21,hhi8(0x3f000000)
+  67 0034 0E94 0000 		call __mulsf3
+  68               	.LVL6:
+  69 0038 0E94 0000 		call __fixunssfsi
+  70 003c 7B01      		movw r14,r22
+  71 003e 8C01      		movw r16,r24
+  72               	.LM9:
+  73 0040 80EC      		ldi r24,lo8(-64)
+  74 0042 0E94 0000 		call i2c_start
+  75               	.LM10:
+  76 0046 84E1      		ldi r24,lo8(20)
+  77 0048 0E94 0000 		call i2c_write
+  78               	.LM11:
+  79 004c 8F2D      		mov r24,r15
+  80 004e 0E94 0000 		call i2c_write
+  81               	.LM12:
+  82 0052 8E2D      		mov r24,r14
+  83 0054 0E94 0000 		call i2c_write
+  84               	.LM13:
+  85 0058 0E94 0000 		call i2c_stop
+  86               	/* epilogue start */
+  87               	.LM14:
+  88 005c 1F91      		pop r17
+  89 005e 0F91      		pop r16
+  90 0060 FF90      		pop r15
+  91 0062 EF90      		pop r14
+  92 0064 0895      		ret
+  93               	.LFE18:
+  95               	.global	MPL3115A2_read8
+  97               	MPL3115A2_read8:
+  98               	.LFB20:
+  99               	.LM15:
+ 100               	.LVL7:
+ 101 0066 1F93      		push r17
+ 102               	/* prologue: function */
+ 103               	/* frame size = 0 */
+ 104 0068 182F      		mov r17,r24
+ 105               	.LM16:
+ 106 006a 80EC      		ldi r24,lo8(-64)
+ 107               	.LVL8:
+ 108 006c 0E94 0000 		call i2c_start
+ 109               	.LM17:
+ 110 0070 812F      		mov r24,r17
+ 111 0072 0E94 0000 		call i2c_write
+ 112               	.LM18:
+ 113 0076 81EC      		ldi r24,lo8(-63)
+ 114 0078 0E94 0000 		call i2c_rep_start
+ 115               	.LM19:
+ 116 007c 0E94 0000 		call i2c_readNak
+ 117 0080 182F      		mov r17,r24
+ 118               	.LVL9:
+ 119               	.LM20:
+ 120 0082 0E94 0000 		call i2c_stop
+ 121               	.LM21:
+ 122 0086 812F      		mov r24,r17
+ 123               	/* epilogue start */
+ 124 0088 1F91      		pop r17
+ 125               	.LVL10:
+ 126 008a 0895      		ret
+ 127               	.LFE20:
+ 129               	.global	MPL3115A2_getTemperature
+ 131               	MPL3115A2_getTemperature:
+ 132               	.LFB19:
+ 133               	.LM22:
+ 134 008c 0F93      		push r16
+ 135 008e 1F93      		push r17
+ 136               	/* prologue: function */
+ 137               	/* frame size = 0 */
+ 138               	.L8:
+ 139               	.LM23:
+ 140 0090 80E0      		ldi r24,lo8(0)
+ 141 0092 0E94 0000 		call MPL3115A2_read8
+ 142 0096 182F      		mov r17,r24
+ 143               	.LVL11:
+ 144               	.LM24:
+ 145 0098 68EC      		ldi r22,lo8(200)
+ 146 009a 70E0      		ldi r23,hi8(200)
+ 147 009c 80E0      		ldi r24,hlo8(200)
+ 148 009e 90E0      		ldi r25,hhi8(200)
+ 149 00a0 0E94 0000 		call chThdSleep
+ 150               	.LM25:
+ 151 00a4 11FF      		sbrs r17,1
+ 152 00a6 00C0      		rjmp .L8
+ 153               	.LM26:
+ 154 00a8 84E0      		ldi r24,lo8(4)
+ 155 00aa 0E94 0000 		call MPL3115A2_read8
+ 156               	.LM27:
+ 157 00ae 182F      		mov r17,r24
+ 158               	.LVL12:
+ 159 00b0 00E0      		ldi r16,lo8(0)
+ 160               	.LVL13:
+ 161               	.LM28:
+ 162 00b2 85E0      		ldi r24,lo8(5)
+ 163 00b4 0E94 0000 		call MPL3115A2_read8
+ 164 00b8 282F      		mov r18,r24
+ 165               	.LVL14:
+ 166 00ba 30E0      		ldi r19,lo8(0)
+ 167               	.LVL15:
+ 168 00bc 202B      		or r18,r16
+ 169 00be 312B      		or r19,r17
+ 170               	.LVL16:
+ 171               	.LM29:
+ 172 00c0 3595      		asr r19
+ 173 00c2 2795      		ror r18
+ 174 00c4 3595      		asr r19
+ 175 00c6 2795      		ror r18
+ 176 00c8 3595      		asr r19
+ 177 00ca 2795      		ror r18
+ 178 00cc 3595      		asr r19
+ 179 00ce 2795      		ror r18
+ 180               	.LM30:
+ 181 00d0 33FD      		sbrc r19,3
+ 182               	.LM31:
+ 183 00d2 306F      		ori r19,hi8(-4096)
+ 184               	.L9:
+ 185               	.LM32:
+ 186 00d4 B901      		movw r22,r18
+ 187 00d6 8827      		clr r24
+ 188 00d8 77FD      		sbrc r23,7
+ 189 00da 8095      		com r24
+ 190 00dc 982F      		mov r25,r24
+ 191               	.LVL17:
+ 192 00de 0E94 0000 		call __floatsisf
+ 193               	.LVL18:
+ 194 00e2 20E0      		ldi r18,lo8(0x3d800000)
+ 195 00e4 30E0      		ldi r19,hi8(0x3d800000)
+ 196 00e6 40E8      		ldi r20,hlo8(0x3d800000)
+ 197 00e8 5DE3      		ldi r21,hhi8(0x3d800000)
+ 198 00ea 0E94 0000 		call __mulsf3
+ 199               	/* epilogue start */
+ 200               	.LM33:
+ 201 00ee 1F91      		pop r17
+ 202 00f0 0F91      		pop r16
+ 203 00f2 0895      		ret
+ 204               	.LFE19:
+ 206               	.global	MPL3115A2_getAltitude
+ 208               	MPL3115A2_getAltitude:
+ 209               	.LFB17:
+ 210               	.LM34:
+ 211 00f4 AF92      		push r10
+ 212 00f6 BF92      		push r11
+ 213 00f8 CF92      		push r12
+ 214 00fa DF92      		push r13
+ 215 00fc EF92      		push r14
+ 216 00fe FF92      		push r15
+ 217 0100 0F93      		push r16
+ 218 0102 1F93      		push r17
+ 219               	/* prologue: function */
+ 220               	/* frame size = 0 */
+ 221 0104 00C0      		rjmp .L14
+ 222               	.L15:
+ 223               	.LM35:
+ 224 0106 68EC      		ldi r22,lo8(200)
+ 225 0108 70E0      		ldi r23,hi8(200)
+ 226 010a 80E0      		ldi r24,hlo8(200)
+ 227 010c 90E0      		ldi r25,hhi8(200)
+ 228 010e 0E94 0000 		call chThdSleep
+ 229               	.L14:
+ 230               	.LM36:
+ 231 0112 86E2      		ldi r24,lo8(38)
+ 232 0114 0E94 0000 		call MPL3115A2_read8
+ 233 0118 81FD      		sbrc r24,1
+ 234 011a 00C0      		rjmp .L15
+ 235               	.LM37:
+ 236 011c 6091 0000 		lds r22,_ctrl_reg1
+ 237 0120 6068      		ori r22,lo8(-128)
+ 238 0122 6093 0000 		sts _ctrl_reg1,r22
+ 239               	.LM38:
+ 240 0126 86E2      		ldi r24,lo8(38)
+ 241 0128 0E94 0000 		call MPL3115A2_write8
+ 242               	.LM39:
+ 243 012c 6091 0000 		lds r22,_ctrl_reg1
+ 244 0130 6260      		ori r22,lo8(2)
+ 245 0132 6093 0000 		sts _ctrl_reg1,r22
+ 246               	.LM40:
+ 247 0136 86E2      		ldi r24,lo8(38)
+ 248 0138 0E94 0000 		call MPL3115A2_write8
+ 249               	.L16:
+ 250               	.LM41:
+ 251 013c 80E0      		ldi r24,lo8(0)
+ 252 013e 0E94 0000 		call MPL3115A2_read8
+ 253 0142 182F      		mov r17,r24
+ 254               	.LVL19:
+ 255               	.LM42:
+ 256 0144 68EC      		ldi r22,lo8(200)
+ 257 0146 70E0      		ldi r23,hi8(200)
+ 258 0148 80E0      		ldi r24,hlo8(200)
+ 259 014a 90E0      		ldi r25,hhi8(200)
+ 260 014c 0E94 0000 		call chThdSleep
+ 261               	.LM43:
+ 262 0150 12FF      		sbrs r17,2
+ 263 0152 00C0      		rjmp .L16
+ 264               	.LM44:
+ 265 0154 81E0      		ldi r24,lo8(1)
+ 266 0156 0E94 0000 		call MPL3115A2_read8
+ 267 015a A82E      		mov r10,r24
+ 268               	.LM45:
+ 269 015c 82E0      		ldi r24,lo8(2)
+ 270 015e 0E94 0000 		call MPL3115A2_read8
+ 271 0162 E82E      		mov r14,r24
+ 272               	.LM46:
+ 273 0164 83E0      		ldi r24,lo8(3)
+ 274 0166 0E94 0000 		call MPL3115A2_read8
+ 275               	.LM47:
+ 276 016a FF24      		clr r15
+ 277 016c 00E0      		ldi r16,lo8(0)
+ 278 016e 10E0      		ldi r17,hi8(0)
+ 279 0170 8701      		movw r16,r14
+ 280 0172 FF24      		clr r15
+ 281 0174 EE24      		clr r14
+ 282 0176 BB24      		clr r11
+ 283 0178 CC24      		clr r12
+ 284 017a DD24      		clr r13
+ 285 017c DA2C      		mov r13,r10
+ 286 017e CC24      		clr r12
+ 287 0180 BB24      		clr r11
+ 288 0182 AA24      		clr r10
+ 289 0184 EA28      		or r14,r10
+ 290 0186 FB28      		or r15,r11
+ 291 0188 0C29      		or r16,r12
+ 292 018a 1D29      		or r17,r13
+ 293 018c 90E0      		ldi r25,lo8(0)
+ 294 018e A0E0      		ldi r26,lo8(0)
+ 295 0190 B0E0      		ldi r27,hi8(0)
+ 296 0192 BA2F      		mov r27,r26
+ 297 0194 A92F      		mov r26,r25
+ 298 0196 982F      		mov r25,r24
+ 299 0198 8827      		clr r24
+ 300 019a E82A      		or r14,r24
+ 301 019c F92A      		or r15,r25
+ 302 019e 0A2B      		or r16,r26
+ 303 01a0 1B2B      		or r17,r27
+ 304 01a2 C801      		movw r24,r16
+ 305 01a4 B701      		movw r22,r14
+ 306 01a6 0E94 0000 		call __floatsisf
+ 307 01aa 20E0      		ldi r18,lo8(0x37800000)
+ 308 01ac 30E0      		ldi r19,hi8(0x37800000)
+ 309 01ae 40E8      		ldi r20,hlo8(0x37800000)
+ 310 01b0 57E3      		ldi r21,hhi8(0x37800000)
+ 311 01b2 0E94 0000 		call __mulsf3
+ 312               	/* epilogue start */
+ 313               	.LM48:
+ 314 01b6 1F91      		pop r17
+ 315               	.LVL20:
+ 316 01b8 0F91      		pop r16
+ 317 01ba FF90      		pop r15
+ 318 01bc EF90      		pop r14
+ 319 01be DF90      		pop r13
+ 320 01c0 CF90      		pop r12
+ 321 01c2 BF90      		pop r11
+ 322 01c4 AF90      		pop r10
+ 323 01c6 0895      		ret
+ 324               	.LFE17:
+ 326               	.global	MPL3115A2_getPressure
+ 328               	MPL3115A2_getPressure:
+ 329               	.LFB16:
+ 330               	.LM49:
+ 331 01c8 EF92      		push r14
+ 332 01ca FF92      		push r15
+ 333 01cc 0F93      		push r16
+ 334 01ce 1F93      		push r17
+ 335               	/* prologue: function */
+ 336               	/* frame size = 0 */
+ 337 01d0 00C0      		rjmp .L20
+ 338               	.L21:
+ 339               	.LM50:
+ 340 01d2 68EC      		ldi r22,lo8(200)
+ 341 01d4 70E0      		ldi r23,hi8(200)
+ 342 01d6 80E0      		ldi r24,hlo8(200)
+ 343 01d8 90E0      		ldi r25,hhi8(200)
+ 344 01da 0E94 0000 		call chThdSleep
+ 345               	.L20:
+ 346               	.LM51:
+ 347 01de 86E2      		ldi r24,lo8(38)
+ 348 01e0 0E94 0000 		call MPL3115A2_read8
+ 349 01e4 81FD      		sbrc r24,1
+ 350 01e6 00C0      		rjmp .L21
+ 351               	.LM52:
+ 352 01e8 6091 0000 		lds r22,_ctrl_reg1
+ 353 01ec 6F77      		andi r22,lo8(127)
+ 354 01ee 6093 0000 		sts _ctrl_reg1,r22
+ 355               	.LM53:
+ 356 01f2 86E2      		ldi r24,lo8(38)
+ 357 01f4 0E94 0000 		call MPL3115A2_write8
+ 358               	.LM54:
+ 359 01f8 6091 0000 		lds r22,_ctrl_reg1
+ 360 01fc 6260      		ori r22,lo8(2)
+ 361 01fe 6093 0000 		sts _ctrl_reg1,r22
+ 362               	.LM55:
+ 363 0202 86E2      		ldi r24,lo8(38)
+ 364 0204 0E94 0000 		call MPL3115A2_write8
+ 365               	.L22:
+ 366               	.LM56:
+ 367 0208 80E0      		ldi r24,lo8(0)
+ 368 020a 0E94 0000 		call MPL3115A2_read8
+ 369 020e 182F      		mov r17,r24
+ 370               	.LVL21:
+ 371               	.LM57:
+ 372 0210 68EC      		ldi r22,lo8(200)
+ 373 0212 70E0      		ldi r23,hi8(200)
+ 374 0214 80E0      		ldi r24,hlo8(200)
+ 375 0216 90E0      		ldi r25,hhi8(200)
+ 376 0218 0E94 0000 		call chThdSleep
+ 377               	.LM58:
+ 378 021c 12FF      		sbrs r17,2
+ 379 021e 00C0      		rjmp .L22
+ 380               	.LM59:
+ 381 0220 81E0      		ldi r24,lo8(1)
+ 382 0222 0E94 0000 		call MPL3115A2_read8
+ 383 0226 E82E      		mov r14,r24
+ 384               	.LVL22:
+ 385 0228 FF24      		clr r15
+ 386               	.LVL23:
+ 387 022a 00E0      		ldi r16,lo8(0)
+ 388 022c 10E0      		ldi r17,hi8(0)
+ 389               	.LVL24:
+ 390               	.LM60:
+ 391 022e 102F      		mov r17,r16
+ 392 0230 0F2D      		mov r16,r15
+ 393 0232 FE2C      		mov r15,r14
+ 394 0234 EE24      		clr r14
+ 395               	.LVL25:
+ 396               	.LM61:
+ 397 0236 82E0      		ldi r24,lo8(2)
+ 398 0238 0E94 0000 		call MPL3115A2_read8
+ 399 023c 90E0      		ldi r25,lo8(0)
+ 400 023e A0E0      		ldi r26,lo8(0)
+ 401 0240 B0E0      		ldi r27,hi8(0)
+ 402 0242 E82A      		or r14,r24
+ 403 0244 F92A      		or r15,r25
+ 404 0246 0A2B      		or r16,r26
+ 405 0248 1B2B      		or r17,r27
+ 406               	.LM62:
+ 407 024a 102F      		mov r17,r16
+ 408 024c 0F2D      		mov r16,r15
+ 409 024e FE2C      		mov r15,r14
+ 410 0250 EE24      		clr r14
+ 411               	.LVL26:
+ 412               	.LM63:
+ 413 0252 83E0      		ldi r24,lo8(3)
+ 414 0254 0E94 0000 		call MPL3115A2_read8
+ 415 0258 90E0      		ldi r25,lo8(0)
+ 416 025a A0E0      		ldi r26,lo8(0)
+ 417 025c B0E0      		ldi r27,hi8(0)
+ 418 025e E82A      		or r14,r24
+ 419 0260 F92A      		or r15,r25
+ 420 0262 0A2B      		or r16,r26
+ 421 0264 1B2B      		or r17,r27
+ 422               	.LM64:
+ 423 0266 54E0      		ldi r21,4
+ 424 0268 1695      	1:	lsr r17
+ 425 026a 0795      		ror r16
+ 426 026c F794      		ror r15
+ 427 026e E794      		ror r14
+ 428 0270 5A95      		dec r21
+ 429 0272 01F4      		brne 1b
+ 430 0274 C801      		movw r24,r16
+ 431 0276 B701      		movw r22,r14
+ 432 0278 0E94 0000 		call __floatunsisf
+ 433 027c 20E0      		ldi r18,lo8(0x3e800000)
+ 434 027e 30E0      		ldi r19,hi8(0x3e800000)
+ 435 0280 40E8      		ldi r20,hlo8(0x3e800000)
+ 436 0282 5EE3      		ldi r21,hhi8(0x3e800000)
+ 437 0284 0E94 0000 		call __mulsf3
+ 438               	/* epilogue start */
+ 439               	.LM65:
+ 440 0288 1F91      		pop r17
+ 441               	.LVL27:
+ 442 028a 0F91      		pop r16
+ 443               	.LVL28:
+ 444 028c FF90      		pop r15
+ 445               	.LVL29:
+ 446 028e EF90      		pop r14
+ 447               	.LVL30:
+ 448 0290 0895      		ret
+ 449               	.LFE16:
+ 451               	.global	MPL3115A2_init
+ 453               	MPL3115A2_init:
+ 454               	.LFB15:
+ 455               	.LM66:
+ 456               	/* prologue: function */
+ 457               	/* frame size = 0 */
+ 458               	.LM67:
+ 459 0292 8CE0      		ldi r24,lo8(12)
+ 460 0294 0E94 0000 		call MPL3115A2_read8
+ 461               	.LM68:
+ 462 0298 843C      		cpi r24,lo8(-60)
+ 463 029a 01F0      		breq .L26
+ 464 029c 80E0      		ldi r24,lo8(0)
+ 465 029e 0895      		ret
+ 466               	.L26:
+ 467               	.LM69:
+ 468 02a0 86E2      		ldi r24,lo8(38)
+ 469 02a2 64E0      		ldi r22,lo8(4)
+ 470 02a4 0E94 0000 		call MPL3115A2_write8
+ 471               	.LM70:
+ 472 02a8 68EC      		ldi r22,lo8(200)
+ 473 02aa 70E0      		ldi r23,hi8(200)
+ 474 02ac 80E0      		ldi r24,hlo8(200)
+ 475 02ae 90E0      		ldi r25,hhi8(200)
+ 476 02b0 0E94 0000 		call chThdSleep
+ 477 02b4 00C0      		rjmp .L28
+ 478               	.L29:
+ 479               	.LM71:
+ 480 02b6 68EC      		ldi r22,lo8(200)
+ 481 02b8 70E0      		ldi r23,hi8(200)
+ 482 02ba 80E0      		ldi r24,hlo8(200)
+ 483 02bc 90E0      		ldi r25,hhi8(200)
+ 484 02be 0E94 0000 		call chThdSleep
+ 485               	.L28:
+ 486               	.LM72:
+ 487 02c2 86E2      		ldi r24,lo8(38)
+ 488 02c4 0E94 0000 		call MPL3115A2_read8
+ 489 02c8 82FD      		sbrc r24,2
+ 490 02ca 00C0      		rjmp .L29
+ 491               	.LM73:
+ 492 02cc 88E9      		ldi r24,lo8(-104)
+ 493 02ce 8093 0000 		sts _ctrl_reg1,r24
+ 494               	.LM74:
+ 495 02d2 86E2      		ldi r24,lo8(38)
+ 496 02d4 68E9      		ldi r22,lo8(-104)
+ 497 02d6 0E94 0000 		call MPL3115A2_write8
+ 498               	.LM75:
+ 499 02da 83E1      		ldi r24,lo8(19)
+ 500 02dc 67E0      		ldi r22,lo8(7)
+ 501 02de 0E94 0000 		call MPL3115A2_write8
+ 502 02e2 81E0      		ldi r24,lo8(1)
+ 503               	.LM76:
+ 504 02e4 0895      		ret
+ 505               	.LFE15:
+ 507               		.comm mode,1,1
+ 508               		.comm _ctrl_reg1,1,1
+ 581               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 MPL3115A2.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:18     .text:00000000 MPL3115A2_write8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:52     .text:00000024 MPL3115A2_setSeaPressure
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:97     .text:00000066 MPL3115A2_read8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:131    .text:0000008c MPL3115A2_getTemperature
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:208    .text:000000f4 MPL3115A2_getAltitude
+                            *COM*:00000001 _ctrl_reg1
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:328    .text:000001c8 MPL3115A2_getPressure
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccAHczLa.s:453    .text:00000292 MPL3115A2_init
+                            *COM*:00000001 mode
+
+UNDEFINED SYMBOLS
+i2c_start
+i2c_write
+i2c_stop
+__mulsf3
+__fixunssfsi
+i2c_rep_start
+i2c_readNak
+chThdSleep
+__floatsisf
+__floatunsisf
+__do_clear_bss

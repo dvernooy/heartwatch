@@ -1,0 +1,653 @@
+   1               		.file	"DS3231.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	bcd_to_decimal
+  18               	bcd_to_decimal:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 282F      		mov r18,r24
+  26 0002 2295      		swap r18
+  27 0004 2F70      		andi r18,lo8(15)
+  28 0006 30E0      		ldi r19,lo8(0)
+  29 0008 A901      		movw r20,r18
+  30 000a 440F      		lsl r20
+  31 000c 551F      		rol r21
+  32 000e 440F      		lsl r20
+  33 0010 551F      		rol r21
+  34 0012 440F      		lsl r20
+  35 0014 551F      		rol r21
+  36 0016 220F      		lsl r18
+  37 0018 331F      		rol r19
+  38 001a 420F      		add r20,r18
+  39 001c 531F      		adc r21,r19
+  40 001e 8F70      		andi r24,lo8(15)
+  41               	.LVL1:
+  42               	.LM3:
+  43 0020 840F      		add r24,r20
+  44               	.LVL2:
+  45               	/* epilogue start */
+  46 0022 0895      		ret
+  47               	.LFE2:
+  49               	.global	decimal_to_bcd
+  51               	decimal_to_bcd:
+  52               	.LFB3:
+  53               	.LM4:
+  54               	.LVL3:
+  55               	/* prologue: function */
+  56               	/* frame size = 0 */
+  57 0024 282F      		mov r18,r24
+  58               	.LM5:
+  59 0026 6AE0      		ldi r22,lo8(10)
+  60 0028 0E94 0000 		call __udivmodqi4
+  61               	.LVL4:
+  62 002c 482F      		mov r20,r24
+  63 002e 50E0      		ldi r21,lo8(0)
+  64 0030 4295      		swap r20
+  65 0032 5295      		swap r21
+  66 0034 507F      		andi r21,0xf0
+  67 0036 5427      		eor r21,r20
+  68 0038 407F      		andi r20,0xf0
+  69 003a 5427      		eor r21,r20
+  70 003c 822F      		mov r24,r18
+  71 003e 0E94 0000 		call __udivmodqi4
+  72 0042 892F      		mov r24,r25
+  73 0044 8F70      		andi r24,lo8(15)
+  74               	.LM6:
+  75 0046 842B      		or r24,r20
+  76               	/* epilogue start */
+  77 0048 0895      		ret
+  78               	.LFE3:
+  80               	.global	DS3231_write8
+  82               	DS3231_write8:
+  83               	.LFB5:
+  84               	.LM7:
+  85               	.LVL5:
+  86 004a 0F93      		push r16
+  87 004c 1F93      		push r17
+  88               	/* prologue: function */
+  89               	/* frame size = 0 */
+  90 004e 182F      		mov r17,r24
+  91 0050 062F      		mov r16,r22
+  92               	.LM8:
+  93 0052 80ED      		ldi r24,lo8(-48)
+  94               	.LVL6:
+  95 0054 0E94 0000 		call i2c_start
+  96               	.LVL7:
+  97               	.LM9:
+  98 0058 812F      		mov r24,r17
+  99 005a 0E94 0000 		call i2c_write
+ 100               	.LM10:
+ 101 005e 802F      		mov r24,r16
+ 102 0060 0E94 0000 		call i2c_write
+ 103               	.LM11:
+ 104 0064 0E94 0000 		call i2c_stop
+ 105               	/* epilogue start */
+ 106               	.LM12:
+ 107 0068 1F91      		pop r17
+ 108               	.LVL8:
+ 109 006a 0F91      		pop r16
+ 110               	.LVL9:
+ 111 006c 0895      		ret
+ 112               	.LFE5:
+ 114               	.global	DS3231_setDate
+ 116               	DS3231_setDate:
+ 117               	.LFB10:
+ 118               	.LM13:
+ 119               	.LVL10:
+ 120 006e FF92      		push r15
+ 121 0070 0F93      		push r16
+ 122 0072 1F93      		push r17
+ 123               	/* prologue: function */
+ 124               	/* frame size = 0 */
+ 125 0074 162F      		mov r17,r22
+ 126 0076 042F      		mov r16,r20
+ 127 0078 F22E      		mov r15,r18
+ 128               	.LM14:
+ 129 007a 0E94 0000 		call decimal_to_bcd
+ 130               	.LVL11:
+ 131 007e 682F      		mov r22,r24
+ 132 0080 83E0      		ldi r24,lo8(3)
+ 133 0082 0E94 0000 		call DS3231_write8
+ 134               	.LM15:
+ 135 0086 812F      		mov r24,r17
+ 136 0088 0E94 0000 		call decimal_to_bcd
+ 137 008c 682F      		mov r22,r24
+ 138 008e 84E0      		ldi r24,lo8(4)
+ 139 0090 0E94 0000 		call DS3231_write8
+ 140               	.LM16:
+ 141 0094 802F      		mov r24,r16
+ 142 0096 0E94 0000 		call decimal_to_bcd
+ 143 009a 682F      		mov r22,r24
+ 144 009c 85E0      		ldi r24,lo8(5)
+ 145 009e 0E94 0000 		call DS3231_write8
+ 146               	.LM17:
+ 147 00a2 8F2D      		mov r24,r15
+ 148 00a4 0E94 0000 		call decimal_to_bcd
+ 149 00a8 682F      		mov r22,r24
+ 150 00aa 86E0      		ldi r24,lo8(6)
+ 151 00ac 0E94 0000 		call DS3231_write8
+ 152               	/* epilogue start */
+ 153               	.LM18:
+ 154 00b0 1F91      		pop r17
+ 155               	.LVL12:
+ 156 00b2 0F91      		pop r16
+ 157               	.LVL13:
+ 158 00b4 FF90      		pop r15
+ 159               	.LVL14:
+ 160 00b6 0895      		ret
+ 161               	.LFE10:
+ 163               	.global	DS3231_setTime
+ 165               	DS3231_setTime:
+ 166               	.LFB9:
+ 167               	.LM19:
+ 168               	.LVL15:
+ 169 00b8 EF92      		push r14
+ 170 00ba FF92      		push r15
+ 171 00bc 0F93      		push r16
+ 172               	.LVL16:
+ 173 00be 1F93      		push r17
+ 174 00c0 CF93      		push r28
+ 175 00c2 DF93      		push r29
+ 176               	/* prologue: function */
+ 177               	/* frame size = 0 */
+ 178 00c4 E82E      		mov r14,r24
+ 179 00c6 F62E      		mov r15,r22
+ 180 00c8 842F      		mov r24,r20
+ 181               	.LVL17:
+ 182 00ca E901      		movw r28,r18
+ 183               	.LM20:
+ 184 00cc 0E94 0000 		call decimal_to_bcd
+ 185               	.LVL18:
+ 186 00d0 682F      		mov r22,r24
+ 187 00d2 80E0      		ldi r24,lo8(0)
+ 188 00d4 0E94 0000 		call DS3231_write8
+ 189               	.LM21:
+ 190 00d8 8F2D      		mov r24,r15
+ 191 00da 0E94 0000 		call decimal_to_bcd
+ 192 00de 682F      		mov r22,r24
+ 193 00e0 81E0      		ldi r24,lo8(1)
+ 194 00e2 0E94 0000 		call DS3231_write8
+ 195               	.LM22:
+ 196 00e6 0130      		cpi r16,1
+ 197 00e8 1105      		cpc r17,__zero_reg__
+ 198               	.LVL19:
+ 199 00ea 01F0      		breq .L19
+ 200               	.LM23:
+ 201 00ec 8E2D      		mov r24,r14
+ 202 00ee 0E94 0000 		call decimal_to_bcd
+ 203 00f2 682F      		mov r22,r24
+ 204 00f4 6F73      		andi r22,lo8(63)
+ 205 00f6 82E0      		ldi r24,lo8(2)
+ 206 00f8 0E94 0000 		call DS3231_write8
+ 207               	/* epilogue start */
+ 208               	.LM24:
+ 209 00fc DF91      		pop r29
+ 210 00fe CF91      		pop r28
+ 211               	.LVL20:
+ 212 0100 1F91      		pop r17
+ 213 0102 0F91      		pop r16
+ 214               	.LVL21:
+ 215 0104 FF90      		pop r15
+ 216               	.LVL22:
+ 217 0106 EF90      		pop r14
+ 218               	.LVL23:
+ 219 0108 0895      		ret
+ 220               	.LVL24:
+ 221               	.L19:
+ 222               	.LM25:
+ 223 010a 2197      		sbiw r28,1
+ 224 010c 01F0      		breq .L13
+ 225 010e 10E4      		ldi r17,lo8(64)
+ 226               	.L14:
+ 227               	.LM26:
+ 228 0110 8E2D      		mov r24,r14
+ 229 0112 0E94 0000 		call decimal_to_bcd
+ 230 0116 8F71      		andi r24,lo8(31)
+ 231 0118 182B      		or r17,r24
+ 232 011a 82E0      		ldi r24,lo8(2)
+ 233 011c 612F      		mov r22,r17
+ 234 011e 0E94 0000 		call DS3231_write8
+ 235               	.LM27:
+ 236 0122 DF91      		pop r29
+ 237 0124 CF91      		pop r28
+ 238               	.LVL25:
+ 239 0126 1F91      		pop r17
+ 240 0128 0F91      		pop r16
+ 241               	.LVL26:
+ 242 012a FF90      		pop r15
+ 243               	.LVL27:
+ 244 012c EF90      		pop r14
+ 245               	.LVL28:
+ 246 012e 0895      		ret
+ 247               	.LVL29:
+ 248               	.L13:
+ 249               	.LM28:
+ 250 0130 10E6      		ldi r17,lo8(96)
+ 251 0132 00C0      		rjmp .L14
+ 252               	.LFE9:
+ 254               	.global	DS3231_read8
+ 256               	DS3231_read8:
+ 257               	.LFB4:
+ 258               	.LM29:
+ 259               	.LVL30:
+ 260 0134 1F93      		push r17
+ 261               	/* prologue: function */
+ 262               	/* frame size = 0 */
+ 263 0136 182F      		mov r17,r24
+ 264               	.LM30:
+ 265 0138 80ED      		ldi r24,lo8(-48)
+ 266               	.LVL31:
+ 267 013a 0E94 0000 		call i2c_start
+ 268               	.LM31:
+ 269 013e 812F      		mov r24,r17
+ 270 0140 0E94 0000 		call i2c_write
+ 271               	.LM32:
+ 272 0144 81ED      		ldi r24,lo8(-47)
+ 273 0146 0E94 0000 		call i2c_rep_start
+ 274               	.LM33:
+ 275 014a 0E94 0000 		call i2c_readNak
+ 276 014e 182F      		mov r17,r24
+ 277               	.LVL32:
+ 278               	.LM34:
+ 279 0150 0E94 0000 		call i2c_stop
+ 280               	.LM35:
+ 281 0154 812F      		mov r24,r17
+ 282               	/* epilogue start */
+ 283 0156 1F91      		pop r17
+ 284               	.LVL33:
+ 285 0158 0895      		ret
+ 286               	.LFE4:
+ 288               	.global	DS3231_getTemp
+ 290               	DS3231_getTemp:
+ 291               	.LFB12:
+ 292               	.LM36:
+ 293 015a AF92      		push r10
+ 294 015c BF92      		push r11
+ 295 015e CF92      		push r12
+ 296 0160 DF92      		push r13
+ 297 0162 EF92      		push r14
+ 298 0164 FF92      		push r15
+ 299 0166 0F93      		push r16
+ 300 0168 1F93      		push r17
+ 301               	/* prologue: function */
+ 302               	/* frame size = 0 */
+ 303               	.LM37:
+ 304 016a 82E1      		ldi r24,lo8(18)
+ 305 016c 0E94 0000 		call DS3231_read8
+ 306 0170 E82E      		mov r14,r24
+ 307               	.LVL34:
+ 308               	.LM38:
+ 309 0172 81E1      		ldi r24,lo8(17)
+ 310 0174 0E94 0000 		call DS3231_read8
+ 311 0178 A82E      		mov r10,r24
+ 312               	.LM39:
+ 313 017a E294      		swap r14
+ 314 017c E694      		lsr r14
+ 315 017e E694      		lsr r14
+ 316 0180 E3E0      		ldi r30,lo8(3)
+ 317 0182 EE22      		and r14,r30
+ 318 0184 FF24      		clr r15
+ 319 0186 00E0      		ldi r16,lo8(0)
+ 320 0188 10E0      		ldi r17,hi8(0)
+ 321 018a C801      		movw r24,r16
+ 322 018c B701      		movw r22,r14
+ 323               	.LVL35:
+ 324 018e 0E94 0000 		call __floatunsisf
+ 325               	.LM40:
+ 326 0192 20E0      		ldi r18,lo8(0x3e800000)
+ 327 0194 30E0      		ldi r19,hi8(0x3e800000)
+ 328 0196 40E8      		ldi r20,hlo8(0x3e800000)
+ 329 0198 5EE3      		ldi r21,hhi8(0x3e800000)
+ 330 019a 0E94 0000 		call __mulsf3
+ 331 019e 7B01      		movw r14,r22
+ 332 01a0 8C01      		movw r16,r24
+ 333 01a2 BB24      		clr r11
+ 334 01a4 A7FC      		sbrc r10,7
+ 335 01a6 B094      		com r11
+ 336 01a8 CB2C      		mov r12,r11
+ 337 01aa DB2C      		mov r13,r11
+ 338 01ac C601      		movw r24,r12
+ 339 01ae B501      		movw r22,r10
+ 340 01b0 0E94 0000 		call __floatsisf
+ 341 01b4 A801      		movw r20,r16
+ 342 01b6 9701      		movw r18,r14
+ 343 01b8 0E94 0000 		call __addsf3
+ 344               	/* epilogue start */
+ 345               	.LM41:
+ 346 01bc 1F91      		pop r17
+ 347 01be 0F91      		pop r16
+ 348 01c0 FF90      		pop r15
+ 349 01c2 EF90      		pop r14
+ 350 01c4 DF90      		pop r13
+ 351 01c6 CF90      		pop r12
+ 352 01c8 BF90      		pop r11
+ 353 01ca AF90      		pop r10
+ 354 01cc 0895      		ret
+ 355               	.LFE12:
+ 357               	.global	DS3231_getStatus
+ 359               	DS3231_getStatus:
+ 360               	.LFB11:
+ 361               	.LM42:
+ 362               	/* prologue: function */
+ 363               	/* frame size = 0 */
+ 364               	.LM43:
+ 365 01ce 8FE0      		ldi r24,lo8(15)
+ 366 01d0 0E94 0000 		call DS3231_read8
+ 367               	/* epilogue start */
+ 368               	.LM44:
+ 369 01d4 0895      		ret
+ 370               	.LFE11:
+ 372               	.global	DS3231_getDate
+ 374               	DS3231_getDate:
+ 375               	.LFB8:
+ 376               	.LM45:
+ 377               	.LVL36:
+ 378 01d6 AF92      		push r10
+ 379 01d8 BF92      		push r11
+ 380 01da CF92      		push r12
+ 381 01dc DF92      		push r13
+ 382 01de EF92      		push r14
+ 383 01e0 FF92      		push r15
+ 384 01e2 0F93      		push r16
+ 385 01e4 1F93      		push r17
+ 386               	/* prologue: function */
+ 387               	/* frame size = 0 */
+ 388 01e6 5C01      		movw r10,r24
+ 389 01e8 6B01      		movw r12,r22
+ 390 01ea 7A01      		movw r14,r20
+ 391 01ec 8901      		movw r16,r18
+ 392               	.LM46:
+ 393 01ee 86E0      		ldi r24,lo8(6)
+ 394               	.LVL37:
+ 395 01f0 0E94 0000 		call DS3231_read8
+ 396               	.LVL38:
+ 397               	.LM47:
+ 398 01f4 282F      		mov r18,r24
+ 399 01f6 2295      		swap r18
+ 400 01f8 2F70      		andi r18,lo8(15)
+ 401 01fa 30E0      		ldi r19,lo8(0)
+ 402 01fc A901      		movw r20,r18
+ 403 01fe 440F      		lsl r20
+ 404 0200 551F      		rol r21
+ 405 0202 440F      		lsl r20
+ 406 0204 551F      		rol r21
+ 407 0206 440F      		lsl r20
+ 408 0208 551F      		rol r21
+ 409 020a 220F      		lsl r18
+ 410 020c 331F      		rol r19
+ 411 020e 420F      		add r20,r18
+ 412 0210 531F      		adc r21,r19
+ 413 0212 8F70      		andi r24,lo8(15)
+ 414 0214 840F      		add r24,r20
+ 415 0216 F801      		movw r30,r16
+ 416 0218 8083      		st Z,r24
+ 417               	.LM48:
+ 418 021a 85E0      		ldi r24,lo8(5)
+ 419 021c 0E94 0000 		call DS3231_read8
+ 420 0220 282F      		mov r18,r24
+ 421 0222 2F71      		andi r18,lo8(31)
+ 422               	.LM49:
+ 423 0224 2295      		swap r18
+ 424 0226 2F70      		andi r18,lo8(15)
+ 425 0228 30E0      		ldi r19,lo8(0)
+ 426 022a A901      		movw r20,r18
+ 427 022c 440F      		lsl r20
+ 428 022e 551F      		rol r21
+ 429 0230 440F      		lsl r20
+ 430 0232 551F      		rol r21
+ 431 0234 440F      		lsl r20
+ 432 0236 551F      		rol r21
+ 433 0238 220F      		lsl r18
+ 434 023a 331F      		rol r19
+ 435 023c 420F      		add r20,r18
+ 436 023e 531F      		adc r21,r19
+ 437 0240 8F70      		andi r24,lo8(15)
+ 438 0242 840F      		add r24,r20
+ 439 0244 F701      		movw r30,r14
+ 440 0246 8083      		st Z,r24
+ 441               	.LM50:
+ 442 0248 84E0      		ldi r24,lo8(4)
+ 443 024a 0E94 0000 		call DS3231_read8
+ 444 024e 282F      		mov r18,r24
+ 445 0250 2F73      		andi r18,lo8(63)
+ 446               	.LM51:
+ 447 0252 2295      		swap r18
+ 448 0254 2F70      		andi r18,lo8(15)
+ 449 0256 30E0      		ldi r19,lo8(0)
+ 450 0258 A901      		movw r20,r18
+ 451 025a 440F      		lsl r20
+ 452 025c 551F      		rol r21
+ 453 025e 440F      		lsl r20
+ 454 0260 551F      		rol r21
+ 455 0262 440F      		lsl r20
+ 456 0264 551F      		rol r21
+ 457 0266 220F      		lsl r18
+ 458 0268 331F      		rol r19
+ 459 026a 420F      		add r20,r18
+ 460 026c 531F      		adc r21,r19
+ 461 026e 8F70      		andi r24,lo8(15)
+ 462 0270 840F      		add r24,r20
+ 463 0272 F601      		movw r30,r12
+ 464 0274 8083      		st Z,r24
+ 465               	.LM52:
+ 466 0276 83E0      		ldi r24,lo8(3)
+ 467 0278 0E94 0000 		call DS3231_read8
+ 468               	.LM53:
+ 469 027c 8770      		andi r24,lo8(7)
+ 470 027e F501      		movw r30,r10
+ 471 0280 8083      		st Z,r24
+ 472               	/* epilogue start */
+ 473               	.LM54:
+ 474 0282 1F91      		pop r17
+ 475 0284 0F91      		pop r16
+ 476               	.LVL39:
+ 477 0286 FF90      		pop r15
+ 478 0288 EF90      		pop r14
+ 479               	.LVL40:
+ 480 028a DF90      		pop r13
+ 481 028c CF90      		pop r12
+ 482               	.LVL41:
+ 483 028e BF90      		pop r11
+ 484 0290 AF90      		pop r10
+ 485               	.LVL42:
+ 486 0292 0895      		ret
+ 487               	.LFE8:
+ 489               	.global	DS3231_getTime
+ 491               	DS3231_getTime:
+ 492               	.LFB7:
+ 493               	.LM55:
+ 494               	.LVL43:
+ 495 0294 AF92      		push r10
+ 496 0296 BF92      		push r11
+ 497 0298 CF92      		push r12
+ 498 029a DF92      		push r13
+ 499 029c EF92      		push r14
+ 500 029e FF92      		push r15
+ 501 02a0 0F93      		push r16
+ 502               	.LVL44:
+ 503 02a2 1F93      		push r17
+ 504 02a4 CF93      		push r28
+ 505 02a6 DF93      		push r29
+ 506               	/* prologue: function */
+ 507               	/* frame size = 0 */
+ 508 02a8 5C01      		movw r10,r24
+ 509 02aa 6B01      		movw r12,r22
+ 510 02ac 7A01      		movw r14,r20
+ 511 02ae E901      		movw r28,r18
+ 512               	.LM56:
+ 513 02b0 80E0      		ldi r24,lo8(0)
+ 514               	.LVL45:
+ 515 02b2 0E94 0000 		call DS3231_read8
+ 516               	.LVL46:
+ 517               	.LM57:
+ 518 02b6 282F      		mov r18,r24
+ 519 02b8 2295      		swap r18
+ 520 02ba 2F70      		andi r18,lo8(15)
+ 521 02bc 30E0      		ldi r19,lo8(0)
+ 522 02be A901      		movw r20,r18
+ 523 02c0 440F      		lsl r20
+ 524 02c2 551F      		rol r21
+ 525 02c4 440F      		lsl r20
+ 526 02c6 551F      		rol r21
+ 527 02c8 440F      		lsl r20
+ 528 02ca 551F      		rol r21
+ 529 02cc 220F      		lsl r18
+ 530 02ce 331F      		rol r19
+ 531 02d0 420F      		add r20,r18
+ 532 02d2 531F      		adc r21,r19
+ 533 02d4 8F70      		andi r24,lo8(15)
+ 534 02d6 840F      		add r24,r20
+ 535 02d8 F701      		movw r30,r14
+ 536 02da 8083      		st Z,r24
+ 537               	.LM58:
+ 538 02dc 81E0      		ldi r24,lo8(1)
+ 539 02de 0E94 0000 		call DS3231_read8
+ 540               	.LM59:
+ 541 02e2 282F      		mov r18,r24
+ 542 02e4 2295      		swap r18
+ 543 02e6 2F70      		andi r18,lo8(15)
+ 544 02e8 30E0      		ldi r19,lo8(0)
+ 545 02ea A901      		movw r20,r18
+ 546 02ec 440F      		lsl r20
+ 547 02ee 551F      		rol r21
+ 548 02f0 440F      		lsl r20
+ 549 02f2 551F      		rol r21
+ 550 02f4 440F      		lsl r20
+ 551 02f6 551F      		rol r21
+ 552 02f8 220F      		lsl r18
+ 553 02fa 331F      		rol r19
+ 554 02fc 420F      		add r20,r18
+ 555 02fe 531F      		adc r21,r19
+ 556 0300 8F70      		andi r24,lo8(15)
+ 557 0302 840F      		add r24,r20
+ 558 0304 F601      		movw r30,r12
+ 559 0306 8083      		st Z,r24
+ 560               	.LM60:
+ 561 0308 0130      		cpi r16,1
+ 562 030a 1105      		cpc r17,__zero_reg__
+ 563               	.LVL47:
+ 564 030c 01F0      		breq .L35
+ 565               	.LM61:
+ 566 030e 82E0      		ldi r24,lo8(2)
+ 567 0310 0E94 0000 		call DS3231_read8
+ 568 0314 282F      		mov r18,r24
+ 569 0316 2F73      		andi r18,lo8(63)
+ 570               	.L34:
+ 571               	.LM62:
+ 572 0318 2295      		swap r18
+ 573 031a 2F70      		andi r18,lo8(15)
+ 574 031c 30E0      		ldi r19,lo8(0)
+ 575 031e A901      		movw r20,r18
+ 576 0320 440F      		lsl r20
+ 577 0322 551F      		rol r21
+ 578 0324 440F      		lsl r20
+ 579 0326 551F      		rol r21
+ 580 0328 440F      		lsl r20
+ 581 032a 551F      		rol r21
+ 582 032c 220F      		lsl r18
+ 583 032e 331F      		rol r19
+ 584 0330 420F      		add r20,r18
+ 585 0332 531F      		adc r21,r19
+ 586 0334 8F70      		andi r24,lo8(15)
+ 587 0336 840F      		add r24,r20
+ 588 0338 F501      		movw r30,r10
+ 589 033a 8083      		st Z,r24
+ 590               	/* epilogue start */
+ 591               	.LM63:
+ 592 033c DF91      		pop r29
+ 593 033e CF91      		pop r28
+ 594               	.LVL48:
+ 595 0340 1F91      		pop r17
+ 596 0342 0F91      		pop r16
+ 597               	.LVL49:
+ 598 0344 FF90      		pop r15
+ 599 0346 EF90      		pop r14
+ 600               	.LVL50:
+ 601 0348 DF90      		pop r13
+ 602 034a CF90      		pop r12
+ 603               	.LVL51:
+ 604 034c BF90      		pop r11
+ 605 034e AF90      		pop r10
+ 606               	.LVL52:
+ 607 0350 0895      		ret
+ 608               	.LVL53:
+ 609               	.L35:
+ 610               	.LM64:
+ 611 0352 82E0      		ldi r24,lo8(2)
+ 612 0354 0E94 0000 		call DS3231_read8
+ 613               	.LM65:
+ 614 0358 8072      		andi r24,lo8(32)
+ 615 035a 8295      		swap r24
+ 616 035c 8695      		lsr r24
+ 617 035e 8770      		andi r24,lo8(7)
+ 618 0360 8883      		st Y,r24
+ 619 0362 1982      		std Y+1,__zero_reg__
+ 620               	.LM66:
+ 621 0364 82E0      		ldi r24,lo8(2)
+ 622 0366 0E94 0000 		call DS3231_read8
+ 623 036a 282F      		mov r18,r24
+ 624 036c 2F71      		andi r18,lo8(31)
+ 625 036e 00C0      		rjmp .L34
+ 626               	.LFE7:
+ 628               	.global	DS3231_init
+ 630               	DS3231_init:
+ 631               	.LFB6:
+ 632               	.LM67:
+ 633               	/* prologue: function */
+ 634               	/* frame size = 0 */
+ 635               	.LM68:
+ 636 0370 8EE0      		ldi r24,lo8(14)
+ 637 0372 60E0      		ldi r22,lo8(0)
+ 638 0374 0E94 0000 		call DS3231_write8
+ 639               	.LM69:
+ 640 0378 8FE0      		ldi r24,lo8(15)
+ 641 037a 0E94 0000 		call DS3231_read8
+ 642 037e 682F      		mov r22,r24
+ 643 0380 677F      		andi r22,lo8(-9)
+ 644 0382 8FE0      		ldi r24,lo8(15)
+ 645 0384 0E94 0000 		call DS3231_write8
+ 646               	/* epilogue start */
+ 647               	.LM70:
+ 648 0388 0895      		ret
+ 649               	.LFE6:
+ 755               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 DS3231.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:18     .text:00000000 bcd_to_decimal
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:51     .text:00000024 decimal_to_bcd
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:82     .text:0000004a DS3231_write8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:116    .text:0000006e DS3231_setDate
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:165    .text:000000b8 DS3231_setTime
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:256    .text:00000134 DS3231_read8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:290    .text:0000015a DS3231_getTemp
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:359    .text:000001ce DS3231_getStatus
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:374    .text:000001d6 DS3231_getDate
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:491    .text:00000294 DS3231_getTime
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cczE0OUr.s:630    .text:00000370 DS3231_init
+
+UNDEFINED SYMBOLS
+__udivmodqi4
+i2c_start
+i2c_write
+i2c_stop
+i2c_rep_start
+i2c_readNak
+__floatunsisf
+__mulsf3
+__floatsisf
+__addsf3

@@ -1,0 +1,1957 @@
+   1               		.file	"MAX30105.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	MAX30105_getRevisionID
+  18               	MAX30105_getRevisionID:
+  19               	.LFB53:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 8091 0000 		lds r24,MAX30105_revisionID
+  25               	/* epilogue start */
+  26 0004 0895      		ret
+  27               	.LFE53:
+  29               	.global	MAX30105_available
+  31               	MAX30105_available:
+  32               	.LFB55:
+  33               	.LM3:
+  34               	/* prologue: function */
+  35               	/* frame size = 0 */
+  36               	.LM4:
+  37 0006 8091 0000 		lds r24,sense+8
+  38 000a 9091 0000 		lds r25,sense+9
+  39               	.LM5:
+  40 000e 891B      		sub r24,r25
+  41               	/* epilogue start */
+  42 0010 0895      		ret
+  43               	.LFE55:
+  45               	.global	MAX30105_getFIFORed
+  47               	MAX30105_getFIFORed:
+  48               	.LFB59:
+  49               	.LM6:
+  50               	/* prologue: function */
+  51               	/* frame size = 0 */
+  52               	.LM7:
+  53 0012 E091 0000 		lds r30,sense+9
+  54 0016 F0E0      		ldi r31,lo8(0)
+  55 0018 EE0F      		lsl r30
+  56 001a FF1F      		rol r31
+  57 001c EE0F      		lsl r30
+  58 001e FF1F      		rol r31
+  59 0020 E050      		subi r30,lo8(-(sense))
+  60 0022 F040      		sbci r31,hi8(-(sense))
+  61 0024 6081      		ld r22,Z
+  62 0026 7181      		ldd r23,Z+1
+  63               	.LM8:
+  64 0028 8281      		ldd r24,Z+2
+  65 002a 9381      		ldd r25,Z+3
+  66               	/* epilogue start */
+  67 002c 0895      		ret
+  68               	.LFE59:
+  70               	.global	MAX30105_getFIFOIR
+  72               	MAX30105_getFIFOIR:
+  73               	.LFB60:
+  74               	.LM9:
+  75               	/* prologue: function */
+  76               	/* frame size = 0 */
+  77               	.LM10:
+  78 002e E091 0000 		lds r30,sense+9
+  79 0032 F0E0      		ldi r31,lo8(0)
+  80 0034 EE0F      		lsl r30
+  81 0036 FF1F      		rol r31
+  82 0038 EE0F      		lsl r30
+  83 003a FF1F      		rol r31
+  84 003c E050      		subi r30,lo8(-(sense+4))
+  85 003e F040      		sbci r31,hi8(-(sense+4))
+  86 0040 6081      		ld r22,Z
+  87 0042 7181      		ldd r23,Z+1
+  88               	.LM11:
+  89 0044 8281      		ldd r24,Z+2
+  90 0046 9381      		ldd r25,Z+3
+  91               	/* epilogue start */
+  92 0048 0895      		ret
+  93               	.LFE60:
+  95               	.global	MAX30105_nextSample
+  97               	MAX30105_nextSample:
+  98               	.LFB61:
+  99               	.LM12:
+ 100               	/* prologue: function */
+ 101               	/* frame size = 0 */
+ 102               	.LM13:
+ 103 004a 9091 0000 		lds r25,sense+8
+ 104 004e 8091 0000 		lds r24,sense+9
+ 105 0052 9817      		cp r25,r24
+ 106 0054 01F0      		breq .L11
+ 107               	.LM14:
+ 108 0056 1092 0000 		sts sense+9,__zero_reg__
+ 109               	.L11:
+ 110 005a 0895      		ret
+ 111               	.LFE61:
+ 113               	.global	MAX30105_write8
+ 115               	MAX30105_write8:
+ 116               	.LFB66:
+ 117               	.LM15:
+ 118               	.LVL0:
+ 119 005c 0F93      		push r16
+ 120 005e 1F93      		push r17
+ 121               	/* prologue: function */
+ 122               	/* frame size = 0 */
+ 123 0060 182F      		mov r17,r24
+ 124 0062 062F      		mov r16,r22
+ 125               	.LM16:
+ 126 0064 8EEA      		ldi r24,lo8(-82)
+ 127               	.LVL1:
+ 128 0066 0E94 0000 		call i2c_start
+ 129               	.LVL2:
+ 130               	.LM17:
+ 131 006a 812F      		mov r24,r17
+ 132 006c 0E94 0000 		call i2c_write
+ 133               	.LM18:
+ 134 0070 802F      		mov r24,r16
+ 135 0072 0E94 0000 		call i2c_write
+ 136               	.LM19:
+ 137 0076 0E94 0000 		call i2c_stop
+ 138               	/* epilogue start */
+ 139               	.LM20:
+ 140 007a 1F91      		pop r17
+ 141               	.LVL3:
+ 142 007c 0F91      		pop r16
+ 143               	.LVL4:
+ 144 007e 0895      		ret
+ 145               	.LFE66:
+ 147               	.global	MAX30105_setPROXINTTHRESH
+ 149               	MAX30105_setPROXINTTHRESH:
+ 150               	.LFB50:
+ 151               	.LM21:
+ 152               	.LVL5:
+ 153               	/* prologue: function */
+ 154               	/* frame size = 0 */
+ 155 0080 682F      		mov r22,r24
+ 156               	.LM22:
+ 157 0082 80E3      		ldi r24,lo8(48)
+ 158               	.LVL6:
+ 159 0084 0E94 0000 		call MAX30105_write8
+ 160               	.LVL7:
+ 161               	/* epilogue start */
+ 162               	.LM23:
+ 163 0088 0895      		ret
+ 164               	.LFE50:
+ 166               	.global	MAX30105_clearFIFO
+ 168               	MAX30105_clearFIFO:
+ 169               	.LFB42:
+ 170               	.LM24:
+ 171               	/* prologue: function */
+ 172               	/* frame size = 0 */
+ 173               	.LM25:
+ 174 008a 84E0      		ldi r24,lo8(4)
+ 175 008c 60E0      		ldi r22,lo8(0)
+ 176 008e 0E94 0000 		call MAX30105_write8
+ 177               	.LM26:
+ 178 0092 85E0      		ldi r24,lo8(5)
+ 179 0094 60E0      		ldi r22,lo8(0)
+ 180 0096 0E94 0000 		call MAX30105_write8
+ 181               	.LM27:
+ 182 009a 86E0      		ldi r24,lo8(6)
+ 183 009c 60E0      		ldi r22,lo8(0)
+ 184 009e 0E94 0000 		call MAX30105_write8
+ 185               	/* epilogue start */
+ 186               	.LM28:
+ 187 00a2 0895      		ret
+ 188               	.LFE42:
+ 190               	.global	MAX30105_disableSlots
+ 192               	MAX30105_disableSlots:
+ 193               	.LFB40:
+ 194               	.LM29:
+ 195               	/* prologue: function */
+ 196               	/* frame size = 0 */
+ 197               	.LM30:
+ 198 00a4 81E1      		ldi r24,lo8(17)
+ 199 00a6 60E0      		ldi r22,lo8(0)
+ 200 00a8 0E94 0000 		call MAX30105_write8
+ 201               	.LM31:
+ 202 00ac 82E1      		ldi r24,lo8(18)
+ 203 00ae 60E0      		ldi r22,lo8(0)
+ 204 00b0 0E94 0000 		call MAX30105_write8
+ 205               	/* epilogue start */
+ 206               	.LM32:
+ 207 00b4 0895      		ret
+ 208               	.LFE40:
+ 210               	.global	MAX30105_setProximityThreshold
+ 212               	MAX30105_setProximityThreshold:
+ 213               	.LFB38:
+ 214               	.LM33:
+ 215               	.LVL8:
+ 216               	/* prologue: function */
+ 217               	/* frame size = 0 */
+ 218 00b6 682F      		mov r22,r24
+ 219               	.LM34:
+ 220 00b8 80E3      		ldi r24,lo8(48)
+ 221               	.LVL9:
+ 222 00ba 0E94 0000 		call MAX30105_write8
+ 223               	.LVL10:
+ 224               	/* epilogue start */
+ 225               	.LM35:
+ 226 00be 0895      		ret
+ 227               	.LFE38:
+ 229               	.global	MAX30105_setPulseAmplitudeProximity
+ 231               	MAX30105_setPulseAmplitudeProximity:
+ 232               	.LFB37:
+ 233               	.LM36:
+ 234               	.LVL11:
+ 235               	/* prologue: function */
+ 236               	/* frame size = 0 */
+ 237 00c0 682F      		mov r22,r24
+ 238               	.LM37:
+ 239 00c2 80E1      		ldi r24,lo8(16)
+ 240               	.LVL12:
+ 241 00c4 0E94 0000 		call MAX30105_write8
+ 242               	.LVL13:
+ 243               	/* epilogue start */
+ 244               	.LM38:
+ 245 00c8 0895      		ret
+ 246               	.LFE37:
+ 248               	.global	MAX30105_setPulseAmplitudeIR
+ 250               	MAX30105_setPulseAmplitudeIR:
+ 251               	.LFB36:
+ 252               	.LM39:
+ 253               	.LVL14:
+ 254               	/* prologue: function */
+ 255               	/* frame size = 0 */
+ 256 00ca 682F      		mov r22,r24
+ 257               	.LM40:
+ 258 00cc 8DE0      		ldi r24,lo8(13)
+ 259               	.LVL15:
+ 260 00ce 0E94 0000 		call MAX30105_write8
+ 261               	.LVL16:
+ 262               	/* epilogue start */
+ 263               	.LM41:
+ 264 00d2 0895      		ret
+ 265               	.LFE36:
+ 267               	.global	MAX30105_setPulseAmplitudeRed
+ 269               	MAX30105_setPulseAmplitudeRed:
+ 270               	.LFB35:
+ 271               	.LM42:
+ 272               	.LVL17:
+ 273               	/* prologue: function */
+ 274               	/* frame size = 0 */
+ 275 00d4 682F      		mov r22,r24
+ 276               	.LM43:
+ 277 00d6 8CE0      		ldi r24,lo8(12)
+ 278               	.LVL18:
+ 279 00d8 0E94 0000 		call MAX30105_write8
+ 280               	.LVL19:
+ 281               	/* epilogue start */
+ 282               	.LM44:
+ 283 00dc 0895      		ret
+ 284               	.LFE35:
+ 286               	.global	MAX30105_read8
+ 288               	MAX30105_read8:
+ 289               	.LFB65:
+ 290               	.LM45:
+ 291               	.LVL20:
+ 292 00de 1F93      		push r17
+ 293               	/* prologue: function */
+ 294               	/* frame size = 0 */
+ 295 00e0 182F      		mov r17,r24
+ 296               	.LM46:
+ 297 00e2 8EEA      		ldi r24,lo8(-82)
+ 298               	.LVL21:
+ 299 00e4 0E94 0000 		call i2c_start
+ 300               	.LM47:
+ 301 00e8 812F      		mov r24,r17
+ 302 00ea 0E94 0000 		call i2c_write
+ 303               	.LM48:
+ 304 00ee 8FEA      		ldi r24,lo8(-81)
+ 305 00f0 0E94 0000 		call i2c_rep_start
+ 306               	.LM49:
+ 307 00f4 0E94 0000 		call i2c_readNak
+ 308 00f8 182F      		mov r17,r24
+ 309               	.LVL22:
+ 310               	.LM50:
+ 311 00fa 0E94 0000 		call i2c_stop
+ 312               	.LM51:
+ 313 00fe 812F      		mov r24,r17
+ 314               	/* epilogue start */
+ 315 0100 1F91      		pop r17
+ 316               	.LVL23:
+ 317 0102 0895      		ret
+ 318               	.LFE65:
+ 320               	.global	MAX30105_bitMask
+ 322               	MAX30105_bitMask:
+ 323               	.LFB64:
+ 324               	.LM52:
+ 325               	.LVL24:
+ 326 0104 FF92      		push r15
+ 327 0106 0F93      		push r16
+ 328 0108 1F93      		push r17
+ 329               	/* prologue: function */
+ 330               	/* frame size = 0 */
+ 331 010a 182F      		mov r17,r24
+ 332 010c 062F      		mov r16,r22
+ 333 010e F42E      		mov r15,r20
+ 334               	.LM53:
+ 335 0110 0E94 0000 		call MAX30105_read8
+ 336               	.LVL25:
+ 337               	.LM54:
+ 338 0114 0823      		and r16,r24
+ 339 0116 F02A      		or r15,r16
+ 340 0118 812F      		mov r24,r17
+ 341 011a 6F2D      		mov r22,r15
+ 342 011c 0E94 0000 		call MAX30105_write8
+ 343               	/* epilogue start */
+ 344               	.LM55:
+ 345 0120 1F91      		pop r17
+ 346               	.LVL26:
+ 347 0122 0F91      		pop r16
+ 348               	.LVL27:
+ 349 0124 FF90      		pop r15
+ 350               	.LVL28:
+ 351 0126 0895      		ret
+ 352               	.LFE64:
+ 354               	.global	MAX30105_setFIFOAlmostFull
+ 356               	MAX30105_setFIFOAlmostFull:
+ 357               	.LFB45:
+ 358               	.LM56:
+ 359               	.LVL29:
+ 360               	/* prologue: function */
+ 361               	/* frame size = 0 */
+ 362 0128 482F      		mov r20,r24
+ 363               	.LM57:
+ 364 012a 88E0      		ldi r24,lo8(8)
+ 365               	.LVL30:
+ 366 012c 60EF      		ldi r22,lo8(-16)
+ 367 012e 0E94 0000 		call MAX30105_bitMask
+ 368               	.LVL31:
+ 369               	/* epilogue start */
+ 370               	.LM58:
+ 371 0132 0895      		ret
+ 372               	.LFE45:
+ 374               	.global	MAX30105_disableFIFORollover
+ 376               	MAX30105_disableFIFORollover:
+ 377               	.LFB44:
+ 378               	.LM59:
+ 379               	/* prologue: function */
+ 380               	/* frame size = 0 */
+ 381               	.LM60:
+ 382 0134 88E0      		ldi r24,lo8(8)
+ 383 0136 6FEE      		ldi r22,lo8(-17)
+ 384 0138 40E0      		ldi r20,lo8(0)
+ 385 013a 0E94 0000 		call MAX30105_bitMask
+ 386               	/* epilogue start */
+ 387               	.LM61:
+ 388 013e 0895      		ret
+ 389               	.LFE44:
+ 391               	.global	MAX30105_enableFIFORollover
+ 393               	MAX30105_enableFIFORollover:
+ 394               	.LFB43:
+ 395               	.LM62:
+ 396               	/* prologue: function */
+ 397               	/* frame size = 0 */
+ 398               	.LM63:
+ 399 0140 88E0      		ldi r24,lo8(8)
+ 400 0142 6FEE      		ldi r22,lo8(-17)
+ 401 0144 40E1      		ldi r20,lo8(16)
+ 402 0146 0E94 0000 		call MAX30105_bitMask
+ 403               	/* epilogue start */
+ 404               	.LM64:
+ 405 014a 0895      		ret
+ 406               	.LFE43:
+ 408               	.global	MAX30105_setFIFOAverage
+ 410               	MAX30105_setFIFOAverage:
+ 411               	.LFB41:
+ 412               	.LM65:
+ 413               	.LVL32:
+ 414               	/* prologue: function */
+ 415               	/* frame size = 0 */
+ 416 014c 482F      		mov r20,r24
+ 417               	.LM66:
+ 418 014e 88E0      		ldi r24,lo8(8)
+ 419               	.LVL33:
+ 420 0150 6FE1      		ldi r22,lo8(31)
+ 421 0152 0E94 0000 		call MAX30105_bitMask
+ 422               	.LVL34:
+ 423               	/* epilogue start */
+ 424               	.LM67:
+ 425 0156 0895      		ret
+ 426               	.LFE41:
+ 428               	.global	MAX30105_enableSlot
+ 430               	MAX30105_enableSlot:
+ 431               	.LFB39:
+ 432               	.LM68:
+ 433               	.LVL35:
+ 434               	/* prologue: function */
+ 435               	/* frame size = 0 */
+ 436 0158 462F      		mov r20,r22
+ 437               	.LM69:
+ 438 015a 8230      		cpi r24,lo8(2)
+ 439 015c 01F0      		breq .L44
+ 440               	.LVL36:
+ 441 015e 8330      		cpi r24,lo8(3)
+ 442 0160 00F0      		brlo .L49
+ 443 0162 8330      		cpi r24,lo8(3)
+ 444 0164 01F0      		breq .L45
+ 445 0166 8430      		cpi r24,lo8(4)
+ 446 0168 01F0      		breq .L50
+ 447               	.L48:
+ 448 016a 0895      		ret
+ 449               	.L49:
+ 450 016c 8130      		cpi r24,lo8(1)
+ 451 016e 01F4      		brne .L48
+ 452               	.LM70:
+ 453 0170 81E1      		ldi r24,lo8(17)
+ 454               	.LVL37:
+ 455 0172 68EF      		ldi r22,lo8(-8)
+ 456 0174 0E94 0000 		call MAX30105_bitMask
+ 457               	.LVL38:
+ 458 0178 0895      		ret
+ 459               	.LVL39:
+ 460               	.L50:
+ 461               	.LM71:
+ 462 017a 4295      		swap r20
+ 463 017c 407F      		andi r20,lo8(-16)
+ 464 017e 82E1      		ldi r24,lo8(18)
+ 465               	.LVL40:
+ 466 0180 6FE8      		ldi r22,lo8(-113)
+ 467 0182 0E94 0000 		call MAX30105_bitMask
+ 468               	.LVL41:
+ 469 0186 0895      		ret
+ 470               	.LVL42:
+ 471               	.L44:
+ 472               	.LM72:
+ 473 0188 4295      		swap r20
+ 474 018a 407F      		andi r20,lo8(-16)
+ 475 018c 81E1      		ldi r24,lo8(17)
+ 476               	.LVL43:
+ 477 018e 6FE8      		ldi r22,lo8(-113)
+ 478 0190 0E94 0000 		call MAX30105_bitMask
+ 479               	.LVL44:
+ 480 0194 0895      		ret
+ 481               	.LVL45:
+ 482               	.L45:
+ 483               	.LM73:
+ 484 0196 82E1      		ldi r24,lo8(18)
+ 485               	.LVL46:
+ 486 0198 68EF      		ldi r22,lo8(-8)
+ 487 019a 0E94 0000 		call MAX30105_bitMask
+ 488               	.LVL47:
+ 489 019e 0895      		ret
+ 490               	.LFE39:
+ 492               	.global	MAX30105_setPulseWidth
+ 494               	MAX30105_setPulseWidth:
+ 495               	.LFB34:
+ 496               	.LM74:
+ 497               	.LVL48:
+ 498               	/* prologue: function */
+ 499               	/* frame size = 0 */
+ 500 01a0 482F      		mov r20,r24
+ 501               	.LM75:
+ 502 01a2 8AE0      		ldi r24,lo8(10)
+ 503               	.LVL49:
+ 504 01a4 6CEF      		ldi r22,lo8(-4)
+ 505 01a6 0E94 0000 		call MAX30105_bitMask
+ 506               	.LVL50:
+ 507               	/* epilogue start */
+ 508               	.LM76:
+ 509 01aa 0895      		ret
+ 510               	.LFE34:
+ 512               	.global	MAX30105_setSampleRate
+ 514               	MAX30105_setSampleRate:
+ 515               	.LFB33:
+ 516               	.LM77:
+ 517               	.LVL51:
+ 518               	/* prologue: function */
+ 519               	/* frame size = 0 */
+ 520 01ac 482F      		mov r20,r24
+ 521               	.LM78:
+ 522 01ae 8AE0      		ldi r24,lo8(10)
+ 523               	.LVL52:
+ 524 01b0 63EE      		ldi r22,lo8(-29)
+ 525 01b2 0E94 0000 		call MAX30105_bitMask
+ 526               	.LVL53:
+ 527               	/* epilogue start */
+ 528               	.LM79:
+ 529 01b6 0895      		ret
+ 530               	.LFE33:
+ 532               	.global	MAX30105_setADCRange
+ 534               	MAX30105_setADCRange:
+ 535               	.LFB32:
+ 536               	.LM80:
+ 537               	.LVL54:
+ 538               	/* prologue: function */
+ 539               	/* frame size = 0 */
+ 540 01b8 482F      		mov r20,r24
+ 541               	.LM81:
+ 542 01ba 8AE0      		ldi r24,lo8(10)
+ 543               	.LVL55:
+ 544 01bc 6FE9      		ldi r22,lo8(-97)
+ 545 01be 0E94 0000 		call MAX30105_bitMask
+ 546               	.LVL56:
+ 547               	/* epilogue start */
+ 548               	.LM82:
+ 549 01c2 0895      		ret
+ 550               	.LFE32:
+ 552               	.global	MAX30105_setLEDMode
+ 554               	MAX30105_setLEDMode:
+ 555               	.LFB31:
+ 556               	.LM83:
+ 557               	.LVL57:
+ 558               	/* prologue: function */
+ 559               	/* frame size = 0 */
+ 560 01c4 482F      		mov r20,r24
+ 561               	.LM84:
+ 562 01c6 89E0      		ldi r24,lo8(9)
+ 563               	.LVL58:
+ 564 01c8 68EF      		ldi r22,lo8(-8)
+ 565 01ca 0E94 0000 		call MAX30105_bitMask
+ 566               	.LVL59:
+ 567               	/* epilogue start */
+ 568               	.LM85:
+ 569 01ce 0895      		ret
+ 570               	.LFE31:
+ 572               	.global	MAX30105_wakeUp
+ 574               	MAX30105_wakeUp:
+ 575               	.LFB30:
+ 576               	.LM86:
+ 577               	/* prologue: function */
+ 578               	/* frame size = 0 */
+ 579               	.LM87:
+ 580 01d0 89E0      		ldi r24,lo8(9)
+ 581 01d2 6FE7      		ldi r22,lo8(127)
+ 582 01d4 40E0      		ldi r20,lo8(0)
+ 583 01d6 0E94 0000 		call MAX30105_bitMask
+ 584               	/* epilogue start */
+ 585               	.LM88:
+ 586 01da 0895      		ret
+ 587               	.LFE30:
+ 589               	.global	MAX30105_shutDown
+ 591               	MAX30105_shutDown:
+ 592               	.LFB29:
+ 593               	.LM89:
+ 594               	/* prologue: function */
+ 595               	/* frame size = 0 */
+ 596               	.LM90:
+ 597 01dc 89E0      		ldi r24,lo8(9)
+ 598 01de 6FE7      		ldi r22,lo8(127)
+ 599 01e0 40E8      		ldi r20,lo8(-128)
+ 600 01e2 0E94 0000 		call MAX30105_bitMask
+ 601               	/* epilogue start */
+ 602               	.LM91:
+ 603 01e6 0895      		ret
+ 604               	.LFE29:
+ 606               	.global	MAX30105_disableDIETEMPRDY
+ 608               	MAX30105_disableDIETEMPRDY:
+ 609               	.LFB27:
+ 610               	.LM92:
+ 611               	/* prologue: function */
+ 612               	/* frame size = 0 */
+ 613               	.LM93:
+ 614 01e8 83E0      		ldi r24,lo8(3)
+ 615 01ea 6DEF      		ldi r22,lo8(-3)
+ 616 01ec 40E0      		ldi r20,lo8(0)
+ 617 01ee 0E94 0000 		call MAX30105_bitMask
+ 618               	/* epilogue start */
+ 619               	.LM94:
+ 620 01f2 0895      		ret
+ 621               	.LFE27:
+ 623               	.global	MAX30105_enableDIETEMPRDY
+ 625               	MAX30105_enableDIETEMPRDY:
+ 626               	.LFB26:
+ 627               	.LM95:
+ 628               	/* prologue: function */
+ 629               	/* frame size = 0 */
+ 630               	.LM96:
+ 631 01f4 83E0      		ldi r24,lo8(3)
+ 632 01f6 6DEF      		ldi r22,lo8(-3)
+ 633 01f8 42E0      		ldi r20,lo8(2)
+ 634 01fa 0E94 0000 		call MAX30105_bitMask
+ 635               	/* epilogue start */
+ 636               	.LM97:
+ 637 01fe 0895      		ret
+ 638               	.LFE26:
+ 640               	.global	MAX30105_disablePROXINT
+ 642               	MAX30105_disablePROXINT:
+ 643               	.LFB25:
+ 644               	.LM98:
+ 645               	/* prologue: function */
+ 646               	/* frame size = 0 */
+ 647               	.LM99:
+ 648 0200 82E0      		ldi r24,lo8(2)
+ 649 0202 6FEE      		ldi r22,lo8(-17)
+ 650 0204 40E0      		ldi r20,lo8(0)
+ 651 0206 0E94 0000 		call MAX30105_bitMask
+ 652               	/* epilogue start */
+ 653               	.LM100:
+ 654 020a 0895      		ret
+ 655               	.LFE25:
+ 657               	.global	MAX30105_enablePROXINT
+ 659               	MAX30105_enablePROXINT:
+ 660               	.LFB24:
+ 661               	.LM101:
+ 662               	/* prologue: function */
+ 663               	/* frame size = 0 */
+ 664               	.LM102:
+ 665 020c 82E0      		ldi r24,lo8(2)
+ 666 020e 6FEE      		ldi r22,lo8(-17)
+ 667 0210 40E1      		ldi r20,lo8(16)
+ 668 0212 0E94 0000 		call MAX30105_bitMask
+ 669               	/* epilogue start */
+ 670               	.LM103:
+ 671 0216 0895      		ret
+ 672               	.LFE24:
+ 674               	.global	MAX30105_disableALCOVF
+ 676               	MAX30105_disableALCOVF:
+ 677               	.LFB23:
+ 678               	.LM104:
+ 679               	/* prologue: function */
+ 680               	/* frame size = 0 */
+ 681               	.LM105:
+ 682 0218 82E0      		ldi r24,lo8(2)
+ 683 021a 6FED      		ldi r22,lo8(-33)
+ 684 021c 40E0      		ldi r20,lo8(0)
+ 685 021e 0E94 0000 		call MAX30105_bitMask
+ 686               	/* epilogue start */
+ 687               	.LM106:
+ 688 0222 0895      		ret
+ 689               	.LFE23:
+ 691               	.global	MAX30105_enableALCOVF
+ 693               	MAX30105_enableALCOVF:
+ 694               	.LFB22:
+ 695               	.LM107:
+ 696               	/* prologue: function */
+ 697               	/* frame size = 0 */
+ 698               	.LM108:
+ 699 0224 82E0      		ldi r24,lo8(2)
+ 700 0226 6FED      		ldi r22,lo8(-33)
+ 701 0228 40E2      		ldi r20,lo8(32)
+ 702 022a 0E94 0000 		call MAX30105_bitMask
+ 703               	/* epilogue start */
+ 704               	.LM109:
+ 705 022e 0895      		ret
+ 706               	.LFE22:
+ 708               	.global	MAX30105_disableDATARDY
+ 710               	MAX30105_disableDATARDY:
+ 711               	.LFB21:
+ 712               	.LM110:
+ 713               	/* prologue: function */
+ 714               	/* frame size = 0 */
+ 715               	.LM111:
+ 716 0230 82E0      		ldi r24,lo8(2)
+ 717 0232 6FEB      		ldi r22,lo8(-65)
+ 718 0234 40E0      		ldi r20,lo8(0)
+ 719 0236 0E94 0000 		call MAX30105_bitMask
+ 720               	/* epilogue start */
+ 721               	.LM112:
+ 722 023a 0895      		ret
+ 723               	.LFE21:
+ 725               	.global	MAX30105_enableDATARDY
+ 727               	MAX30105_enableDATARDY:
+ 728               	.LFB20:
+ 729               	.LM113:
+ 730               	/* prologue: function */
+ 731               	/* frame size = 0 */
+ 732               	.LM114:
+ 733 023c 82E0      		ldi r24,lo8(2)
+ 734 023e 6FEB      		ldi r22,lo8(-65)
+ 735 0240 40E4      		ldi r20,lo8(64)
+ 736 0242 0E94 0000 		call MAX30105_bitMask
+ 737               	/* epilogue start */
+ 738               	.LM115:
+ 739 0246 0895      		ret
+ 740               	.LFE20:
+ 742               	.global	MAX30105_disableAFULL
+ 744               	MAX30105_disableAFULL:
+ 745               	.LFB19:
+ 746               	.LM116:
+ 747               	/* prologue: function */
+ 748               	/* frame size = 0 */
+ 749               	.LM117:
+ 750 0248 82E0      		ldi r24,lo8(2)
+ 751 024a 6FE7      		ldi r22,lo8(127)
+ 752 024c 40E0      		ldi r20,lo8(0)
+ 753 024e 0E94 0000 		call MAX30105_bitMask
+ 754               	/* epilogue start */
+ 755               	.LM118:
+ 756 0252 0895      		ret
+ 757               	.LFE19:
+ 759               	.global	MAX30105_enableAFULL
+ 761               	MAX30105_enableAFULL:
+ 762               	.LFB18:
+ 763               	.LM119:
+ 764               	/* prologue: function */
+ 765               	/* frame size = 0 */
+ 766               	.LM120:
+ 767 0254 82E0      		ldi r24,lo8(2)
+ 768 0256 6FE7      		ldi r22,lo8(127)
+ 769 0258 40E8      		ldi r20,lo8(-128)
+ 770 025a 0E94 0000 		call MAX30105_bitMask
+ 771               	/* epilogue start */
+ 772               	.LM121:
+ 773 025e 0895      		ret
+ 774               	.LFE18:
+ 776               	.global	MAX30105_readRevisionID
+ 778               	MAX30105_readRevisionID:
+ 779               	.LFB52:
+ 780               	.LM122:
+ 781               	/* prologue: function */
+ 782               	/* frame size = 0 */
+ 783               	.LM123:
+ 784 0260 8EEF      		ldi r24,lo8(-2)
+ 785 0262 0E94 0000 		call MAX30105_read8
+ 786 0266 8093 0000 		sts MAX30105_revisionID,r24
+ 787               	/* epilogue start */
+ 788               	.LM124:
+ 789 026a 0895      		ret
+ 790               	.LFE52:
+ 792               	.global	MAX30105_readPartID
+ 794               	MAX30105_readPartID:
+ 795               	.LFB51:
+ 796               	.LM125:
+ 797               	/* prologue: function */
+ 798               	/* frame size = 0 */
+ 799               	.LM126:
+ 800 026c 8FEF      		ldi r24,lo8(-1)
+ 801 026e 0E94 0000 		call MAX30105_read8
+ 802               	/* epilogue start */
+ 803               	.LM127:
+ 804 0272 0895      		ret
+ 805               	.LFE51:
+ 807               	.global	MAX30105_init
+ 809               	MAX30105_init:
+ 810               	.LFB15:
+ 811               	.LM128:
+ 812               	/* prologue: function */
+ 813               	/* frame size = 0 */
+ 814               	.LM129:
+ 815 0274 0E94 0000 		call MAX30105_readPartID
+ 816               	.LM130:
+ 817 0278 0E94 0000 		call MAX30105_readRevisionID
+ 818               	.LM131:
+ 819 027c 81E0      		ldi r24,lo8(1)
+ 820               	/* epilogue start */
+ 821 027e 0895      		ret
+ 822               	.LFE15:
+ 824               	.global	MAX30105_getReadPointer
+ 826               	MAX30105_getReadPointer:
+ 827               	.LFB47:
+ 828               	.LM132:
+ 829               	/* prologue: function */
+ 830               	/* frame size = 0 */
+ 831               	.LM133:
+ 832 0280 86E0      		ldi r24,lo8(6)
+ 833 0282 0E94 0000 		call MAX30105_read8
+ 834               	/* epilogue start */
+ 835               	.LM134:
+ 836 0286 0895      		ret
+ 837               	.LFE47:
+ 839               	.global	MAX30105_getWritePointer
+ 841               	MAX30105_getWritePointer:
+ 842               	.LFB46:
+ 843               	.LM135:
+ 844               	/* prologue: function */
+ 845               	/* frame size = 0 */
+ 846               	.LM136:
+ 847 0288 84E0      		ldi r24,lo8(4)
+ 848 028a 0E94 0000 		call MAX30105_read8
+ 849               	/* epilogue start */
+ 850               	.LM137:
+ 851 028e 0895      		ret
+ 852               	.LFE46:
+ 854               	.global	MAX30105_getINT2
+ 856               	MAX30105_getINT2:
+ 857               	.LFB17:
+ 858               	.LM138:
+ 859               	/* prologue: function */
+ 860               	/* frame size = 0 */
+ 861               	.LM139:
+ 862 0290 81E0      		ldi r24,lo8(1)
+ 863 0292 0E94 0000 		call MAX30105_read8
+ 864               	/* epilogue start */
+ 865               	.LM140:
+ 866 0296 0895      		ret
+ 867               	.LFE17:
+ 869               	.global	MAX30105_getINT1
+ 871               	MAX30105_getINT1:
+ 872               	.LFB16:
+ 873               	.LM141:
+ 874               	/* prologue: function */
+ 875               	/* frame size = 0 */
+ 876               	.LM142:
+ 877 0298 80E0      		ldi r24,lo8(0)
+ 878 029a 0E94 0000 		call MAX30105_read8
+ 879               	/* epilogue start */
+ 880               	.LM143:
+ 881 029e 0895      		ret
+ 882               	.LFE16:
+ 884               	.global	MAX30105_check
+ 886               	MAX30105_check:
+ 887               	.LFB62:
+ 888               	.LM144:
+ 889 02a0 9F92      		push r9
+ 890 02a2 AF92      		push r10
+ 891 02a4 BF92      		push r11
+ 892 02a6 CF92      		push r12
+ 893 02a8 DF92      		push r13
+ 894 02aa EF92      		push r14
+ 895 02ac FF92      		push r15
+ 896 02ae 0F93      		push r16
+ 897 02b0 1F93      		push r17
+ 898 02b2 DF93      		push r29
+ 899 02b4 CF93      		push r28
+ 900 02b6 CDB7      		in r28,__SP_L__
+ 901 02b8 DEB7      		in r29,__SP_H__
+ 902 02ba 2897      		sbiw r28,8
+ 903 02bc 0FB6      		in __tmp_reg__,__SREG__
+ 904 02be F894      		cli
+ 905 02c0 DEBF      		out __SP_H__,r29
+ 906 02c2 0FBE      		out __SREG__,__tmp_reg__
+ 907 02c4 CDBF      		out __SP_L__,r28
+ 908               	/* prologue: function */
+ 909               	/* frame size = 8 */
+ 910               	.LM145:
+ 911 02c6 0E94 0000 		call MAX30105_getReadPointer
+ 912 02ca 182F      		mov r17,r24
+ 913               	.LVL60:
+ 914               	.LM146:
+ 915 02cc 0E94 0000 		call MAX30105_getWritePointer
+ 916               	.LM147:
+ 917 02d0 1817      		cp r17,r24
+ 918               	.LVL61:
+ 919 02d2 01F4      		brne .+2
+ 920 02d4 00C0      		rjmp .L116
+ 921               	.LBB4:
+ 922               	.LM148:
+ 923 02d6 C82E      		mov r12,r24
+ 924               	.LVL62:
+ 925 02d8 DD24      		clr r13
+ 926               	.LVL63:
+ 927 02da C11A      		sub r12,r17
+ 928 02dc D108      		sbc r13,__zero_reg__
+ 929               	.LVL64:
+ 930               	.LM149:
+ 931 02de D7FC      		sbrc r13,7
+ 932 02e0 00C0      		rjmp .L117
+ 933               	.L100:
+ 934               	.LM150:
+ 935 02e2 8091 0000 		lds r24,MAX30105_activeLEDs
+ 936               	.LVL65:
+ 937 02e6 23E0      		ldi r18,lo8(3)
+ 938 02e8 829F      		mul r24,r18
+ 939 02ea C001      		movw r24,r0
+ 940 02ec 1124      		clr r1
+ 941 02ee 8C9D      		mul r24,r12
+ 942 02f0 7001      		movw r14,r0
+ 943 02f2 8D9D      		mul r24,r13
+ 944 02f4 F00C      		add r15,r0
+ 945 02f6 9C9D      		mul r25,r12
+ 946 02f8 F00C      		add r15,r0
+ 947 02fa 1124      		clr r1
+ 948               	.LVL66:
+ 949               	.LM151:
+ 950 02fc 8EEA      		ldi r24,lo8(-82)
+ 951 02fe 0E94 0000 		call i2c_start
+ 952               	.LM152:
+ 953 0302 87E0      		ldi r24,lo8(7)
+ 954 0304 0E94 0000 		call i2c_write
+ 955               	.LM153:
+ 956 0308 1E14      		cp __zero_reg__,r14
+ 957 030a 1F04      		cpc __zero_reg__,r15
+ 958 030c 04F0      		brlt .+2
+ 959 030e 00C0      		rjmp .L115
+ 960               	.LBB6:
+ 961               	.LM154:
+ 962 0310 F3E0      		ldi r31,lo8(3)
+ 963 0312 9F2E      		mov r9,r31
+ 964 0314 E0E2      		ldi r30,lo8(32)
+ 965 0316 AE2E      		mov r10,r30
+ 966 0318 B12C      		mov r11,__zero_reg__
+ 967               	.LVL67:
+ 968               	.L112:
+ 969               	.LM155:
+ 970 031a 91E2      		ldi r25,lo8(33)
+ 971 031c E916      		cp r14,r25
+ 972 031e F104      		cpc r15,__zero_reg__
+ 973 0320 04F0      		brlt .+2
+ 974 0322 00C0      		rjmp .L102
+ 975 0324 8701      		movw r16,r14
+ 976 0326 EE24      		clr r14
+ 977 0328 FF24      		clr r15
+ 978               	.LM156:
+ 979 032a 8FEA      		ldi r24,lo8(-81)
+ 980 032c 0E94 0000 		call i2c_rep_start
+ 981               	.LM157:
+ 982 0330 0230      		cpi r16,2
+ 983 0332 1105      		cpc r17,__zero_reg__
+ 984 0334 04F4      		brge .+2
+ 985 0336 00C0      		rjmp .L118
+ 986               	.L106:
+ 987               	.LM158:
+ 988 0338 1092 0000 		sts sense+8,__zero_reg__
+ 989               	.LM159:
+ 990 033c 1C82      		std Y+4,__zero_reg__
+ 991               	.LM160:
+ 992 033e 0E94 0000 		call i2c_readAck
+ 993 0342 8B83      		std Y+3,r24
+ 994               	.LM161:
+ 995 0344 0E94 0000 		call i2c_readAck
+ 996 0348 8A83      		std Y+2,r24
+ 997               	.LM162:
+ 998 034a 0E94 0000 		call i2c_readAck
+ 999 034e 8983      		std Y+1,r24
+ 1000               	.LM163:
+ 1001 0350 8981      		ldd r24,Y+1
+ 1002 0352 9A81      		ldd r25,Y+2
+ 1003 0354 AB81      		ldd r26,Y+3
+ 1004 0356 BC81      		ldd r27,Y+4
+ 1005               	.LVL68:
+ 1006 0358 A370      		andi r26,hlo8(262143)
+ 1007 035a B070      		andi r27,hhi8(262143)
+ 1008 035c 8D83      		std Y+5,r24
+ 1009 035e 9E83      		std Y+6,r25
+ 1010 0360 AF83      		std Y+7,r26
+ 1011 0362 B887      		std Y+8,r27
+ 1012               	.LM164:
+ 1013 0364 E091 0000 		lds r30,sense+8
+ 1014 0368 F0E0      		ldi r31,lo8(0)
+ 1015 036a EE0F      		lsl r30
+ 1016 036c FF1F      		rol r31
+ 1017 036e EE0F      		lsl r30
+ 1018 0370 FF1F      		rol r31
+ 1019 0372 E050      		subi r30,lo8(-(sense))
+ 1020 0374 F040      		sbci r31,hi8(-(sense))
+ 1021 0376 8083      		st Z,r24
+ 1022 0378 9183      		std Z+1,r25
+ 1023 037a A283      		std Z+2,r26
+ 1024 037c B383      		std Z+3,r27
+ 1025               	.LM165:
+ 1026 037e 4091 0000 		lds r20,MAX30105_activeLEDs
+ 1027 0382 4230      		cpi r20,lo8(2)
+ 1028 0384 00F0      		brlo .L105
+ 1029               	.LM166:
+ 1030 0386 1C82      		std Y+4,__zero_reg__
+ 1031               	.LM167:
+ 1032 0388 0E94 0000 		call i2c_readAck
+ 1033               	.LVL69:
+ 1034 038c 8B83      		std Y+3,r24
+ 1035               	.LM168:
+ 1036 038e 0E94 0000 		call i2c_readAck
+ 1037 0392 8A83      		std Y+2,r24
+ 1038               	.LM169:
+ 1039 0394 0E94 0000 		call i2c_readAck
+ 1040 0398 8983      		std Y+1,r24
+ 1041               	.LM170:
+ 1042 039a 8981      		ldd r24,Y+1
+ 1043 039c 9A81      		ldd r25,Y+2
+ 1044 039e AB81      		ldd r26,Y+3
+ 1045 03a0 BC81      		ldd r27,Y+4
+ 1046               	.LVL70:
+ 1047 03a2 A370      		andi r26,hlo8(262143)
+ 1048 03a4 B070      		andi r27,hhi8(262143)
+ 1049 03a6 8D83      		std Y+5,r24
+ 1050 03a8 9E83      		std Y+6,r25
+ 1051 03aa AF83      		std Y+7,r26
+ 1052 03ac B887      		std Y+8,r27
+ 1053               	.LM171:
+ 1054 03ae E091 0000 		lds r30,sense+8
+ 1055 03b2 F0E0      		ldi r31,lo8(0)
+ 1056 03b4 EE0F      		lsl r30
+ 1057 03b6 FF1F      		rol r31
+ 1058 03b8 EE0F      		lsl r30
+ 1059 03ba FF1F      		rol r31
+ 1060 03bc E050      		subi r30,lo8(-(sense+4))
+ 1061 03be F040      		sbci r31,hi8(-(sense+4))
+ 1062 03c0 8083      		st Z,r24
+ 1063 03c2 9183      		std Z+1,r25
+ 1064 03c4 A283      		std Z+2,r26
+ 1065 03c6 B383      		std Z+3,r27
+ 1066 03c8 4091 0000 		lds r20,MAX30105_activeLEDs
+ 1067               	.L105:
+ 1068               	.LM172:
+ 1069 03cc 242F      		mov r18,r20
+ 1070 03ce 30E0      		ldi r19,lo8(0)
+ 1071 03d0 C901      		movw r24,r18
+ 1072               	.LVL71:
+ 1073 03d2 880F      		lsl r24
+ 1074 03d4 991F      		rol r25
+ 1075 03d6 820F      		add r24,r18
+ 1076 03d8 931F      		adc r25,r19
+ 1077 03da 081B      		sub r16,r24
+ 1078 03dc 190B      		sbc r17,r25
+ 1079               	.LM173:
+ 1080 03de 0230      		cpi r16,2
+ 1081 03e0 1105      		cpc r17,__zero_reg__
+ 1082 03e2 04F0      		brlt .+2
+ 1083 03e4 00C0      		rjmp .L106
+ 1084               	.LM174:
+ 1085 03e6 1092 0000 		sts sense+8,__zero_reg__
+ 1086               	.LM175:
+ 1087 03ea 4130      		cpi r20,lo8(1)
+ 1088 03ec 01F0      		breq .L119
+ 1089               	.L107:
+ 1090               	.LM176:
+ 1091 03ee 4230      		cpi r20,lo8(2)
+ 1092 03f0 01F4      		brne .+2
+ 1093 03f2 00C0      		rjmp .L120
+ 1094               	.LVL72:
+ 1095               	.L108:
+ 1096               	.LBE6:
+ 1097               	.LM177:
+ 1098 03f4 E114      		cp r14,__zero_reg__
+ 1099 03f6 F104      		cpc r15,__zero_reg__
+ 1100 03f8 01F0      		breq .+2
+ 1101 03fa 00C0      		rjmp .L112
+ 1102               	.L115:
+ 1103 03fc 9601      		movw r18,r12
+ 1104               	.LVL73:
+ 1105               	.L99:
+ 1106               	.LBE4:
+ 1107               	.LM178:
+ 1108 03fe C901      		movw r24,r18
+ 1109               	.LVL74:
+ 1110               	/* epilogue start */
+ 1111 0400 2896      		adiw r28,8
+ 1112 0402 0FB6      		in __tmp_reg__,__SREG__
+ 1113 0404 F894      		cli
+ 1114 0406 DEBF      		out __SP_H__,r29
+ 1115 0408 0FBE      		out __SREG__,__tmp_reg__
+ 1116 040a CDBF      		out __SP_L__,r28
+ 1117 040c CF91      		pop r28
+ 1118 040e DF91      		pop r29
+ 1119 0410 1F91      		pop r17
+ 1120               	.LVL75:
+ 1121 0412 0F91      		pop r16
+ 1122               	.LVL76:
+ 1123 0414 FF90      		pop r15
+ 1124 0416 EF90      		pop r14
+ 1125               	.LVL77:
+ 1126 0418 DF90      		pop r13
+ 1127               	.LVL78:
+ 1128 041a CF90      		pop r12
+ 1129               	.LVL79:
+ 1130 041c BF90      		pop r11
+ 1131 041e AF90      		pop r10
+ 1132 0420 9F90      		pop r9
+ 1133 0422 0895      		ret
+ 1134               	.LVL80:
+ 1135               	.L102:
+ 1136               	.LBB7:
+ 1137               	.LBB5:
+ 1138               	.LM179:
+ 1139 0424 6091 0000 		lds r22,MAX30105_activeLEDs
+ 1140 0428 699D      		mul r22,r9
+ 1141 042a B001      		movw r22,r0
+ 1142 042c 1124      		clr r1
+ 1143 042e 80E2      		ldi r24,lo8(32)
+ 1144 0430 90E0      		ldi r25,hi8(32)
+ 1145 0432 0E94 0000 		call __divmodhi4
+ 1146 0436 8501      		movw r16,r10
+ 1147 0438 081B      		sub r16,r24
+ 1148 043a 190B      		sbc r17,r25
+ 1149 043c E01A      		sub r14,r16
+ 1150 043e F10A      		sbc r15,r17
+ 1151               	.LM180:
+ 1152 0440 8FEA      		ldi r24,lo8(-81)
+ 1153 0442 0E94 0000 		call i2c_rep_start
+ 1154               	.LM181:
+ 1155 0446 0230      		cpi r16,2
+ 1156 0448 1105      		cpc r17,__zero_reg__
+ 1157 044a 04F0      		brlt .+2
+ 1158 044c 00C0      		rjmp .L106
+ 1159               	.L118:
+ 1160 044e 4091 0000 		lds r20,MAX30105_activeLEDs
+ 1161               	.LM182:
+ 1162 0452 1092 0000 		sts sense+8,__zero_reg__
+ 1163               	.LM183:
+ 1164 0456 4130      		cpi r20,lo8(1)
+ 1165 0458 01F4      		brne .L107
+ 1166               	.L119:
+ 1167               	.LM184:
+ 1168 045a 1C82      		std Y+4,__zero_reg__
+ 1169               	.LM185:
+ 1170 045c 0E94 0000 		call i2c_readAck
+ 1171 0460 8B83      		std Y+3,r24
+ 1172               	.LM186:
+ 1173 0462 0E94 0000 		call i2c_readAck
+ 1174 0466 8A83      		std Y+2,r24
+ 1175               	.LM187:
+ 1176 0468 0E94 0000 		call i2c_readNak
+ 1177 046c 8983      		std Y+1,r24
+ 1178               	.LM188:
+ 1179 046e 0E94 0000 		call i2c_stop
+ 1180               	.LM189:
+ 1181 0472 8981      		ldd r24,Y+1
+ 1182 0474 9A81      		ldd r25,Y+2
+ 1183 0476 AB81      		ldd r26,Y+3
+ 1184 0478 BC81      		ldd r27,Y+4
+ 1185               	.LVL81:
+ 1186 047a A370      		andi r26,hlo8(262143)
+ 1187 047c B070      		andi r27,hhi8(262143)
+ 1188 047e 8D83      		std Y+5,r24
+ 1189 0480 9E83      		std Y+6,r25
+ 1190 0482 AF83      		std Y+7,r26
+ 1191 0484 B887      		std Y+8,r27
+ 1192               	.LM190:
+ 1193 0486 E091 0000 		lds r30,sense+8
+ 1194 048a F0E0      		ldi r31,lo8(0)
+ 1195 048c EE0F      		lsl r30
+ 1196 048e FF1F      		rol r31
+ 1197 0490 EE0F      		lsl r30
+ 1198 0492 FF1F      		rol r31
+ 1199 0494 E050      		subi r30,lo8(-(sense))
+ 1200 0496 F040      		sbci r31,hi8(-(sense))
+ 1201 0498 8083      		st Z,r24
+ 1202 049a 9183      		std Z+1,r25
+ 1203 049c A283      		std Z+2,r26
+ 1204 049e B383      		std Z+3,r27
+ 1205 04a0 4091 0000 		lds r20,MAX30105_activeLEDs
+ 1206               	.LM191:
+ 1207 04a4 4230      		cpi r20,lo8(2)
+ 1208 04a6 01F0      		breq .+2
+ 1209 04a8 00C0      		rjmp .L108
+ 1210               	.LVL82:
+ 1211               	.L120:
+ 1212               	.LM192:
+ 1213 04aa 1C82      		std Y+4,__zero_reg__
+ 1214               	.LM193:
+ 1215 04ac 0E94 0000 		call i2c_readAck
+ 1216 04b0 8B83      		std Y+3,r24
+ 1217               	.LM194:
+ 1218 04b2 0E94 0000 		call i2c_readAck
+ 1219 04b6 8A83      		std Y+2,r24
+ 1220               	.LM195:
+ 1221 04b8 0E94 0000 		call i2c_readAck
+ 1222 04bc 8983      		std Y+1,r24
+ 1223               	.LM196:
+ 1224 04be 8981      		ldd r24,Y+1
+ 1225 04c0 9A81      		ldd r25,Y+2
+ 1226 04c2 AB81      		ldd r26,Y+3
+ 1227 04c4 BC81      		ldd r27,Y+4
+ 1228               	.LVL83:
+ 1229 04c6 A370      		andi r26,hlo8(262143)
+ 1230 04c8 B070      		andi r27,hhi8(262143)
+ 1231 04ca 8D83      		std Y+5,r24
+ 1232 04cc 9E83      		std Y+6,r25
+ 1233 04ce AF83      		std Y+7,r26
+ 1234 04d0 B887      		std Y+8,r27
+ 1235               	.LM197:
+ 1236 04d2 E091 0000 		lds r30,sense+8
+ 1237 04d6 F0E0      		ldi r31,lo8(0)
+ 1238 04d8 EE0F      		lsl r30
+ 1239 04da FF1F      		rol r31
+ 1240 04dc EE0F      		lsl r30
+ 1241 04de FF1F      		rol r31
+ 1242 04e0 E050      		subi r30,lo8(-(sense))
+ 1243 04e2 F040      		sbci r31,hi8(-(sense))
+ 1244 04e4 8083      		st Z,r24
+ 1245 04e6 9183      		std Z+1,r25
+ 1246 04e8 A283      		std Z+2,r26
+ 1247 04ea B383      		std Z+3,r27
+ 1248               	.LM198:
+ 1249 04ec 1C82      		std Y+4,__zero_reg__
+ 1250               	.LM199:
+ 1251 04ee 0E94 0000 		call i2c_readAck
+ 1252               	.LVL84:
+ 1253 04f2 8B83      		std Y+3,r24
+ 1254               	.LM200:
+ 1255 04f4 0E94 0000 		call i2c_readAck
+ 1256 04f8 8A83      		std Y+2,r24
+ 1257               	.LM201:
+ 1258 04fa 0E94 0000 		call i2c_readNak
+ 1259 04fe 8983      		std Y+1,r24
+ 1260               	.LM202:
+ 1261 0500 0E94 0000 		call i2c_stop
+ 1262               	.LM203:
+ 1263 0504 8981      		ldd r24,Y+1
+ 1264 0506 9A81      		ldd r25,Y+2
+ 1265 0508 AB81      		ldd r26,Y+3
+ 1266 050a BC81      		ldd r27,Y+4
+ 1267               	.LVL85:
+ 1268 050c A370      		andi r26,hlo8(262143)
+ 1269 050e B070      		andi r27,hhi8(262143)
+ 1270 0510 8D83      		std Y+5,r24
+ 1271 0512 9E83      		std Y+6,r25
+ 1272 0514 AF83      		std Y+7,r26
+ 1273 0516 B887      		std Y+8,r27
+ 1274               	.LM204:
+ 1275 0518 E091 0000 		lds r30,sense+8
+ 1276 051c F0E0      		ldi r31,lo8(0)
+ 1277 051e EE0F      		lsl r30
+ 1278 0520 FF1F      		rol r31
+ 1279 0522 EE0F      		lsl r30
+ 1280 0524 FF1F      		rol r31
+ 1281 0526 E050      		subi r30,lo8(-(sense+4))
+ 1282 0528 F040      		sbci r31,hi8(-(sense+4))
+ 1283 052a 8083      		st Z,r24
+ 1284 052c 9183      		std Z+1,r25
+ 1285 052e A283      		std Z+2,r26
+ 1286 0530 B383      		std Z+3,r27
+ 1287 0532 00C0      		rjmp .L108
+ 1288               	.LVL86:
+ 1289               	.L116:
+ 1290               	.LBE5:
+ 1291               	.LBE7:
+ 1292               	.LM205:
+ 1293 0534 20E0      		ldi r18,lo8(0)
+ 1294 0536 30E0      		ldi r19,hi8(0)
+ 1295 0538 00C0      		rjmp .L99
+ 1296               	.LVL87:
+ 1297               	.L117:
+ 1298               	.LBB8:
+ 1299               	.LM206:
+ 1300 053a 80E2      		ldi r24,lo8(32)
+ 1301 053c 90E0      		ldi r25,hi8(32)
+ 1302               	.LVL88:
+ 1303 053e C80E      		add r12,r24
+ 1304 0540 D91E      		adc r13,r25
+ 1305 0542 00C0      		rjmp .L100
+ 1306               	.LBE8:
+ 1307               	.LFE62:
+ 1309               	.global	MAX30105_safeCheck
+ 1311               	MAX30105_safeCheck:
+ 1312               	.LFB63:
+ 1313               	.LM207:
+ 1314               	.LVL89:
+ 1315               	/* prologue: function */
+ 1316               	/* frame size = 0 */
+ 1317               	.LM208:
+ 1318 0544 0E94 0000 		call MAX30105_check
+ 1319               	.LVL90:
+ 1320 0548 20E0      		ldi r18,lo8(0)
+ 1321 054a 892B      		or r24,r25
+ 1322 054c 01F0      		breq .L122
+ 1323 054e 21E0      		ldi r18,lo8(1)
+ 1324               	.L122:
+ 1325               	.LM209:
+ 1326 0550 822F      		mov r24,r18
+ 1327               	/* epilogue start */
+ 1328 0552 0895      		ret
+ 1329               	.LFE63:
+ 1331               	.global	MAX30105_getRedIR
+ 1333               	MAX30105_getRedIR:
+ 1334               	.LFB58:
+ 1335               	.LM210:
+ 1336               	.LVL91:
+ 1337 0554 CF93      		push r28
+ 1338 0556 DF93      		push r29
+ 1339               	/* prologue: function */
+ 1340               	/* frame size = 0 */
+ 1341 0558 EC01      		movw r28,r24
+ 1342               	.LM211:
+ 1343 055a 8AEF      		ldi r24,lo8(-6)
+ 1344               	.LVL92:
+ 1345 055c 0E94 0000 		call MAX30105_safeCheck
+ 1346 0560 8823      		tst r24
+ 1347 0562 01F0      		breq .L128
+ 1348               	.LM212:
+ 1349 0564 E091 0000 		lds r30,sense+8
+ 1350 0568 F0E0      		ldi r31,lo8(0)
+ 1351 056a EE0F      		lsl r30
+ 1352 056c FF1F      		rol r31
+ 1353 056e EE0F      		lsl r30
+ 1354 0570 FF1F      		rol r31
+ 1355 0572 E050      		subi r30,lo8(-(sense))
+ 1356 0574 F040      		sbci r31,hi8(-(sense))
+ 1357 0576 8081      		ld r24,Z
+ 1358 0578 9181      		ldd r25,Z+1
+ 1359 057a A281      		ldd r26,Z+2
+ 1360 057c B381      		ldd r27,Z+3
+ 1361 057e 8883      		st Y,r24
+ 1362 0580 9983      		std Y+1,r25
+ 1363 0582 AA83      		std Y+2,r26
+ 1364 0584 BB83      		std Y+3,r27
+ 1365               	.LM213:
+ 1366 0586 E091 0000 		lds r30,sense+8
+ 1367 058a F0E0      		ldi r31,lo8(0)
+ 1368 058c EE0F      		lsl r30
+ 1369 058e FF1F      		rol r31
+ 1370 0590 EE0F      		lsl r30
+ 1371 0592 FF1F      		rol r31
+ 1372 0594 E050      		subi r30,lo8(-(sense+4))
+ 1373 0596 F040      		sbci r31,hi8(-(sense+4))
+ 1374 0598 8081      		ld r24,Z
+ 1375 059a 9181      		ldd r25,Z+1
+ 1376 059c A281      		ldd r26,Z+2
+ 1377 059e B381      		ldd r27,Z+3
+ 1378 05a0 8C83      		std Y+4,r24
+ 1379 05a2 9D83      		std Y+5,r25
+ 1380 05a4 AE83      		std Y+6,r26
+ 1381 05a6 BF83      		std Y+7,r27
+ 1382 05a8 21E0      		ldi r18,lo8(1)
+ 1383 05aa 30E0      		ldi r19,hi8(1)
+ 1384 05ac 40E0      		ldi r20,hlo8(1)
+ 1385 05ae 50E0      		ldi r21,hhi8(1)
+ 1386               	.LM214:
+ 1387 05b0 B901      		movw r22,r18
+ 1388 05b2 CA01      		movw r24,r20
+ 1389               	/* epilogue start */
+ 1390 05b4 DF91      		pop r29
+ 1391 05b6 CF91      		pop r28
+ 1392               	.LVL93:
+ 1393 05b8 0895      		ret
+ 1394               	.LVL94:
+ 1395               	.L128:
+ 1396               	.LM215:
+ 1397 05ba 20E0      		ldi r18,lo8(0)
+ 1398 05bc 30E0      		ldi r19,hi8(0)
+ 1399 05be 40E0      		ldi r20,hlo8(0)
+ 1400 05c0 50E0      		ldi r21,hhi8(0)
+ 1401               	.LM216:
+ 1402 05c2 B901      		movw r22,r18
+ 1403 05c4 CA01      		movw r24,r20
+ 1404 05c6 DF91      		pop r29
+ 1405 05c8 CF91      		pop r28
+ 1406               	.LVL95:
+ 1407 05ca 0895      		ret
+ 1408               	.LFE58:
+ 1410               	.global	MAX30105_getIR
+ 1412               	MAX30105_getIR:
+ 1413               	.LFB57:
+ 1414               	.LM217:
+ 1415               	/* prologue: function */
+ 1416               	/* frame size = 0 */
+ 1417               	.LM218:
+ 1418 05cc 8AEF      		ldi r24,lo8(-6)
+ 1419 05ce 0E94 0000 		call MAX30105_safeCheck
+ 1420 05d2 8823      		tst r24
+ 1421 05d4 01F0      		breq .L133
+ 1422               	.LM219:
+ 1423 05d6 E091 0000 		lds r30,sense+8
+ 1424 05da F0E0      		ldi r31,lo8(0)
+ 1425 05dc EE0F      		lsl r30
+ 1426 05de FF1F      		rol r31
+ 1427 05e0 EE0F      		lsl r30
+ 1428 05e2 FF1F      		rol r31
+ 1429 05e4 E050      		subi r30,lo8(-(sense+4))
+ 1430 05e6 F040      		sbci r31,hi8(-(sense+4))
+ 1431 05e8 2081      		ld r18,Z
+ 1432 05ea 3181      		ldd r19,Z+1
+ 1433 05ec 4281      		ldd r20,Z+2
+ 1434 05ee 5381      		ldd r21,Z+3
+ 1435               	.LM220:
+ 1436 05f0 B901      		movw r22,r18
+ 1437 05f2 CA01      		movw r24,r20
+ 1438               	/* epilogue start */
+ 1439 05f4 0895      		ret
+ 1440               	.L133:
+ 1441               	.LM221:
+ 1442 05f6 20E0      		ldi r18,lo8(0)
+ 1443 05f8 30E0      		ldi r19,hi8(0)
+ 1444 05fa 40E0      		ldi r20,hlo8(0)
+ 1445 05fc 50E0      		ldi r21,hhi8(0)
+ 1446               	.LM222:
+ 1447 05fe B901      		movw r22,r18
+ 1448 0600 CA01      		movw r24,r20
+ 1449 0602 0895      		ret
+ 1450               	.LFE57:
+ 1452               	.global	MAX30105_getRed
+ 1454               	MAX30105_getRed:
+ 1455               	.LFB56:
+ 1456               	.LM223:
+ 1457               	/* prologue: function */
+ 1458               	/* frame size = 0 */
+ 1459               	.LM224:
+ 1460 0604 8AEF      		ldi r24,lo8(-6)
+ 1461 0606 0E94 0000 		call MAX30105_safeCheck
+ 1462 060a 8823      		tst r24
+ 1463 060c 01F0      		breq .L138
+ 1464               	.LM225:
+ 1465 060e E091 0000 		lds r30,sense+8
+ 1466 0612 F0E0      		ldi r31,lo8(0)
+ 1467 0614 EE0F      		lsl r30
+ 1468 0616 FF1F      		rol r31
+ 1469 0618 EE0F      		lsl r30
+ 1470 061a FF1F      		rol r31
+ 1471 061c E050      		subi r30,lo8(-(sense))
+ 1472 061e F040      		sbci r31,hi8(-(sense))
+ 1473 0620 2081      		ld r18,Z
+ 1474 0622 3181      		ldd r19,Z+1
+ 1475 0624 4281      		ldd r20,Z+2
+ 1476 0626 5381      		ldd r21,Z+3
+ 1477               	.LM226:
+ 1478 0628 B901      		movw r22,r18
+ 1479 062a CA01      		movw r24,r20
+ 1480               	/* epilogue start */
+ 1481 062c 0895      		ret
+ 1482               	.L138:
+ 1483               	.LM227:
+ 1484 062e 20E0      		ldi r18,lo8(0)
+ 1485 0630 30E0      		ldi r19,hi8(0)
+ 1486 0632 40E0      		ldi r20,hlo8(0)
+ 1487 0634 50E0      		ldi r21,hhi8(0)
+ 1488               	.LM228:
+ 1489 0636 B901      		movw r22,r18
+ 1490 0638 CA01      		movw r24,r20
+ 1491 063a 0895      		ret
+ 1492               	.LFE56:
+ 1494               	.global	MAX30105_readTemperature
+ 1496               	MAX30105_readTemperature:
+ 1497               	.LFB48:
+ 1498               	.LM229:
+ 1499 063c AF92      		push r10
+ 1500 063e BF92      		push r11
+ 1501 0640 CF92      		push r12
+ 1502 0642 DF92      		push r13
+ 1503 0644 EF92      		push r14
+ 1504 0646 FF92      		push r15
+ 1505 0648 0F93      		push r16
+ 1506 064a 1F93      		push r17
+ 1507               	/* prologue: function */
+ 1508               	/* frame size = 0 */
+ 1509               	.LM230:
+ 1510 064c 81E2      		ldi r24,lo8(33)
+ 1511 064e 61E0      		ldi r22,lo8(1)
+ 1512 0650 0E94 0000 		call MAX30105_write8
+ 1513               	.LM231:
+ 1514 0654 8FE1      		ldi r24,lo8(31)
+ 1515 0656 0E94 0000 		call MAX30105_read8
+ 1516 065a E82E      		mov r14,r24
+ 1517               	.LM232:
+ 1518 065c 80E2      		ldi r24,lo8(32)
+ 1519 065e 0E94 0000 		call MAX30105_read8
+ 1520 0662 A82E      		mov r10,r24
+ 1521               	.LVL96:
+ 1522 0664 FF24      		clr r15
+ 1523 0666 E7FC      		sbrc r14,7
+ 1524 0668 F094      		com r15
+ 1525 066a 0F2D      		mov r16,r15
+ 1526 066c 1F2D      		mov r17,r15
+ 1527 066e C801      		movw r24,r16
+ 1528 0670 B701      		movw r22,r14
+ 1529 0672 0E94 0000 		call __floatsisf
+ 1530 0676 7B01      		movw r14,r22
+ 1531 0678 8C01      		movw r16,r24
+ 1532 067a BB24      		clr r11
+ 1533               	.LVL97:
+ 1534 067c CC24      		clr r12
+ 1535 067e DD24      		clr r13
+ 1536               	.LVL98:
+ 1537 0680 C601      		movw r24,r12
+ 1538 0682 B501      		movw r22,r10
+ 1539 0684 0E94 0000 		call __floatunsisf
+ 1540 0688 20E0      		ldi r18,lo8(0x3d800000)
+ 1541 068a 30E0      		ldi r19,hi8(0x3d800000)
+ 1542 068c 40E8      		ldi r20,hlo8(0x3d800000)
+ 1543 068e 5DE3      		ldi r21,hhi8(0x3d800000)
+ 1544 0690 0E94 0000 		call __mulsf3
+ 1545 0694 9B01      		movw r18,r22
+ 1546 0696 AC01      		movw r20,r24
+ 1547 0698 C801      		movw r24,r16
+ 1548 069a B701      		movw r22,r14
+ 1549 069c 0E94 0000 		call __addsf3
+ 1550               	/* epilogue start */
+ 1551               	.LM233:
+ 1552 06a0 1F91      		pop r17
+ 1553 06a2 0F91      		pop r16
+ 1554 06a4 FF90      		pop r15
+ 1555 06a6 EF90      		pop r14
+ 1556 06a8 DF90      		pop r13
+ 1557 06aa CF90      		pop r12
+ 1558               	.LVL99:
+ 1559 06ac BF90      		pop r11
+ 1560               	.LVL100:
+ 1561 06ae AF90      		pop r10
+ 1562               	.LVL101:
+ 1563 06b0 0895      		ret
+ 1564               	.LFE48:
+ 1566               	.global	MAX30105_readTemperatureF
+ 1568               	MAX30105_readTemperatureF:
+ 1569               	.LFB49:
+ 1570               	.LM234:
+ 1571 06b2 EF92      		push r14
+ 1572 06b4 FF92      		push r15
+ 1573 06b6 0F93      		push r16
+ 1574 06b8 1F93      		push r17
+ 1575               	/* prologue: function */
+ 1576               	/* frame size = 0 */
+ 1577               	.LM235:
+ 1578 06ba 0E94 0000 		call MAX30105_readTemperature
+ 1579 06be 7B01      		movw r14,r22
+ 1580 06c0 8C01      		movw r16,r24
+ 1581               	.LVL102:
+ 1582               	.LM236:
+ 1583 06c2 20E0      		ldi r18,lo8(0xc479c000)
+ 1584 06c4 30EC      		ldi r19,hi8(0xc479c000)
+ 1585 06c6 49E7      		ldi r20,hlo8(0xc479c000)
+ 1586 06c8 54EC      		ldi r21,hhi8(0xc479c000)
+ 1587 06ca 0E94 0000 		call __nesf2
+ 1588 06ce 8823      		tst r24
+ 1589 06d0 01F0      		breq .L142
+ 1590 06d2 C801      		movw r24,r16
+ 1591 06d4 B701      		movw r22,r14
+ 1592 06d6 26E6      		ldi r18,lo8(0x3fe66666)
+ 1593 06d8 36E6      		ldi r19,hi8(0x3fe66666)
+ 1594 06da 46EE      		ldi r20,hlo8(0x3fe66666)
+ 1595 06dc 5FE3      		ldi r21,hhi8(0x3fe66666)
+ 1596 06de 0E94 0000 		call __mulsf3
+ 1597 06e2 20E0      		ldi r18,lo8(0x42000000)
+ 1598 06e4 30E0      		ldi r19,hi8(0x42000000)
+ 1599 06e6 40E0      		ldi r20,hlo8(0x42000000)
+ 1600 06e8 52E4      		ldi r21,hhi8(0x42000000)
+ 1601 06ea 0E94 0000 		call __addsf3
+ 1602 06ee 7B01      		movw r14,r22
+ 1603 06f0 8C01      		movw r16,r24
+ 1604               	.L142:
+ 1605               	.LM237:
+ 1606 06f2 B701      		movw r22,r14
+ 1607               	.LVL103:
+ 1608 06f4 C801      		movw r24,r16
+ 1609               	/* epilogue start */
+ 1610 06f6 1F91      		pop r17
+ 1611 06f8 0F91      		pop r16
+ 1612 06fa FF90      		pop r15
+ 1613 06fc EF90      		pop r14
+ 1614 06fe 0895      		ret
+ 1615               	.LFE49:
+ 1617               	.global	MAX30105_softReset
+ 1619               	MAX30105_softReset:
+ 1620               	.LFB28:
+ 1621               	.LM238:
+ 1622               	/* prologue: function */
+ 1623               	/* frame size = 0 */
+ 1624               	.LM239:
+ 1625 0700 89E0      		ldi r24,lo8(9)
+ 1626 0702 6FEB      		ldi r22,lo8(-65)
+ 1627 0704 40E4      		ldi r20,lo8(64)
+ 1628 0706 0E94 0000 		call MAX30105_bitMask
+ 1629               	/* epilogue start */
+ 1630               	.LM240:
+ 1631 070a 0895      		ret
+ 1632               	.LFE28:
+ 1634               	.global	MAX30105_setup
+ 1636               	MAX30105_setup:
+ 1637               	.LFB54:
+ 1638               	.LM241:
+ 1639               	.LVL104:
+ 1640 070c AF92      		push r10
+ 1641 070e BF92      		push r11
+ 1642 0710 CF92      		push r12
+ 1643 0712 DF92      		push r13
+ 1644 0714 EF92      		push r14
+ 1645               	.LVL105:
+ 1646 0716 FF92      		push r15
+ 1647 0718 0F93      		push r16
+ 1648               	.LVL106:
+ 1649 071a 1F93      		push r17
+ 1650 071c DF93      		push r29
+ 1651 071e CF93      		push r28
+ 1652 0720 0F92      		push __tmp_reg__
+ 1653 0722 CDB7      		in r28,__SP_L__
+ 1654 0724 DEB7      		in r29,__SP_H__
+ 1655               	/* prologue: function */
+ 1656               	/* frame size = 1 */
+ 1657 0726 D82E      		mov r13,r24
+ 1658 0728 C42E      		mov r12,r20
+ 1659 072a 5901      		movw r10,r18
+ 1660               	.LM242:
+ 1661 072c 6983      		std Y+1,r22
+ 1662               	.LVL107:
+ 1663 072e 0E94 0000 		call MAX30105_softReset
+ 1664               	.LVL108:
+ 1665               	.LM243:
+ 1666 0732 8981      		ldd r24,Y+1
+ 1667 0734 8130      		cpi r24,lo8(1)
+ 1668               	.LVL109:
+ 1669 0736 01F4      		brne .+2
+ 1670 0738 00C0      		rjmp .L179
+ 1671               	.LM244:
+ 1672 073a 8230      		cpi r24,lo8(2)
+ 1673 073c 01F4      		brne .+2
+ 1674 073e 00C0      		rjmp .L180
+ 1675               	.LM245:
+ 1676 0740 8430      		cpi r24,lo8(4)
+ 1677 0742 01F0      		breq .L155
+ 1678               	.LM246:
+ 1679 0744 8830      		cpi r24,lo8(8)
+ 1680 0746 01F4      		brne .+2
+ 1681 0748 00C0      		rjmp .L181
+ 1682               	.LM247:
+ 1683 074a 8031      		cpi r24,lo8(16)
+ 1684 074c 01F4      		brne .+2
+ 1685 074e 00C0      		rjmp .L182
+ 1686               	.LM248:
+ 1687 0750 8032      		cpi r24,lo8(32)
+ 1688 0752 01F4      		brne .+2
+ 1689 0754 00C0      		rjmp .L183
+ 1690               	.L155:
+ 1691               	.LM249:
+ 1692 0756 80E4      		ldi r24,lo8(64)
+ 1693               	.LVL110:
+ 1694 0758 0E94 0000 		call MAX30105_setFIFOAverage
+ 1695               	.L150:
+ 1696               	.LM250:
+ 1697 075c 0E94 0000 		call MAX30105_enableFIFORollover
+ 1698               	.LM251:
+ 1699 0760 82E0      		ldi r24,lo8(2)
+ 1700 0762 C816      		cp r12,r24
+ 1701 0764 01F4      		brne .+2
+ 1702 0766 00C0      		rjmp .L184
+ 1703               	.LM252:
+ 1704 0768 82E0      		ldi r24,lo8(2)
+ 1705 076a 0E94 0000 		call MAX30105_setLEDMode
+ 1706               	.L157:
+ 1707               	.LM253:
+ 1708 076e C092 0000 		sts MAX30105_activeLEDs,r12
+ 1709               	.LM254:
+ 1710 0772 E0E0      		ldi r30,lo8(4096)
+ 1711 0774 EE16      		cp r14,r30
+ 1712 0776 E0E1      		ldi r30,hi8(4096)
+ 1713 0778 FE06      		cpc r15,r30
+ 1714               	.LVL111:
+ 1715 077a 04F0      		brlt .L162
+ 1716               	.LM255:
+ 1717 077c F0E0      		ldi r31,lo8(8192)
+ 1718 077e EF16      		cp r14,r31
+ 1719 0780 F0E2      		ldi r31,hi8(8192)
+ 1720 0782 FF06      		cpc r15,r31
+ 1721 0784 04F4      		brge .+2
+ 1722 0786 00C0      		rjmp .L185
+ 1723               	.LM256:
+ 1724 0788 80E0      		ldi r24,lo8(16384)
+ 1725 078a E816      		cp r14,r24
+ 1726 078c 80E4      		ldi r24,hi8(16384)
+ 1727 078e F806      		cpc r15,r24
+ 1728 0790 04F4      		brge .+2
+ 1729 0792 00C0      		rjmp .L186
+ 1730               	.LM257:
+ 1731 0794 E0E0      		ldi r30,lo8(16384)
+ 1732 0796 EE16      		cp r14,r30
+ 1733 0798 E0E4      		ldi r30,hi8(16384)
+ 1734 079a FE06      		cpc r15,r30
+ 1735 079c 01F4      		brne .+2
+ 1736 079e 00C0      		rjmp .L187
+ 1737               	.L162:
+ 1738               	.LM258:
+ 1739 07a0 80E0      		ldi r24,lo8(0)
+ 1740 07a2 0E94 0000 		call MAX30105_setADCRange
+ 1741               	.L159:
+ 1742               	.LM259:
+ 1743 07a6 F4E6      		ldi r31,lo8(100)
+ 1744 07a8 AF16      		cp r10,r31
+ 1745 07aa B104      		cpc r11,__zero_reg__
+ 1746 07ac 04F0      		brlt .L171
+ 1747               	.LM260:
+ 1748 07ae 88EC      		ldi r24,lo8(200)
+ 1749 07b0 A816      		cp r10,r24
+ 1750 07b2 B104      		cpc r11,__zero_reg__
+ 1751 07b4 04F4      		brge .+2
+ 1752 07b6 00C0      		rjmp .L188
+ 1753               	.LM261:
+ 1754 07b8 E0E9      		ldi r30,lo8(400)
+ 1755 07ba AE16      		cp r10,r30
+ 1756 07bc E1E0      		ldi r30,hi8(400)
+ 1757 07be BE06      		cpc r11,r30
+ 1758 07c0 04F4      		brge .+2
+ 1759 07c2 00C0      		rjmp .L189
+ 1760               	.LM262:
+ 1761 07c4 F0E2      		ldi r31,lo8(800)
+ 1762 07c6 AF16      		cp r10,r31
+ 1763 07c8 F3E0      		ldi r31,hi8(800)
+ 1764 07ca BF06      		cpc r11,r31
+ 1765 07cc 04F4      		brge .+2
+ 1766 07ce 00C0      		rjmp .L190
+ 1767               	.LM263:
+ 1768 07d0 88EE      		ldi r24,lo8(1000)
+ 1769 07d2 A816      		cp r10,r24
+ 1770 07d4 83E0      		ldi r24,hi8(1000)
+ 1771 07d6 B806      		cpc r11,r24
+ 1772 07d8 04F4      		brge .+2
+ 1773 07da 00C0      		rjmp .L191
+ 1774               	.LM264:
+ 1775 07dc E0E4      		ldi r30,lo8(1600)
+ 1776 07de AE16      		cp r10,r30
+ 1777 07e0 E6E0      		ldi r30,hi8(1600)
+ 1778 07e2 BE06      		cpc r11,r30
+ 1779 07e4 04F4      		brge .+2
+ 1780 07e6 00C0      		rjmp .L192
+ 1781               	.LM265:
+ 1782 07e8 F0E8      		ldi r31,lo8(3200)
+ 1783 07ea AF16      		cp r10,r31
+ 1784 07ec FCE0      		ldi r31,hi8(3200)
+ 1785 07ee BF06      		cpc r11,r31
+ 1786 07f0 04F4      		brge .+2
+ 1787 07f2 00C0      		rjmp .L193
+ 1788               	.LM266:
+ 1789 07f4 80E8      		ldi r24,lo8(3200)
+ 1790 07f6 A816      		cp r10,r24
+ 1791 07f8 8CE0      		ldi r24,hi8(3200)
+ 1792 07fa B806      		cpc r11,r24
+ 1793 07fc 01F4      		brne .+2
+ 1794 07fe 00C0      		rjmp .L194
+ 1795               	.L171:
+ 1796               	.LM267:
+ 1797 0800 80E0      		ldi r24,lo8(0)
+ 1798 0802 0E94 0000 		call MAX30105_setSampleRate
+ 1799               	.L164:
+ 1800               	.LM268:
+ 1801 0806 0637      		cpi r16,118
+ 1802 0808 1105      		cpc r17,__zero_reg__
+ 1803               	.LVL112:
+ 1804 080a 04F0      		brlt .L176
+ 1805               	.LM269:
+ 1806 080c 073D      		cpi r16,215
+ 1807 080e 1105      		cpc r17,__zero_reg__
+ 1808 0810 04F0      		brlt .L195
+ 1809               	.LM270:
+ 1810 0812 E1E0      		ldi r30,hi8(411)
+ 1811 0814 0B39      		cpi r16,lo8(411)
+ 1812 0816 1E07      		cpc r17,r30
+ 1813 0818 04F4      		brge .+2
+ 1814 081a 00C0      		rjmp .L196
+ 1815               	.LM271:
+ 1816 081c 0B59      		subi r16,lo8(411)
+ 1817 081e 1140      		sbci r17,hi8(411)
+ 1818 0820 01F4      		brne .+2
+ 1819 0822 00C0      		rjmp .L197
+ 1820               	.L176:
+ 1821               	.LM272:
+ 1822 0824 80E0      		ldi r24,lo8(0)
+ 1823 0826 0E94 0000 		call MAX30105_setPulseWidth
+ 1824               	.L173:
+ 1825               	.LM273:
+ 1826 082a 8D2D      		mov r24,r13
+ 1827 082c 8850      		subi r24,lo8(-(-8))
+ 1828 082e 0E94 0000 		call MAX30105_setPulseAmplitudeRed
+ 1829               	.LM274:
+ 1830 0832 8D2D      		mov r24,r13
+ 1831 0834 0E94 0000 		call MAX30105_setPulseAmplitudeIR
+ 1832               	.LM275:
+ 1833 0838 8D2D      		mov r24,r13
+ 1834 083a 0E94 0000 		call MAX30105_setPulseAmplitudeProximity
+ 1835               	.LM276:
+ 1836 083e 81E0      		ldi r24,lo8(1)
+ 1837 0840 61E0      		ldi r22,lo8(1)
+ 1838 0842 0E94 0000 		call MAX30105_enableSlot
+ 1839               	.LM277:
+ 1840 0846 81E0      		ldi r24,lo8(1)
+ 1841 0848 8C15      		cp r24,r12
+ 1842 084a 00F4      		brsh .L177
+ 1843 084c 82E0      		ldi r24,lo8(2)
+ 1844 084e 62E0      		ldi r22,lo8(2)
+ 1845 0850 0E94 0000 		call MAX30105_enableSlot
+ 1846               	.L177:
+ 1847               	.LM278:
+ 1848 0854 0E94 0000 		call MAX30105_clearFIFO
+ 1849               	/* epilogue start */
+ 1850               	.LM279:
+ 1851 0858 0F90      		pop __tmp_reg__
+ 1852 085a CF91      		pop r28
+ 1853 085c DF91      		pop r29
+ 1854 085e 1F91      		pop r17
+ 1855 0860 0F91      		pop r16
+ 1856               	.LVL113:
+ 1857 0862 FF90      		pop r15
+ 1858 0864 EF90      		pop r14
+ 1859               	.LVL114:
+ 1860 0866 DF90      		pop r13
+ 1861               	.LVL115:
+ 1862 0868 CF90      		pop r12
+ 1863               	.LVL116:
+ 1864 086a BF90      		pop r11
+ 1865 086c AF90      		pop r10
+ 1866               	.LVL117:
+ 1867 086e 0895      		ret
+ 1868               	.LVL118:
+ 1869               	.L184:
+ 1870               	.LM280:
+ 1871 0870 83E0      		ldi r24,lo8(3)
+ 1872 0872 0E94 0000 		call MAX30105_setLEDMode
+ 1873 0876 00C0      		rjmp .L157
+ 1874               	.LVL119:
+ 1875               	.L185:
+ 1876               	.LM281:
+ 1877 0878 80E2      		ldi r24,lo8(32)
+ 1878 087a 0E94 0000 		call MAX30105_setADCRange
+ 1879 087e 00C0      		rjmp .L159
+ 1880               	.L188:
+ 1881               	.LM282:
+ 1882 0880 84E0      		ldi r24,lo8(4)
+ 1883 0882 0E94 0000 		call MAX30105_setSampleRate
+ 1884 0886 00C0      		rjmp .L164
+ 1885               	.LVL120:
+ 1886               	.L195:
+ 1887               	.LM283:
+ 1888 0888 81E0      		ldi r24,lo8(1)
+ 1889 088a 0E94 0000 		call MAX30105_setPulseWidth
+ 1890 088e 00C0      		rjmp .L173
+ 1891               	.LVL121:
+ 1892               	.L181:
+ 1893               	.LM284:
+ 1894 0890 80E6      		ldi r24,lo8(96)
+ 1895               	.LVL122:
+ 1896 0892 0E94 0000 		call MAX30105_setFIFOAverage
+ 1897 0896 00C0      		rjmp .L150
+ 1898               	.LVL123:
+ 1899               	.L191:
+ 1900               	.LM285:
+ 1901 0898 80E1      		ldi r24,lo8(16)
+ 1902 089a 0E94 0000 		call MAX30105_setSampleRate
+ 1903 089e 00C0      		rjmp .L164
+ 1904               	.LVL124:
+ 1905               	.L179:
+ 1906               	.LM286:
+ 1907 08a0 80E0      		ldi r24,lo8(0)
+ 1908               	.LVL125:
+ 1909 08a2 0E94 0000 		call MAX30105_setFIFOAverage
+ 1910 08a6 00C0      		rjmp .L150
+ 1911               	.LVL126:
+ 1912               	.L196:
+ 1913               	.LM287:
+ 1914 08a8 82E0      		ldi r24,lo8(2)
+ 1915 08aa 0E94 0000 		call MAX30105_setPulseWidth
+ 1916 08ae 00C0      		rjmp .L173
+ 1917               	.LVL127:
+ 1918               	.L189:
+ 1919               	.LM288:
+ 1920 08b0 88E0      		ldi r24,lo8(8)
+ 1921 08b2 0E94 0000 		call MAX30105_setSampleRate
+ 1922 08b6 00C0      		rjmp .L164
+ 1923               	.L186:
+ 1924               	.LM289:
+ 1925 08b8 80E4      		ldi r24,lo8(64)
+ 1926 08ba 0E94 0000 		call MAX30105_setADCRange
+ 1927 08be 00C0      		rjmp .L159
+ 1928               	.LVL128:
+ 1929               	.L180:
+ 1930               	.LM290:
+ 1931 08c0 80E2      		ldi r24,lo8(32)
+ 1932               	.LVL129:
+ 1933 08c2 0E94 0000 		call MAX30105_setFIFOAverage
+ 1934 08c6 00C0      		rjmp .L150
+ 1935               	.LVL130:
+ 1936               	.L183:
+ 1937               	.LM291:
+ 1938 08c8 80EA      		ldi r24,lo8(-96)
+ 1939               	.LVL131:
+ 1940 08ca 0E94 0000 		call MAX30105_setFIFOAverage
+ 1941 08ce 00C0      		rjmp .L150
+ 1942               	.LVL132:
+ 1943               	.L187:
+ 1944               	.LM292:
+ 1945 08d0 80E6      		ldi r24,lo8(96)
+ 1946 08d2 0E94 0000 		call MAX30105_setADCRange
+ 1947 08d6 00C0      		rjmp .L159
+ 1948               	.LVL133:
+ 1949               	.L197:
+ 1950               	.LM293:
+ 1951 08d8 83E0      		ldi r24,lo8(3)
+ 1952 08da 0E94 0000 		call MAX30105_setPulseWidth
+ 1953 08de 00C0      		rjmp .L173
+ 1954               	.LVL134:
+ 1955               	.L190:
+ 1956               	.LM294:
+ 1957 08e0 8CE0      		ldi r24,lo8(12)
+ 1958 08e2 0E94 0000 		call MAX30105_setSampleRate
+ 1959 08e6 00C0      		rjmp .L164
+ 1960               	.LVL135:
+ 1961               	.L182:
+ 1962               	.LM295:
+ 1963 08e8 80E8      		ldi r24,lo8(-128)
+ 1964               	.LVL136:
+ 1965 08ea 0E94 0000 		call MAX30105_setFIFOAverage
+ 1966 08ee 00C0      		rjmp .L150
+ 1967               	.LVL137:
+ 1968               	.L194:
+ 1969               	.LM296:
+ 1970 08f0 8CE1      		ldi r24,lo8(28)
+ 1971 08f2 0E94 0000 		call MAX30105_setSampleRate
+ 1972 08f6 00C0      		rjmp .L164
+ 1973               	.L192:
+ 1974               	.LM297:
+ 1975 08f8 84E1      		ldi r24,lo8(20)
+ 1976 08fa 0E94 0000 		call MAX30105_setSampleRate
+ 1977 08fe 00C0      		rjmp .L164
+ 1978               	.L193:
+ 1979               	.LM298:
+ 1980 0900 88E1      		ldi r24,lo8(24)
+ 1981 0902 0E94 0000 		call MAX30105_setSampleRate
+ 1982 0906 00C0      		rjmp .L164
+ 1983               	.LFE54:
+ 1985               		.comm MAX30105_i2caddr,1,1
+ 1986               		.comm MAX30105_activeLEDs,1,1
+ 1987               		.comm MAX30105_revisionID,1,1
+ 1988               		.comm sense,10,1
+ 2421               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 MAX30105.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:18     .text:00000000 MAX30105_getRevisionID
+                            *COM*:00000001 MAX30105_revisionID
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:31     .text:00000006 MAX30105_available
+                            *COM*:0000000a sense
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:47     .text:00000012 MAX30105_getFIFORed
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:72     .text:0000002e MAX30105_getFIFOIR
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:97     .text:0000004a MAX30105_nextSample
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:115    .text:0000005c MAX30105_write8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:149    .text:00000080 MAX30105_setPROXINTTHRESH
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:168    .text:0000008a MAX30105_clearFIFO
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:192    .text:000000a4 MAX30105_disableSlots
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:212    .text:000000b6 MAX30105_setProximityThreshold
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:231    .text:000000c0 MAX30105_setPulseAmplitudeProximity
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:250    .text:000000ca MAX30105_setPulseAmplitudeIR
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:269    .text:000000d4 MAX30105_setPulseAmplitudeRed
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:288    .text:000000de MAX30105_read8
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:322    .text:00000104 MAX30105_bitMask
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:356    .text:00000128 MAX30105_setFIFOAlmostFull
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:376    .text:00000134 MAX30105_disableFIFORollover
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:393    .text:00000140 MAX30105_enableFIFORollover
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:410    .text:0000014c MAX30105_setFIFOAverage
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:430    .text:00000158 MAX30105_enableSlot
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:494    .text:000001a0 MAX30105_setPulseWidth
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:514    .text:000001ac MAX30105_setSampleRate
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:534    .text:000001b8 MAX30105_setADCRange
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:554    .text:000001c4 MAX30105_setLEDMode
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:574    .text:000001d0 MAX30105_wakeUp
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:591    .text:000001dc MAX30105_shutDown
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:608    .text:000001e8 MAX30105_disableDIETEMPRDY
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:625    .text:000001f4 MAX30105_enableDIETEMPRDY
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:642    .text:00000200 MAX30105_disablePROXINT
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:659    .text:0000020c MAX30105_enablePROXINT
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:676    .text:00000218 MAX30105_disableALCOVF
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:693    .text:00000224 MAX30105_enableALCOVF
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:710    .text:00000230 MAX30105_disableDATARDY
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:727    .text:0000023c MAX30105_enableDATARDY
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:744    .text:00000248 MAX30105_disableAFULL
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:761    .text:00000254 MAX30105_enableAFULL
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:778    .text:00000260 MAX30105_readRevisionID
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:794    .text:0000026c MAX30105_readPartID
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:809    .text:00000274 MAX30105_init
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:826    .text:00000280 MAX30105_getReadPointer
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:841    .text:00000288 MAX30105_getWritePointer
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:856    .text:00000290 MAX30105_getINT2
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:871    .text:00000298 MAX30105_getINT1
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:886    .text:000002a0 MAX30105_check
+                            *COM*:00000001 MAX30105_activeLEDs
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1311   .text:00000544 MAX30105_safeCheck
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1333   .text:00000554 MAX30105_getRedIR
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1412   .text:000005cc MAX30105_getIR
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1454   .text:00000604 MAX30105_getRed
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1496   .text:0000063c MAX30105_readTemperature
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1568   .text:000006b2 MAX30105_readTemperatureF
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1619   .text:00000700 MAX30105_softReset
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/cc4RiLv6.s:1636   .text:0000070c MAX30105_setup
+                            *COM*:00000001 MAX30105_i2caddr
+
+UNDEFINED SYMBOLS
+i2c_start
+i2c_write
+i2c_stop
+i2c_rep_start
+i2c_readNak
+i2c_readAck
+__divmodhi4
+__floatsisf
+__floatunsisf
+__mulsf3
+__addsf3
+__nesf2
+__do_clear_bss
