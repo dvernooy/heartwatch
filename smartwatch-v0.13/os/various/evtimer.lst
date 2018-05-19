@@ -1,0 +1,176 @@
+   1               		.file	"evtimer.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	evtObjectInit
+  18               	evtObjectInit:
+  19               	.LFB92:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24 0000 FC01      		movw r30,r24
+  25               	.LBB40:
+  26               	.LBB41:
+  27               	.LM2:
+  28 0002 0A96      		adiw r24,10
+  29               	.LVL1:
+  30 0004 9387      		std Z+11,r25
+  31 0006 8287      		std Z+10,r24
+  32               	.LBE41:
+  33               	.LBE40:
+  34               	.LBB42:
+  35               	.LBB43:
+  36               	.LM3:
+  37 0008 1782      		std Z+7,__zero_reg__
+  38 000a 1682      		std Z+6,__zero_reg__
+  39               	.LBE43:
+  40               	.LBE42:
+  41               	.LM4:
+  42 000c 7587      		std Z+13,r23
+  43 000e 6487      		std Z+12,r22
+  44               	/* epilogue start */
+  45               	.LM5:
+  46 0010 0895      		ret
+  47               	.LFE92:
+  49               	.global	evtStart
+  51               	evtStart:
+  52               	.LFB93:
+  53               	.LM6:
+  54               	.LVL2:
+  55 0012 EF92      		push r14
+  56 0014 FF92      		push r15
+  57 0016 0F93      		push r16
+  58 0018 1F93      		push r17
+  59 001a CF93      		push r28
+  60 001c DF93      		push r29
+  61               	/* prologue: function */
+  62               	/* frame size = 0 */
+  63 001e EC01      		movw r28,r24
+  64               	.LM7:
+  65 0020 F82E      		mov r15,r24
+  66 0022 ED2E      		mov r14,r29
+  67               	.LVL3:
+  68 0024 0C85      		ldd r16,Y+12
+  69 0026 1D85      		ldd r17,Y+13
+  70               	.LBB44:
+  71               	.LBB45:
+  72               	.LBB46:
+  73               	.LBB47:
+  74               	.LM8:
+  75               	/* #APP */
+  76               	 ;  300 "../../../os/rt/include/chsys.h" 1
+  77 0028 F894      		cli
+  78               	 ;  0 "" 2
+  79               	/* #NOAPP */
+  80               	.LBE47:
+  81               	.LBE46:
+  82               	.LBB48:
+  83               	.LBB49:
+  84               	.LBB50:
+  85               	.LBB51:
+  86               	.LM9:
+  87 002a 8E81      		ldd r24,Y+6
+  88 002c 9F81      		ldd r25,Y+7
+  89               	.LVL4:
+  90 002e 892B      		or r24,r25
+  91 0030 01F0      		breq .L4
+  92               	.LM10:
+  93 0032 CE01      		movw r24,r28
+  94               	.LVL5:
+  95 0034 0E94 0000 		call chVTDoResetI
+  96               	.LVL6:
+  97               	.L4:
+  98               	.LBE51:
+  99               	.LBE50:
+ 100               	.LM11:
+ 101 0038 8F2D      		mov r24,r15
+ 102 003a 9E2D      		mov r25,r14
+ 103 003c B801      		movw r22,r16
+ 104 003e 40E0      		ldi r20,lo8(gs(tmrcb))
+ 105 0040 50E0      		ldi r21,hi8(gs(tmrcb))
+ 106 0042 9E01      		movw r18,r28
+ 107 0044 0E94 0000 		call chVTDoSetI
+ 108               	.LBE49:
+ 109               	.LBE48:
+ 110               	.LBB52:
+ 111               	.LBB53:
+ 112               	.LM12:
+ 113               	/* #APP */
+ 114               	 ;  322 "../../../os/rt/include/chsys.h" 1
+ 115 0048 7894      		sei
+ 116               	 ;  0 "" 2
+ 117               	/* epilogue start */
+ 118               	/* #NOAPP */
+ 119               	.LBE53:
+ 120               	.LBE52:
+ 121               	.LBE45:
+ 122               	.LBE44:
+ 123               	.LM13:
+ 124 004a DF91      		pop r29
+ 125               	.LVL7:
+ 126 004c CF91      		pop r28
+ 127               	.LVL8:
+ 128 004e 1F91      		pop r17
+ 129 0050 0F91      		pop r16
+ 130 0052 FF90      		pop r15
+ 131 0054 EF90      		pop r14
+ 132 0056 0895      		ret
+ 133               	.LFE93:
+ 136               	tmrcb:
+ 137               	.LFB91:
+ 138               	.LM14:
+ 139               	.LVL9:
+ 140 0058 0F93      		push r16
+ 141 005a 1F93      		push r17
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	.LM15:
+ 145 005c 8C01      		movw r16,r24
+ 146               	.LVL10:
+ 147               	.LBB54:
+ 148               	.LBB55:
+ 149               	.LM16:
+ 150 005e 0A96      		adiw r24,10
+ 151 0060 60E0      		ldi r22,lo8(0)
+ 152 0062 0E94 0000 		call chEvtBroadcastFlagsI
+ 153               	.LBE55:
+ 154               	.LBE54:
+ 155               	.LM17:
+ 156 0066 F801      		movw r30,r16
+ 157               	.LVL11:
+ 158 0068 6485      		ldd r22,Z+12
+ 159 006a 7585      		ldd r23,Z+13
+ 160 006c C801      		movw r24,r16
+ 161 006e 40E0      		ldi r20,lo8(gs(tmrcb))
+ 162 0070 50E0      		ldi r21,hi8(gs(tmrcb))
+ 163 0072 9801      		movw r18,r16
+ 164 0074 0E94 0000 		call chVTDoSetI
+ 165               	/* epilogue start */
+ 166               	.LM18:
+ 167 0078 1F91      		pop r17
+ 168 007a 0F91      		pop r16
+ 169               	.LVL12:
+ 170 007c 0895      		ret
+ 171               	.LFE91:
+ 213               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 evtimer.c
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:2      *ABS*:0000003f __SREG__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:3      *ABS*:0000003e __SP_H__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:4      *ABS*:0000003d __SP_L__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:5      *ABS*:00000034 __CCP__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:6      *ABS*:00000000 __tmp_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:7      *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:18     .text:00000000 evtObjectInit
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:51     .text:00000012 evtStart
+C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp/ccjBXZub.s:136    .text:00000058 tmrcb
+
+UNDEFINED SYMBOLS
+chVTDoResetI
+chVTDoSetI
+chEvtBroadcastFlagsI
